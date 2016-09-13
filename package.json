@@ -1,0 +1,54 @@
+{
+  "name": "react-boilerplatinum",
+  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "homepage": "https://github.com/Kikobeats/react-boilerplatinum",
+  "version": "0.0.0",
+  "author": {
+    "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kikobeats/react-boilerplatinum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/react-boilerplatinum/issues"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "dependencies": {
+    "react": "~15.0.1",
+    "react-dom": "~15.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "~6.14.0",
+    "babel-loader": "~6.2.5",
+    "babel-plugin-transform-react-constant-elements": "~6.9.1",
+    "babel-plugin-transform-react-remove-prop-types": "~0.2.9",
+    "babel-preset-es2015": "~6.14.0",
+    "babel-preset-react": "~6.11.1",
+    "babel-preset-stage-0": "~6.5.0",
+    "browser-sync-webpack-plugin": "~1.1.2",
+    "react-hot-loader": "~3.0.0-beta.1",
+    "standard": "~8.0.0",
+    "webpack": "~1.13.2",
+    "webpack-dev-server": "~1.15.1"
+  },
+  "scripts": {
+    "build": "webpack --progress --config webpack.production.config.js",
+    "lint": "standard",
+    "start": "node server.js",
+    "test": "echo 'not yet implemented, wanna help?'"
+  },
+  "license": "MIT"
+}
