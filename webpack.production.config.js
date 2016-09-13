@@ -1,9 +1,8 @@
 'use strict'
 
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const pkg = require('./package.json')
 const webpack = require('webpack')
 const path = require('path')
-const pkg = require('./package.json')
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -12,7 +11,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve('dist/assets/js'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),

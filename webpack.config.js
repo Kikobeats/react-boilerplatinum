@@ -13,7 +13,7 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.resolve('dist'),
+    path: path.resolve('dist/assets/js'),
     filename: 'bundle.js',
     publicPath: '/assets/js/'
   },

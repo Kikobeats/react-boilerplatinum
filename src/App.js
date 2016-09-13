@@ -12,9 +12,9 @@ import Counter from './Counter'
 export default class App extends Component {
   render () {
     return (
-      <Layout>
-        <Counter />
-      </Layout>
+    <Layout>
+      <Counter />
+    </Layout>
     )
   }
 }
