@@ -7,16 +7,16 @@ const path = require('path')
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: [
-    './src/index'
+    './src/app/index.js'
   ],
   output: {
-    path: path.resolve('dist/assets/js'),
-    filename: 'bundle.js'
+    path: path.resolve('src/www/assets/js'),
+    filename: 'bundle.js',
+    publicPath: '/assets/js/'
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin({compress: { warnings: false }}),
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
@@ -26,14 +26,15 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
       VERSION: JSON.stringify(pkg.version)
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin({compress: { warnings: false }})
   ],
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /(\.js|\.jsx)$/,
       exclude: /node_modules/,
       loaders: ['babel'],
-      include: path.resolve('src')
+      include: path.resolve('src/app')
     }]
   }
 }
