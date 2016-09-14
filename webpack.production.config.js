@@ -17,7 +17,6 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
-    new webpack.NoErrorsPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       filename: 'vendor.bundle.js',
@@ -27,7 +26,10 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('production'),
       VERSION: JSON.stringify(pkg.version)
     }),
-    new webpack.optimize.UglifyJsPlugin({compress: { warnings: false }})
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+      comments: false
+    })
   ],
   module: {
     loaders: [{
