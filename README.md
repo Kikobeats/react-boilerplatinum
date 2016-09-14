@@ -13,6 +13,7 @@ The premise of this scaffold is provide the best production build possible, but 
 - Use [standard](https://github.com/feross/standard) as linter.
 - All production optimization possible enables.
 - Live editing React components for development (using HMR3).
+- Devices synchronization with [BrowserSync](https://www.browsersync.io/).
 
 It's inspired in [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate).
 
