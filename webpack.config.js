@@ -10,10 +10,10 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/index'
+    './src/app/index.js'
   ],
   output: {
-    path: path.resolve('dist/assets/js'),
+    path: path.resolve('src/www/assets/js'),
     filename: 'bundle.js',
     publicPath: '/assets/js/'
   },
@@ -28,7 +28,8 @@ module.exports = {
         // proxy the Webpack Dev Server endpoint
         // (which should be serving on http://localhost:3100/)
         // through BrowserSync
-        proxy: 'http://localhost:3000'
+        proxy: 'http://localhost:3000',
+        open: false
       },
       // plugin options
       {
@@ -40,10 +41,10 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /(\.js|\.jsx)$/,
       exclude: /node_modules/,
       loaders: ['babel'],
-      include: path.resolve('src')
+      include: path.resolve('src/app')
     }]
   }
 }
