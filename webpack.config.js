@@ -1,6 +1,8 @@
 'use strict'
 
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const autoprefixer = require('autoprefixer')
 const webpack = require('webpack')
 const path = require('path')
 
@@ -14,10 +16,14 @@ module.exports = {
   ],
   output: {
     path: path.resolve('src/www/assets/js'),
-    filename: 'bundle.js',
-    publicPath: '/assets/js/'
+    filename: 'js/bundle.js'
+  },
+  resolve: {
+    extensions: ['', '.scss', '.css', '.js', '.json'],
+    modulesDirectories: ['node_modules']
   },
   plugins: [
+    new ExtractTextPlugin('css/bundle.css', { allChunks: true }),
     new webpack.HotModuleReplacementPlugin(),
     new BrowserSyncPlugin(
       // BrowserSync options
@@ -45,6 +51,10 @@ module.exports = {
       exclude: /node_modules/,
       loaders: ['babel'],
       include: path.resolve('src/app')
+    }, {
+      test: /(\.scss|\.css)$/,
+      loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
     }]
-  }
+  },
+  postcss: [autoprefixer]
 }

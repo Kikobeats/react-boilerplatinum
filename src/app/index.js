@@ -1,3 +1,4 @@
+import './index.scss'
 import { AppContainer } from 'react-hot-loader'
 import ReactDOM from 'react-dom'
 import React from 'react'

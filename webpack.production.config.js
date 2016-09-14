@@ -1,5 +1,7 @@
 'use strict'
 
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const autoprefixer = require('autoprefixer')
 const pkg = require('./package.json')
 const webpack = require('webpack')
 const path = require('path')
@@ -10,16 +12,20 @@ module.exports = {
     './src/app/index.js'
   ],
   output: {
-    path: path.resolve('src/www/assets/js'),
-    filename: 'bundle.js',
-    publicPath: '/assets/js/'
+    path: path.resolve('src/www/assets'),
+    filename: 'js/bundle.js'
+  },
+  resolve: {
+    extensions: ['', '.scss', '.css', '.js', '.json'],
+    modulesDirectories: ['node_modules']
   },
   plugins: [
+    new ExtractTextPlugin('css/bundle.css', { allChunks: true }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'vendor.bundle.js',
+      filename: 'js/vendor.bundle.js',
       minChunks: Infinity
     }),
     new webpack.DefinePlugin({
@@ -37,6 +43,10 @@ module.exports = {
       exclude: /node_modules/,
       loaders: ['babel'],
       include: path.resolve('src/app')
+    }, {
+      test: /(\.scss|\.css)$/,
+      loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
     }]
-  }
+  },
+  postcss: [autoprefixer]
 }
