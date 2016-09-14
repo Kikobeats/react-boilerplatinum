@@ -1,3 +1,17 @@
+<a name="0.2.0"></a>
+# 0.2.0 (2016-09-14)
+
+* Ability to load styles ([9792f04](https://github.com/Kikobeats/react-boilerplatinum/commit/9792f04))
+* Add missing dep ([2361d24](https://github.com/Kikobeats/react-boilerplatinum/commit/2361d24))
+* Add shorthand loader ([8d2f9e4](https://github.com/Kikobeats/react-boilerplatinum/commit/8d2f9e4))
+* Disable local minification ([4a64359](https://github.com/Kikobeats/react-boilerplatinum/commit/4a64359))
+* Fix badges ([71830e3](https://github.com/Kikobeats/react-boilerplatinum/commit/71830e3))
+* Isolate components scaffold ([ea97831](https://github.com/Kikobeats/react-boilerplatinum/commit/ea97831))
+* Update docs ([6320364](https://github.com/Kikobeats/react-boilerplatinum/commit/6320364))
+* Update react deps ([c4c9dab](https://github.com/Kikobeats/react-boilerplatinum/commit/c4c9dab))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2016-09-14)
 
