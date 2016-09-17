@@ -5,6 +5,8 @@ import FilterMenu from '../FilterMenu'
 import Header from '../Header'
 import Menu from '../Menu'
 
+import style from './style.scss'
+
 // If you use React Router, make this component
 // render <Router> with your routes. Currently,
 // only synchronous routes are hot reloaded, and
@@ -35,7 +37,7 @@ class App extends Component {
     return (
       <Container>
         <Header toggle={toggle} />
-        <Menu get={get} />
+        <Menu get={get} style={style.menu} />
         <FilterMenu get={get} />
       </Container>
     )
