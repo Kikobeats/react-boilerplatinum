@@ -15,8 +15,8 @@ module.exports = {
     './src/app/index.js'
   ],
   output: {
-    path: path.resolve('src/www/assets'),
-    filename: 'js/bundle.js'
+    path: path.resolve('src/www'),
+    filename: 'assets/js/bundle.js'
   },
   resolve: {
     extensions: ['', '.scss', '.css', '.js', '.json'],
@@ -26,18 +26,20 @@ module.exports = {
     new HtmlWebpackPlugin(Object.assign({}, config, {
       template: require('html-webpack-template'),
       alwaysWriteToDisk: true,
+      hash: true,
+      inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: true
       }
     })),
     new HtmlWebpackHarddiskPlugin(),
-    new ExtractTextPlugin('css/bundle.css', { allChunks: true }),
+    new ExtractTextPlugin('assets/css/bundle.css', { allChunks: true }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'js/vendor.bundle.js',
+      filename: 'assets/js/vendor.bundle.js',
       minChunks: Infinity
     }),
     new webpack.DefinePlugin({
