@@ -27,6 +27,9 @@
     "webpack"
   ],
   "dependencies": {
+    "html-webpack-harddisk-plugin": "0.0.2",
+    "html-webpack-plugin": "~2.22.0",
+    "html-webpack-template": "~5.1.1",
     "react": "~15.3.1",
     "react-dom": "~15.3.1"
   },

@@ -1,7 +1,10 @@
 'use strict'
 
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const autoprefixer = require('autoprefixer')
+const config = require('./config.json')
 const webpack = require('webpack')
 const path = require('path')
 
@@ -22,6 +25,11 @@ module.exports = {
     modulesDirectories: ['node_modules']
   },
   plugins: [
+    new HtmlWebpackPlugin(Object.assign({}, config, {
+      template: require('html-webpack-template'),
+      alwaysWriteToDisk: true
+    })),
+    new HtmlWebpackHarddiskPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new BrowserSyncPlugin(
       // BrowserSync options

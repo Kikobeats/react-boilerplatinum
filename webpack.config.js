@@ -1,6 +1,8 @@
 'use strict'
 
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const autoprefixer = require('autoprefixer')
 const pkg = require('./package.json')
 const webpack = require('webpack')
@@ -20,6 +22,15 @@ module.exports = {
     modulesDirectories: ['node_modules']
   },
   plugins: [
+    new HtmlWebpackPlugin(Object.assign({}, config, {
+      template: require('html-webpack-template'),
+      alwaysWriteToDisk: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
+    })),
+    new HtmlWebpackHarddiskPlugin(),
     new ExtractTextPlugin('css/bundle.css', { allChunks: true }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
