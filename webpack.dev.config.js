@@ -14,9 +14,8 @@ module.exports = {
     './src/app/index.js'
   ],
   output: {
-    path: path.resolve('src/www/assets'),
-    filename: 'js/bundle.js',
-    publicPath: '/assets'
+    path: path.resolve('src/www'),
+    filename: 'assets/js/bundle.js'
   },
   resolve: {
     extensions: ['', '.scss', '.css', '.js', '.json'],
