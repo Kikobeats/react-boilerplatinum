@@ -1,48 +1,41 @@
 'use strict'
 
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const autoprefixer = require('autoprefixer')
+const pkg = require('./package.json')
 const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'cheap-module-source-map',
   entry: [
-    'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
     './src/app/index.js'
   ],
   output: {
     path: path.resolve('src/www/assets'),
-    filename: 'js/bundle.js',
-    publicPath: '/assets'
+    filename: 'js/bundle.js'
   },
   resolve: {
     extensions: ['', '.scss', '.css', '.js', '.json'],
     modulesDirectories: ['node_modules']
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new BrowserSyncPlugin(
-      // BrowserSync options
-      {
-        // browse to http://localhost:3000/ during development
-        host: 'localhost',
-        port: 3001,
-        // proxy the Webpack Dev Server endpoint
-        // (which should be serving on http://localhost:3100/)
-        // through BrowserSync
-        proxy: 'http://localhost:3000',
-        open: false
-      },
-      // plugin options
-      {
-        // prevent BrowserSync from reloading the page
-        // and let Webpack Dev Server take care of this
-        reload: false
-      }
-    )
+    new ExtractTextPlugin('css/bundle.css', { allChunks: true }),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'js/vendor.bundle.js',
+      minChunks: Infinity
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      VERSION: JSON.stringify(pkg.version)
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+      comments: false
+    })
   ],
   module: {
     loaders: [{
@@ -52,7 +45,7 @@ module.exports = {
       include: path.resolve('src/app')
     }, {
       test: /(\.scss|\.css)$/,
-      loader: 'style!css!postcss!sass'
+      loader: ExtractTextPlugin.extract('style', 'css?minimize&sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass!shorthand')
     }]
   },
   postcss: [autoprefixer]

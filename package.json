@@ -54,7 +54,7 @@
     "webpack-dev-server": "~1.15.1"
   },
   "scripts": {
-    "build": "webpack --progress --config webpack.production.config.js",
+    "build": "webpack --progress --config webpack.config.js",
     "lint": "standard",
     "start": "node server.js",
     "test": "echo 'not yet implemented, wanna help?'"
