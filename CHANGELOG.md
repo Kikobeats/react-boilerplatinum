@@ -1,3 +1,19 @@
+<a name="0.3.0"></a>
+# 0.3.0 (2016-09-17)
+
+* Auto-generate main html ([a82ffee](https://github.com/Kikobeats/react-boilerplatinum/commit/a82ffee))
+* Fix publicPath on local ([11c1d3a](https://github.com/Kikobeats/react-boilerplatinum/commit/11c1d3a))
+* HMR for CSS ([4b7d818](https://github.com/Kikobeats/react-boilerplatinum/commit/4b7d818))
+* Little refactor ([418d0c9](https://github.com/Kikobeats/react-boilerplatinum/commit/418d0c9))
+* Update docs ([ec1ba93](https://github.com/Kikobeats/react-boilerplatinum/commit/ec1ba93))
+* Update prod config ([7f6df46](https://github.com/Kikobeats/react-boilerplatinum/commit/7f6df46))
+* Update scripts ([f5bd670](https://github.com/Kikobeats/react-boilerplatinum/commit/f5bd670))
+* WIP ([a97ec7b](https://github.com/Kikobeats/react-boilerplatinum/commit/a97ec7b))
+* WIP ([e6cff37](https://github.com/Kikobeats/react-boilerplatinum/commit/e6cff37))
+* WIP ([b87d5b0](https://github.com/Kikobeats/react-boilerplatinum/commit/b87d5b0))
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2016-09-14)
 
