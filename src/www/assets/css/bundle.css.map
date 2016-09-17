@@ -1,1 +1,0 @@
-{"version":3,"file":"css/bundle.css","sources":["webpack:////./src/app/index.scss"],"sourcesContent":["*{box-sizing:border-box}body{font-family:-apple-system, BlinkMacSystemFont, sans-serif;line-height:1.5;color:#111;background-color:red}\n\n\n\n/** WEBPACK FOOTER **\n ** /./src/app/index.scss\n **/"],"mappings":"AAAA","sourceRoot":""}
