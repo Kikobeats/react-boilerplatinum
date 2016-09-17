@@ -31,6 +31,7 @@ module.exports = {
     })),
     new HtmlWebpackHarddiskPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
     new BrowserSyncPlugin(
       // BrowserSync options
       {
