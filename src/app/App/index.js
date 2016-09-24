@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-import { Container } from 'rebass'
 
-import FilterMenu from '../FilterMenu'
-import Header from '../Header'
-import Menu from '../Menu'
-
-import style from './style.scss'
+import Layout from '../Layout'
+import Counter from '../Counter'
 
 // If you use React Router, make this component
 // render <Router> with your routes. Currently,
@@ -14,34 +10,12 @@ import style from './style.scss'
 // You can ignore this warning. For details, see:
 // https://github.com/reactjs/react-router/issues/2182
 
-class App extends Component {
-  state = {
-    menuOpen: true,
-    menuFilterOpen: false
-  }
-
-  toggle = (key) => {
-    return (e) => {
-      const val = !this.state[key]
-      this.setState({ [key]: val })
-    }
-  }
-
-  get = (key) => {
-    return this.state[key]
-  }
-
+export default class App extends Component {
   render () {
-    const { toggle, get } = this
-
     return (
-      <Container>
-        <Header toggle={toggle} />
-        <Menu get={get} style={style.menu} />
-        <FilterMenu get={get} />
-      </Container>
+      <Layout>
+        <Counter />
+      </Layout>
     )
   }
 }
-
-export default App
