@@ -1,3 +1,11 @@
+<a name="0.3.2"></a>
+## 0.3.2 (2016-09-24)
+
+* Fix deps ([d55d727](https://github.com/Kikobeats/react-boilerplatinum/commit/d55d727))
+* Use default components ([b57f478](https://github.com/Kikobeats/react-boilerplatinum/commit/b57f478))
+
+
+
 <a name="0.3.1"></a>
 ## 0.3.1 (2016-09-24)
 
