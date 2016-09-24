@@ -1,3 +1,14 @@
+<a name="0.3.1"></a>
+## 0.3.1 (2016-09-24)
+
+* Add html minification rules ([8a893f1](https://github.com/Kikobeats/react-boilerplatinum/commit/8a893f1))
+* Add plugin ([3328d44](https://github.com/Kikobeats/react-boilerplatinum/commit/3328d44))
+* Basic scaffold ([b1549de](https://github.com/Kikobeats/react-boilerplatinum/commit/b1549de))
+* Load styles ([f0de70a](https://github.com/Kikobeats/react-boilerplatinum/commit/f0de70a))
+* Update presets ([36f9ee0](https://github.com/Kikobeats/react-boilerplatinum/commit/36f9ee0))
+
+
+
 <a name="0.3.0"></a>
 # 0.3.0 (2016-09-17)
 
