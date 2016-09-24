@@ -12,6 +12,7 @@ The premise of this scaffold is provide the best production build possible, but 
 
 About **development**:
 
+- Transpiling ES2015+ using Babel with latest preset.
 - Use [standard](https://github.com/feross/standard) as linter.
 - Live editing using HMR for JS and CSS.
 - Devices synchronization with [BrowserSync](https://www.browsersync.io/).
