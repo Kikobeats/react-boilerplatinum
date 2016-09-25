@@ -37,6 +37,7 @@
     "babel-plugin-transform-react-constant-elements": "~6.9.1",
     "babel-plugin-transform-react-remove-prop-types": "~0.2.9",
     "babel-preset-latest": "~6.14.0",
+    "babel-preset-react": "~6.11.1",
     "browser-sync": "~2.15.0",
     "browser-sync-webpack-plugin": "~1.1.2",
     "css-loader": "~0.25.0",
