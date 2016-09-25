@@ -1,3 +1,11 @@
+<a name="0.3.4"></a>
+## 0.3.4 (2016-09-25)
+
+* Add missin dep ([6d6dadc](https://github.com/Kikobeats/react-boilerplatinum/commit/6d6dadc))
+* Update docs ([e1b8684](https://github.com/Kikobeats/react-boilerplatinum/commit/e1b8684))
+
+
+
 <a name="0.3.3"></a>
 ## 0.3.3 (2016-09-24)
 
