@@ -1,3 +1,11 @@
+<a name="0.3.5"></a>
+## 0.3.5 (2016-09-26)
+
+* Better server ([0370888](https://github.com/Kikobeats/react-boilerplatinum/commit/0370888))
+* Setup node version ([96c6b54](https://github.com/Kikobeats/react-boilerplatinum/commit/96c6b54))
+
+
+
 <a name="0.3.4"></a>
 ## 0.3.4 (2016-09-25)
 
