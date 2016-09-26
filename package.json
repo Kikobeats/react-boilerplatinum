@@ -56,6 +56,9 @@
     "webpack": "~1.13.2",
     "webpack-dev-server": "~1.15.1"
   },
+  "engines": {
+    "node": ">= 4"
+  },
   "scripts": {
     "build": "webpack --progress --config webpack.config.js",
     "lint": "standard",
