@@ -1,3 +1,11 @@
+<a name="0.4.0"></a>
+# 0.4.0 (2016-09-26)
+
+* Little refactor, more readable ([27024f2](https://github.com/Kikobeats/react-boilerplatinum/commit/27024f2))
+* Update dep reference ([6a27e4f](https://github.com/Kikobeats/react-boilerplatinum/commit/6a27e4f))
+
+
+
 <a name="0.3.5"></a>
 ## 0.3.5 (2016-09-26)
 
