@@ -1,3 +1,17 @@
+<a name="0.5.0"></a>
+# 0.5.0 (2016-09-26)
+
+* Add file loaders ([94221be](https://github.com/Kikobeats/react-boilerplatinum/commit/94221be))
+* Disable inject assets ([77cbe19](https://github.com/Kikobeats/react-boilerplatinum/commit/77cbe19))
+* Remove prod files ([07cd40f](https://github.com/Kikobeats/react-boilerplatinum/commit/07cd40f))
+* Remove sass in favour of postcss ([1a0671e](https://github.com/Kikobeats/react-boilerplatinum/commit/1a0671e))
+* Update docs ([7170199](https://github.com/Kikobeats/react-boilerplatinum/commit/7170199))
+* Update docs ([aff71df](https://github.com/Kikobeats/react-boilerplatinum/commit/aff71df))
+* Update prod loader ([2de174a](https://github.com/Kikobeats/react-boilerplatinum/commit/2de174a))
+* WIP ([5b0f396](https://github.com/Kikobeats/react-boilerplatinum/commit/5b0f396))
+
+
+
 <a name="0.4.0"></a>
 # 0.4.0 (2016-09-26)
 
