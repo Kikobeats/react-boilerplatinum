@@ -3,7 +3,6 @@
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const autoprefixer = require('autoprefixer')
 const config = require('./config.json')
 const webpack = require('webpack')
 const path = require('path')
@@ -61,8 +60,12 @@ module.exports = {
       include: path.resolve('src/app')
     }, {
       test: /(\.scss|\.css)$/,
-      loader: 'style!css!postcss!sass'
+      loader: 'style!css!postcss'
     }]
   },
-  postcss: [autoprefixer]
+  postcss: [
+    require('postcss-import'),
+    require('precss'),
+    require('autoprefixer')
+  ]
 }
