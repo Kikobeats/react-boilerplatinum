@@ -98,6 +98,7 @@ module.exports = {
   },
   postcss: [
     require('postcss-import'),
+    require('postcss-focus'),
     require('precss'),
     require('autoprefixer')
   ]
