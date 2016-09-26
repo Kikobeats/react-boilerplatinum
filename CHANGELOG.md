@@ -1,3 +1,10 @@
+<a name="0.7.0"></a>
+# 0.7.0 (2016-09-26)
+
+* Add transform-react-remove-prop-types prod setting ([87995a5](https://github.com/Kikobeats/react-boilerplatinum/commit/87995a5))
+
+
+
 <a name="0.6.0"></a>
 # 0.6.0 (2016-09-26)
 
