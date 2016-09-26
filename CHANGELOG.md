@@ -1,3 +1,10 @@
+<a name="0.6.0"></a>
+# 0.6.0 (2016-09-26)
+
+* Add postcss-focus ([e57cca5](https://github.com/Kikobeats/react-boilerplatinum/commit/e57cca5))
+
+
+
 <a name="0.5.0"></a>
 # 0.5.0 (2016-09-26)
 
