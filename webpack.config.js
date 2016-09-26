@@ -72,8 +72,12 @@ module.exports = {
       include: path.resolve('src/app')
     }, {
       test: /(\.scss|\.css)$/,
-      loader: ExtractTextPlugin.extract('style', 'css?minimize&sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass!shorthand')
+      loader: ExtractTextPlugin.extract('style', 'css?minimize&sourceMap!postcss')
     }]
   },
-  postcss: [autoprefixer]
+  postcss: [
+    require('postcss-import'),
+    require('precss'),
+    require('autoprefixer')
+  ]
 }
