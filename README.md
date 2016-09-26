@@ -6,22 +6,27 @@
 [![NPM Status](https://img.shields.io/npm/dm/react-boilerplatinum.svg?style=flat-square)](https://www.npmjs.org/package/react-boilerplatinum)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> A Platinum (opinionated) React Boilerplate.
+> A Platinum React Boilerplate.
 
-The premise of this scaffold is provide the best production build possible, but also the best development user experience.
+The premise of this scaffold is provide the best production build possible, but also the best development experience.
 
-About **development**:
+In **development**:
 
-- Transpiling ES2015+ using Babel with latest preset.
 - Use [standard](https://github.com/feross/standard) as linter.
-- Devices synchronization with [BrowserSync](https://www.browsersync.io/).
-- Live editing using HMR for JS and CSS.
+- Devices synchronization with [BrowserSync](https://www.browsersync.io).
+- Transpiling JavaScript using [Babel](https://babeljs.io) and latest preset.
+- Transpiling stylesheet using [PostCSS](http://postcss.org).
+- Ability to load `node_modules` as CSS `@imports`.
+- Live editing using HMR for JS & CSS.
 - Full screen console error feedback.
+- Autogenerate HTML main file.
 
-About **production**:
+But also, in **production**:
 
-- Split final build into vendor and main.
-- Minify JS, CSS and HTML.
+- Split final build into `vendor` and `main`.
+- Autoprefix vendor CSS.
+- Extract fonts or images that size is `>10kb`.
+- Minify JS, CSS & HTML.
 
 It's inspired in [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate).
 
