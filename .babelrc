@@ -5,7 +5,8 @@
     "production": {
       "plugins": [
         "transform-react-constant-elements",
-        "transform-react-remove-prop-types"
+        "transform-react-remove-prop-types",
+        "transform-react-inline-elements"
       ]
     }
   }
