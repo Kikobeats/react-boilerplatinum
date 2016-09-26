@@ -27,7 +27,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(Object.assign({}, config, {
       template: require('html-webpack-template'),
-      alwaysWriteToDisk: true
+      alwaysWriteToDisk: true,
+      inject: false
     })),
     new HtmlWebpackHarddiskPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -42,8 +43,7 @@ module.exports = {
         // (which should be serving on http://localhost:3100/)
         // through BrowserSync
         proxy: 'http://localhost:3000',
-        open: false,
-        plugins: ['bs-fullscreen-message']
+        open: false
       },
       // plugin options
       {
