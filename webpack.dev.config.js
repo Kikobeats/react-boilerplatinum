@@ -42,7 +42,8 @@ module.exports = {
         // (which should be serving on http://localhost:3100/)
         // through BrowserSync
         proxy: 'http://localhost:3000',
-        open: false
+        open: false,
+        plugins: ['bs-fullscreen-message']
       },
       // plugin options
       {
