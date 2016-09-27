@@ -1,3 +1,10 @@
+<a name="0.7.1"></a>
+## 0.7.1 (2016-09-27)
+
+* Little main scaffold refactor ([e4d59ab](https://github.com/Kikobeats/react-boilerplatinum/commit/e4d59ab))
+
+
+
 <a name="0.7.0"></a>
 # 0.7.0 (2016-09-26)
 
