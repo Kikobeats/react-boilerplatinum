@@ -6,9 +6,9 @@ env:
   global:
     - GIT_NAME: Travis CI
     - GIT_EMAIL: nobody@nobody.org
-    - GITHUB_REPO: windtoday/windtoday.github.io
+    - GITHUB_REPO: Kikobeats/react-boilerplatinum
     - GIT_SOURCE: src/www
-    - GIT_BRANCH: master
+    - GIT_BRANCH: gh-pages
 
 after_script:
   - |
