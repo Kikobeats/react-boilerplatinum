@@ -1,3 +1,14 @@
+<a name="0.8.0"></a>
+# 0.8.0 (2016-10-10)
+
+* Add badges ([d34e9cd](https://github.com/Kikobeats/react-boilerplatinum/commit/d34e9cd))
+* Add correct deploy settings ([93b573d](https://github.com/Kikobeats/react-boilerplatinum/commit/93b573d))
+* Add deploy settings ([f377539](https://github.com/Kikobeats/react-boilerplatinum/commit/f377539))
+* Ignore build files ([5bade6c](https://github.com/Kikobeats/react-boilerplatinum/commit/5bade6c))
+* Remove unused CSS ([d2484f7](https://github.com/Kikobeats/react-boilerplatinum/commit/d2484f7))
+
+
+
 <a name="0.7.1"></a>
 ## 0.7.1 (2016-09-27)
 
