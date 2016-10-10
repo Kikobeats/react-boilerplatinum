@@ -60,13 +60,11 @@ module.exports = {
       include: path.resolve('src/app')
     }, {
       test: /(\.scss|\.css)$/,
-      loader: 'style!css!postcss'
+      loader: 'style!css!sass!postcss'
     }]
   },
   postcss: [
-    require('postcss-import'),
     require('postcss-focus'),
-    require('precss'),
     require('autoprefixer')
   ]
 }

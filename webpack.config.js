@@ -3,7 +3,7 @@
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const autoprefixer = require('autoprefixer')
+const PurifyCSSWebpackPlugin = require('purifycss-webpack-plugin')
 const config = require('./config.json')
 const pkg = require('./package.json')
 const webpack = require('webpack')
@@ -48,6 +48,14 @@ module.exports = {
     })),
     new HtmlWebpackHarddiskPlugin(),
     new ExtractTextPlugin('assets/css/bundle.css', { allChunks: true }),
+    new PurifyCSSWebpackPlugin({
+      basePath: path.resolve('src/www'),
+      paths: ['*.html'],
+      purifyOptions: {
+        minify: true,
+        rejected: true
+      }
+    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.CommonsChunkPlugin({
@@ -72,7 +80,7 @@ module.exports = {
       include: path.resolve('src/app')
     }, {
       test: /(\.scss|\.css)$/,
-      loader: ExtractTextPlugin.extract('style', 'css?minimize&sourceMap!postcss')
+      loader: ExtractTextPlugin.extract('style', 'css?minimize&sourceMap!sass!postcss')
     }, {
       test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'url?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]'
@@ -97,9 +105,7 @@ module.exports = {
     }]
   },
   postcss: [
-    require('postcss-import'),
     require('postcss-focus'),
-    require('precss'),
     require('autoprefixer')
   ]
 }

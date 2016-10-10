@@ -23,10 +23,11 @@ In **development**:
 
 But also, in **production**:
 
-- Split final build into `vendor` and `main`.
-- Autoprefix vendor CSS.
-- Extract fonts or images that size is `>10kb`.
 - Minify JS, CSS & HTML.
+- Split final JS build into `vendor` and `main`.
+- Autoprefix CSS vendor.
+- Extract fonts or images that size is `>10kb`.
+- Removed unused CSS using [PurifyCSS](https://github.com/PurifyCSS/purifycss).
 
 It's inspired in [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate).
 
