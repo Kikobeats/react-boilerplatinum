@@ -1,11 +1,10 @@
 # react-boilerplatinum
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/react-boilerplatinum.svg?style=flat-square)
-[![Dependency status](https://img.shields.io/david/Kikobeats/react-boilerplatinum.svg?style=flat-square)](https://david-dm.org/Kikobeats/react-boilerplatinum)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/react-boilerplatinum.svg?style=flat-square)](https://david-dm.org/Kikobeats/react-boilerplatinum#info=devDependencies)
-[![NPM Status](https://img.shields.io/npm/dm/react-boilerplatinum.svg?style=flat-square)](https://www.npmjs.org/package/react-boilerplatinum)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
-
+[![Build Status](http://img.shields.io/travis/Kikobeats/react-boilerplatinum/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/react-boilerplatinum)
+[![Dependency status](http://img.shields.io/david/Kikobeats/react-boilerplatinum.svg?style=flat-square)](https://david-dm.org/Kikobeats/react-boilerplatinum)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/react-boilerplatinum.svg?style=flat-square)](https://david-dm.org/Kikobeats/react-boilerplatinum#info=devDependencies)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 > A Platinum React Boilerplate.
 
 The premise of this scaffold is provide the best production build possible, but also the best development experience.
