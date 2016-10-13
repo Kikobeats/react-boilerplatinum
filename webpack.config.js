@@ -24,7 +24,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin(Object.assign({}, config, {
-      template: require('html-webpack-template'),
+      template: path.resolve('index.ejs'),
       alwaysWriteToDisk: true,
       hash: true,
       inject: true,
