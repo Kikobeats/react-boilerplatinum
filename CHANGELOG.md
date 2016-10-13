@@ -1,3 +1,15 @@
+<a name="0.8.1"></a>
+## 0.8.1 (2016-10-13)
+
+* Add custom template ([df75f45](https://github.com/Kikobeats/react-boilerplatinum/commit/df75f45))
+* chore(package): update autoprefixer to version 6.5.1 ([8c628bc](https://github.com/Kikobeats/react-boilerplatinum/commit/8c628bc))
+* chore(package): update browser-sync to version 2.17.3 ([a583a65](https://github.com/Kikobeats/react-boilerplatinum/commit/a583a65))
+* chore(package): update html-webpack-template to version 5.4.1 ([f4e5b13](https://github.com/Kikobeats/react-boilerplatinum/commit/f4e5b13))
+* chore(package): update standard to version 8.4.0 ([7fff40d](https://github.com/Kikobeats/react-boilerplatinum/commit/7fff40d))
+* chore(package): update webpack-dev-server to version 1.16.2 ([280c482](https://github.com/Kikobeats/react-boilerplatinum/commit/280c482))
+
+
+
 <a name="0.8.0"></a>
 # 0.8.0 (2016-10-10)
 
