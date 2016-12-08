@@ -50,7 +50,7 @@ module.exports = {
     new ExtractTextPlugin('assets/css/bundle.css', { allChunks: true }),
     new PurifyCSSWebpackPlugin({
       basePath: path.resolve('src/www'),
-      paths: ['*.html'],
+      resolveExtensions: ['.js'],
       purifyOptions: {
         minify: true,
         rejected: true
