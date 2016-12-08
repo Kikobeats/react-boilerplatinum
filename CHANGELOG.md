@@ -1,3 +1,20 @@
+<a name="0.8.2"></a>
+## 0.8.2 (2016-12-08)
+
+* Fix Purify setup ([737a6be](https://github.com/Kikobeats/react-boilerplatinum/commit/737a6be))
+* Remove unnecessary dep ([35ea196](https://github.com/Kikobeats/react-boilerplatinum/commit/35ea196))
+* Remove unnecessary dep ([248886d](https://github.com/Kikobeats/react-boilerplatinum/commit/248886d))
+* Some English language mistakes corrected ([36d2e79](https://github.com/Kikobeats/react-boilerplatinum/commit/36d2e79))
+* chore(package): update babel-core to version 6.18.0 ([2104470](https://github.com/Kikobeats/react-boilerplatinum/commit/2104470))
+* chore(package): update css-loader to version 0.26.1 ([00a7f96](https://github.com/Kikobeats/react-boilerplatinum/commit/00a7f96))
+* chore(package): update html-webpack-plugin to version 2.23.0 ([aa724b9](https://github.com/Kikobeats/react-boilerplatinum/commit/aa724b9))
+* chore(package): update html-webpack-plugin to version 2.24.0 ([68e1836](https://github.com/Kikobeats/react-boilerplatinum/commit/68e1836))
+* chore(package): update postcss-loader to version 1.0.0 ([627d532](https://github.com/Kikobeats/react-boilerplatinum/commit/627d532))
+* chore(package): update postcss-loader to version 1.2.0 ([2be0fa3](https://github.com/Kikobeats/react-boilerplatinum/commit/2be0fa3))
+* chore(package): update webpack to version 1.14.0 ([bc8d35f](https://github.com/Kikobeats/react-boilerplatinum/commit/bc8d35f))
+
+
+
 <a name="0.8.1"></a>
 ## 0.8.1 (2016-10-13)
 
