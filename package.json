@@ -40,7 +40,7 @@
     "file-loader": "~0.10.0",
     "html-webpack-harddisk-plugin": "0.0.2",
     "html-webpack-plugin": "~2.26.0",
-    "node-sass": "~4.3.0",
+    "node-sass": "~4.4.0",
     "postcss-focus": "~1.0.0",
     "postcss-loader": "~1.2.2",
     "purifycss-webpack-plugin": "~2.0.3",
