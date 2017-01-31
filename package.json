@@ -53,7 +53,7 @@
     "travis-after-all": "~1.4.4",
     "url-loader": "~0.5.7",
     "webpack": "~2.2.1",
-    "webpack-dev-server": "~1.16.2"
+    "webpack-dev-server": "~2.2.1"
   },
   "devDependencies": {
     "browser-sync": "~2.18.6",
