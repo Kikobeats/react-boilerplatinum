@@ -1,13 +1,19 @@
 'use strict'
 
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const BrowserSyncPlugin = require('browser-sync-webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const config = require('./config.json')
 const webpack = require('webpack')
 const path = require('path')
 
+const pkg = require('./package.json')
+const config = require('./config.json')
+const {HotModuleReplacementPlugin, NoEmitOnErrorsPlugin} = webpack
+
 module.exports = {
+  performance: {
+    hints: false
+  },
   devtool: 'eval',
   entry: [
     'react-hot-loader/patch',
@@ -20,18 +26,21 @@ module.exports = {
     filename: 'assets/js/bundle.js'
   },
   resolve: {
-    extensions: ['', '.scss', '.css', '.js', '.json'],
-    modulesDirectories: ['node_modules']
+    extensions: ['.scss', '.css', '.js', '.json'],
+    modules: ['node_modules']
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'APP_VERSION': JSON.stringify(pkg.version)
+    }),
     new HtmlWebpackPlugin(Object.assign({}, config, {
       template: path.resolve('index.ejs'),
       alwaysWriteToDisk: true,
       inject: false
     })),
     new HtmlWebpackHarddiskPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new HotModuleReplacementPlugin(),
+    new NoEmitOnErrorsPlugin(),
     new BrowserSyncPlugin(
       // BrowserSync options
       {
@@ -53,18 +62,19 @@ module.exports = {
     )
   ],
   module: {
-    loaders: [{
+    rules: [{
       test: /(\.js|\.jsx)$/,
       exclude: /node_modules/,
-      loaders: ['babel'],
+      loader: 'babel-loader?cacheDirectory',
       include: path.resolve('src/app')
     }, {
       test: /(\.scss|\.css)$/,
-      loader: 'style!css!sass!postcss'
+      loader: [
+        'style-loader',
+        'css-loader',
+        'sass-loader',
+        'postcss-loader'
+      ]
     }]
-  },
-  postcss: [
-    require('postcss-focus'),
-    require('autoprefixer')
-  ]
+  }
 }
