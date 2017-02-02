@@ -8,7 +8,10 @@ const path = require('path')
 
 const pkg = require('./package.json')
 const config = require('./config.json')
-const {HotModuleReplacementPlugin, NoEmitOnErrorsPlugin} = webpack
+const {
+  HotModuleReplacementPlugin,
+  NamedModulesPlugin
+} = webpack
 
 module.exports = {
   performance: {
@@ -30,7 +33,10 @@ module.exports = {
     modules: ['node_modules']
   },
   plugins: [
+    new HotModuleReplacementPlugin(),
+    new NamedModulesPlugin(),
     new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development'),
       'APP_VERSION': JSON.stringify(pkg.version)
     }),
     new HtmlWebpackPlugin(Object.assign({}, config, {
@@ -39,8 +45,6 @@ module.exports = {
       inject: false
     })),
     new HtmlWebpackHarddiskPlugin(),
-    new HotModuleReplacementPlugin(),
-    new NoEmitOnErrorsPlugin(),
     new BrowserSyncPlugin(
       // BrowserSync options
       {
