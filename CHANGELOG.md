@@ -1,3 +1,20 @@
+<a name="0.8.3"></a>
+## 0.8.3 (2017-02-02)
+
+* Add production build ([c519bc3](https://github.com/Kikobeats/react-boilerplatinum/commit/c519bc3))
+* Little refactor ([c18394d](https://github.com/Kikobeats/react-boilerplatinum/commit/c18394d))
+* Update dev config ([9c49d12](https://github.com/Kikobeats/react-boilerplatinum/commit/9c49d12))
+* Upgrade deps ([483c04e](https://github.com/Kikobeats/react-boilerplatinum/commit/483c04e))
+* chore(package): update autoprefixer to version 6.7.0 ([564ed3d](https://github.com/Kikobeats/react-boilerplatinum/commit/564ed3d))
+* chore(package): update file-loader to version 0.10.0 ([91562ec](https://github.com/Kikobeats/react-boilerplatinum/commit/91562ec))
+* chore(package): update html-webpack-plugin to version 2.28.0 ([15d238f](https://github.com/Kikobeats/react-boilerplatinum/commit/15d238f))
+* chore(package): update node-sass to version 4.4.0 ([490160b](https://github.com/Kikobeats/react-boilerplatinum/commit/490160b))
+* chore(package): update node-sass to version 4.5.0 ([829562d](https://github.com/Kikobeats/react-boilerplatinum/commit/829562d))
+* chore(package): update webpack to version 2.2.1 ([83d21ec](https://github.com/Kikobeats/react-boilerplatinum/commit/83d21ec))
+* chore(package): update webpack-dev-server to version 2.2.1 ([d52ec51](https://github.com/Kikobeats/react-boilerplatinum/commit/d52ec51))
+
+
+
 <a name="0.8.2"></a>
 ## 0.8.2 (2016-12-08)
 
