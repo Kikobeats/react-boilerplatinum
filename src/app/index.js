@@ -24,4 +24,6 @@ if (module.hot) {
       el
     )
   })
+} else {
+  require('offline-plugin/runtime').install()
 }

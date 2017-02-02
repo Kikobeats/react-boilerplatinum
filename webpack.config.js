@@ -1,16 +1,28 @@
 'use strict'
 
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
+const PurifyCSSWebpackPlugin = require('purifycss-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const PurifyCSSWebpackPlugin = require('purifycss-webpack-plugin')
-const config = require('./config.json')
-const pkg = require('./package.json')
+const OfflinePlugin = require('offline-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
+const config = require('./config.json')
+const pkg = require('./package.json')
+
+const {
+  HashedModuleIdsPlugin
+} = webpack
+
+const {
+  OccurrenceOrderPlugin,
+  AggressiveMergingPlugin,
+  CommonsChunkPlugin,
+  UglifyJsPlugin } = webpack.optimize
+
 module.exports = {
-  devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
   entry: [
     './src/app/index.js'
   ],
@@ -19,15 +31,19 @@ module.exports = {
     filename: 'assets/js/bundle.js'
   },
   resolve: {
-    extensions: ['', '.scss', '.css', '.js', '.json'],
-    modulesDirectories: ['node_modules']
+    extensions: ['.scss', '.css', '.js'],
+    modules: ['node_modules']
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'APP_VERSION': JSON.stringify(pkg.version)
+    }),
     new HtmlWebpackPlugin(Object.assign({}, config, {
       template: path.resolve('index.ejs'),
       alwaysWriteToDisk: true,
+      inject: false,
       hash: true,
-      inject: true,
       minify: {
         collapseWhitespace: true,
         decodeEntities: true,
@@ -43,11 +59,19 @@ module.exports = {
         removeTagWhitespace: true,
         sortAttributes: true,
         sortClassName: true,
-        useShortDoctype: true
+        useShortDoctype: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
       }
     })),
     new HtmlWebpackHarddiskPlugin(),
-    new ExtractTextPlugin('assets/css/bundle.css', { allChunks: true }),
+    new AggressiveMergingPlugin(),
+    new ExtractTextPlugin({
+      allChunks: true,
+      filename: 'assets/css/bundle.css'
+    }),
     new PurifyCSSWebpackPlugin({
       basePath: path.resolve('src/www'),
       resolveExtensions: ['.js'],
@@ -56,56 +80,53 @@ module.exports = {
         rejected: true
       }
     }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.CommonsChunkPlugin({
+    new HashedModuleIdsPlugin(),
+    // optimizations
+    new CommonsChunkPlugin({
       name: 'vendor',
       filename: 'assets/js/vendor.bundle.js',
       minChunks: Infinity
     }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-      VERSION: JSON.stringify(pkg.version)
-    }),
-    new webpack.optimize.UglifyJsPlugin({
+    new OccurrenceOrderPlugin(),
+    new UglifyJsPlugin({
+      sourceMap: true,
+      minimize: true,
       compress: { warnings: false },
       comments: false
+    }),
+    new OfflinePlugin({
+      relativePaths: false,
+      publicPath: '/',
+      caches: {
+        main: [':rest:'],
+        additional: [
+          'assets/js/vendor.bundle.js',
+          ':externals:'
+        ],
+        externals: [
+          'https://www.google-analytics.com/analytics.js'
+        ]
+      },
+      safeToUseOptionalCaches: true,
+      AppCache: false
     })
   ],
   module: {
-    loaders: [{
-      test: /(\.js|\.jsx)$/,
+    rules: [{
+      test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loaders: ['babel'],
+      loader: ['babel-loader'],
       include: path.resolve('src/app')
     }, {
-      test: /(\.scss|\.css)$/,
-      loader: ExtractTextPlugin.extract('style', 'css?minimize&sourceMap!sass!postcss')
-    }, {
-      test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-      loader: 'url?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]'
-    }, {
-      test: /\.woff2(\?\S*)?$/,
-      loader: 'url?limit=10000&mimetype=application/font-woff2&name=fonts/[name].[ext]'
-    }, {
-      test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-      loader: 'url?limit=10000&mimetype=application/font-tff&name=fonts/[name].[ext]'
-    }, {
-      test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-      loader: 'file?name=fonts/[name].[ext]'
-    }, {
-      test: /\.png(\?v=\d+\.\d+\.\d+)?$/,
-      loader: 'file?name=img/[name].[ext]'
-    }, {
-      test: /\.gif(\?v=\d+\.\d+\.\d+)?$/,
-      loader: 'file?name=img/[name].[ext]'
-    }, {
-      test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-      loader: 'url?limit=10000&mimetype=image/svg+xml&name=img/[name].[ext]'
+      test: /\.(css|scss)$/,
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: [
+          'css-loader?minimize&sourceMap',
+          'sass-loader',
+          'postcss-loader'
+        ]
+      })
     }]
-  },
-  postcss: [
-    require('postcss-focus'),
-    require('autoprefixer')
-  ]
+  }
 }
