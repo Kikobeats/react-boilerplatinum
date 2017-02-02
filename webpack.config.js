@@ -11,9 +11,7 @@ const path = require('path')
 const config = require('./config.json')
 const pkg = require('./package.json')
 
-const {
-  HashedModuleIdsPlugin
-} = webpack
+const { HashedModuleIdsPlugin } = webpack
 
 const {
   OccurrenceOrderPlugin,
