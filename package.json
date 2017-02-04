@@ -59,9 +59,9 @@
   "devDependencies": {
     "babel-preset-react-optimize": "latest",
     "browser-sync": "latest",
-    "browser-sync-webpack": "latest",
+    "browser-sync-webpack-plugin": "latest",
     "standard": "latest",
-    "webpack-dev-server": "2"
+    "webpack-dev-server": "latest"
   },
   "engines": {
     "node": ">= 4"
