@@ -1,3 +1,12 @@
+<a name="0.8.4"></a>
+## 0.8.4 (2017-02-04)
+
+* Better overlay ([06bcb24](https://github.com/Kikobeats/react-boilerplatinum/commit/06bcb24))
+* Refactor ([98f510e](https://github.com/Kikobeats/react-boilerplatinum/commit/98f510e))
+* chore(package): update offline-plugin to version 4.6.0 ([7c72e02](https://github.com/Kikobeats/react-boilerplatinum/commit/7c72e02))
+
+
+
 <a name="0.8.3"></a>
 ## 0.8.3 (2017-02-02)
 
