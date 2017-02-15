@@ -1,3 +1,20 @@
+<a name="0.8.5"></a>
+## 0.8.5 (2017-02-15)
+
+* Avoid deprecated references ([6e5468a](https://github.com/Kikobeats/react-boilerplatinum/commit/6e5468a))
+* chore(package): update babel-core to version 6.23.1 ([7a93716](https://github.com/Kikobeats/react-boilerplatinum/commit/7a93716))
+* chore(package): update babel-loader to version 6.3.0 ([7926770](https://github.com/Kikobeats/react-boilerplatinum/commit/7926770))
+* chore(package): update babel-plugin-transform-object-rest-spread to version 6.23.0 ([9dc659b](https://github.com/Kikobeats/react-boilerplatinum/commit/9dc659b))
+* chore(package): update babel-plugin-transform-react-constant-elements to version 6.23.0 ([852f516](https://github.com/Kikobeats/react-boilerplatinum/commit/852f516))
+* chore(package): update babel-plugin-transform-react-remove-prop-types to version 0.3.0 ([dc1ebcd](https://github.com/Kikobeats/react-boilerplatinum/commit/dc1ebcd))
+* chore(package): update babel-preset-react to version 6.23.0 ([9b672a9](https://github.com/Kikobeats/react-boilerplatinum/commit/9b672a9))
+* chore(package): update html-webpack-harddisk-plugin to version 0.1.0 ([0e4bfb5](https://github.com/Kikobeats/react-boilerplatinum/commit/0e4bfb5))
+* chore(package): update postcss-loader to version 1.3.0 ([50ac4bb](https://github.com/Kikobeats/react-boilerplatinum/commit/50ac4bb))
+* chore(package): update sass-loader to version 5.0.0 ([cfcdc43](https://github.com/Kikobeats/react-boilerplatinum/commit/cfcdc43))
+* chore(package): update sass-loader to version 6.0.0 ([863caa2](https://github.com/Kikobeats/react-boilerplatinum/commit/863caa2))
+
+
+
 <a name="0.8.4"></a>
 ## 0.8.4 (2017-02-04)
 
