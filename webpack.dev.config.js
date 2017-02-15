@@ -8,7 +8,7 @@ const path = require('path')
 
 const pkg = require('./package.json')
 const config = require('./config.json')
-const { HotModuleReplacementPlugin, NamedModulesPlugin} = webpack
+const {HotModuleReplacementPlugin, NamedModulesPlugin} = webpack
 
 module.exports = {
   performance: {

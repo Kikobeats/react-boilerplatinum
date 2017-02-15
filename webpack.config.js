@@ -113,13 +113,13 @@ module.exports = {
     rules: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loader: ['babel-loader'],
+      use: ['babel-loader'],
       include: path.resolve('src/app')
     }, {
       test: /\.(css|scss)$/,
-      loader: ExtractTextPlugin.extract({
-        fallbackLoader: 'style-loader',
-        loader: [
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: [
           'css-loader?minimize&sourceMap',
           'sass-loader',
           'postcss-loader'
