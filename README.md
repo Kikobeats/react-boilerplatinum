@@ -7,25 +7,24 @@
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 > A Platinum React Boilerplate.
 
-The premise of this scaffold is to provide both the best production build possible and the best development experience.
-In **development**, this configuration:
+![](https://d3uepj124s5rcx.cloudfront.net/items/183w3E0R082W2r0a0822/Screen%20Recording%202017-03-02%20at%2008.52%20pm.gif?v=36a77851)
 
-- Uses [standard](https://github.com/feross/standard) as linter.
-- Uses [BrowserSync](https://www.browsersync.io) for device synchronization
-- Transpiles JavaScript using [Babel](https://babeljs.io) and latest preset.
-- Transpiles stylesheets using [PostCSS](http://postcss.org).
-- Allows to load `node_modules` as CSS `@imports`.
-- Allows live edition using HMR for JS & CSS.
-- Provides full screen console error feedback.
-- Autogenerates HTML main file.
+The premise of this React scaffolding is provide the best development experience but also with the best production tips.
 
-But also, in **production**:
+About **development**:
 
-- Minifies JS, CSS & HTML.
-- Splits final JS build into `vendor` and `main`.
-- Adds autoprefix CSS vendor.
-- Extracts fonts or images which size is `>10kb`.
-- Removes unused CSS using [PurifyCSS](https://github.com/PurifyCSS/purifycss).
+- Real time coding feedback with DevTools errors overlay.
+- Device synchronization for mobile testing using  [BrowserSync](https://www.browsersync.io).
+- JavaScript transpiling by [Babel](https://babeljs.io) and latest preset by default.
+- Stylesheets transpiling by [PostCSS](http://postcss.org).
+
+About **production**:
+
+- JS, CSS & HTML minification.
+- Offline Support using ServiceWorkers.
+- Remove unused CSS and autoprefix vendors.
+- Final bundle split into `vendor` and `main`.
+
 
 It's inspired by [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate).
 
