@@ -1,6 +1,7 @@
 'use strict'
 
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
+const DashboardPlugin = require('webpack-dashboard/plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
@@ -30,6 +31,7 @@ module.exports = {
     modules: ['node_modules']
   },
   plugins: [
+    new DashboardPlugin(),
     new HotModuleReplacementPlugin(),
     new NamedModulesPlugin(),
     new webpack.DefinePlugin({

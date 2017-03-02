@@ -61,6 +61,7 @@
     "browser-sync": "latest",
     "browser-sync-webpack-plugin": "latest",
     "standard": "latest",
+    "webpack-dashboard": "latest",
     "webpack-dev-server": "latest"
   },
   "engines": {
@@ -69,7 +70,7 @@
   "scripts": {
     "build": "webpack --progress --debug --config webpack.config.js",
     "lint": "standard",
-    "start": "node bin/server",
+    "start": "webpack-dashboard -- node bin/server",
     "test": "echo 'not yet implemented, wanna help?'"
   },
   "license": "MIT"
