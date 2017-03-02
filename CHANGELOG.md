@@ -1,3 +1,13 @@
+<a name="1.0.0"></a>
+# 1.0.0 (2017-03-02)
+
+* Add webpack-dashboard ([9fb542d](https://github.com/Kikobeats/react-boilerplatinum/commit/9fb542d))
+* Fix dependency reference ([ff980bf](https://github.com/Kikobeats/react-boilerplatinum/commit/ff980bf))
+* Remove include ([5aa6f19](https://github.com/Kikobeats/react-boilerplatinum/commit/5aa6f19))
+* Update docs ([d8bece4](https://github.com/Kikobeats/react-boilerplatinum/commit/d8bece4))
+
+
+
 <a name="0.8.5"></a>
 ## 0.8.5 (2017-02-15)
 
