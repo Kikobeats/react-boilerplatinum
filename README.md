@@ -5,7 +5,7 @@
 [![Dependency status](http://img.shields.io/david/Kikobeats/react-boilerplatinum.svg?style=flat-square)](https://david-dm.org/Kikobeats/react-boilerplatinum)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/react-boilerplatinum.svg?style=flat-square)](https://david-dm.org/Kikobeats/react-boilerplatinum#info=devDependencies)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
-> A Platinum React Boilerplate.
+> A React scaffold focused in developer experience.
 
 ![](https://d3uepj124s5rcx.cloudfront.net/items/183w3E0R082W2r0a0822/Screen%20Recording%202017-03-02%20at%2008.52%20pm.gif?v=36a77851)
 
