@@ -36,7 +36,7 @@
     "babel-plugin-transform-react-remove-prop-types": "~0.3.2",
     "babel-preset-latest": "~6.22.0",
     "babel-preset-react": "~6.23.0",
-    "css-loader": "~0.26.2",
+    "css-loader": "~0.27.0",
     "extract-text-webpack-plugin": "~2.1.0",
     "file-loader": "~0.10.1",
     "html-webpack-harddisk-plugin": "0.1.0",
