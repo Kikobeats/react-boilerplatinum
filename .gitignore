@@ -2,7 +2,7 @@
 # npm
 ############################
 node_modules
-npm-debug.log
+npm-debug.log*
 
 ############################
 # tmp, editor & OS files
@@ -31,6 +31,7 @@ coverage
 ############################
 .node_history
 .node_history
+src/www
 src/www/assets/css
 src/www/assets/js
 src/www/index.html
