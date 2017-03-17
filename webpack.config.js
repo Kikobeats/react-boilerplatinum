@@ -26,7 +26,8 @@ module.exports = {
   ],
   output: {
     path: path.resolve('src/www'),
-    filename: 'assets/js/bundle.js'
+    filename: '[name].js',
+    chunkFilename: '[name]-[id].js'
   },
   resolve: {
     extensions: ['.scss', '.css', '.js'],
