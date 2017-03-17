@@ -12,6 +12,9 @@ var server = new WebpackDevServer(compiler, {
   historyApiFallback: true,
   overlay: true,
   contentBase: 'src/www',
+  // If you want you can change the target URL for your backend API
+  // More information here:
+  // https://webpack.js.org/configuration/dev-server/#devserver-proxy
   proxy: {
     '/api': {
       target: 'http://localhost:8080',
