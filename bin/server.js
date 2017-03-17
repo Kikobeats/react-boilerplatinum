@@ -11,7 +11,15 @@ var server = new WebpackDevServer(compiler, {
   hot: true,
   historyApiFallback: true,
   overlay: true,
-  contentBase: 'src/www'
+  contentBase: 'src/www',
+  proxy: {
+    '/api': {
+      target: 'http://localhost:8080',
+      secure: false,
+      changeOrigin: true
+    }
+  }
+
 })
 
 server.listen(3000, 'localhost', function (err) {

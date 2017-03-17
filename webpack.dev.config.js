@@ -25,7 +25,7 @@ module.exports = {
   output: {
     path: path.resolve('src/www'),
     filename: '[name].js',
-    chunkFilename: '[name]-[id].js'
+    chunkFilename: '[name].js'
   },
   resolve: {
     extensions: ['.scss', '.css', '.js', '.json'],
