@@ -1,3 +1,23 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2017-04-01)
+
+* Don't register hot two times ([aeb11b2](https://github.com/Kikobeats/react-boilerplatinum/commit/aeb11b2))
+* Update deps ([9bf2ca6](https://github.com/Kikobeats/react-boilerplatinum/commit/9bf2ca6))
+* Update deps ([7b038e7](https://github.com/Kikobeats/react-boilerplatinum/commit/7b038e7))
+* Update README.md ([5a81c5f](https://github.com/Kikobeats/react-boilerplatinum/commit/5a81c5f))
+* chore(package): update babel-core to version 6.24.0 ([dd247cf](https://github.com/Kikobeats/react-boilerplatinum/commit/dd247cf))
+* chore(package): update babel-loader to version 6.4.1 ([29a9b47](https://github.com/Kikobeats/react-boilerplatinum/commit/29a9b47))
+* chore(package): update babel-preset-latest to version 6.24.0 ([2541aa0](https://github.com/Kikobeats/react-boilerplatinum/commit/2541aa0))
+* chore(package): update css-loader to version 0.27.1 ([cce38cc](https://github.com/Kikobeats/react-boilerplatinum/commit/cce38cc))
+* chore(package): update css-loader to version 0.28.0 ([64496d1](https://github.com/Kikobeats/react-boilerplatinum/commit/64496d1))
+* chore(package): update file-loader to version 0.11.0 ([a6c08b8](https://github.com/Kikobeats/react-boilerplatinum/commit/a6c08b8))
+* chore(package): update style-loader to version 0.14.0 ([dd150ae](https://github.com/Kikobeats/react-boilerplatinum/commit/dd150ae))
+* chore(package): update style-loader to version 0.15.0 ([cf3b0d5](https://github.com/Kikobeats/react-boilerplatinum/commit/cf3b0d5))
+* chore(package): update style-loader to version 0.16.0 ([119f226](https://github.com/Kikobeats/react-boilerplatinum/commit/119f226))
+* chore(package): update webpack to version 2.3.1 ([bdca7ee](https://github.com/Kikobeats/react-boilerplatinum/commit/bdca7ee))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-03-02)
 
