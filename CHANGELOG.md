@@ -1,3 +1,10 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2017-04-01)
+
+* Sort plugins ([b6b2334](https://github.com/Kikobeats/react-boilerplatinum/commit/b6b2334))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2017-04-01)
 
