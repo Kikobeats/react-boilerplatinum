@@ -35,8 +35,8 @@ module.exports = {
     modules: ['node_modules']
   },
   plugins: [
-    new DashboardPlugin(),
     new HotModuleReplacementPlugin(),
+    new DashboardPlugin(),
     new NamedModulesPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
