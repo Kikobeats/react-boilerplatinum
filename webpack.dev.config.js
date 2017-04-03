@@ -18,6 +18,8 @@ module.exports = {
   devtool: 'eval',
   cache: true,
   entry: [
+    // activate HMR for React
+    'react-hot-loader/patch',
     // bundle the client for webpack-dev-server
     // and connect to the provided endpoint
     'webpack-dev-server/client?http://0.0.0.0:3000',
@@ -73,7 +75,7 @@ module.exports = {
     rules: [{
       test: /(\.js|\.jsx)$/,
       exclude: /node_modules/,
-      loader: 'babel-loader?cacheDirectory'
+      loader: ['react-hot-loader/webpack', 'babel-loader?cacheDirectory']
     }, {
       test: /(\.scss|\.css)$/,
       loader: [
