@@ -1,3 +1,14 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2017-04-03)
+
+* Add preload and bundle analyzer plugins ([ccbcf9a](https://github.com/Kikobeats/react-boilerplatinum/commit/ccbcf9a))
+* Enable cache mode ([3cb2453](https://github.com/Kikobeats/react-boilerplatinum/commit/3cb2453))
+* Enable HMR correctly ([04829f0](https://github.com/Kikobeats/react-boilerplatinum/commit/04829f0))
+* Update deps ([2196bd6](https://github.com/Kikobeats/react-boilerplatinum/commit/2196bd6))
+* Update purify dep ([d8d3284](https://github.com/Kikobeats/react-boilerplatinum/commit/d8d3284))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2017-04-01)
 
