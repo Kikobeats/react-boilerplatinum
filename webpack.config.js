@@ -1,7 +1,9 @@
 'use strict'
 
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
+const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const PreloadWebpackPlugin = require('preload-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const PurifyCSSPlugin = require('purifycss-webpack')
 const OfflinePlugin = require('offline-plugin')
@@ -12,7 +14,7 @@ const path = require('path')
 const config = require('./config.json')
 const pkg = require('./package.json')
 
-const { HashedModuleIdsPlugin } = webpack
+const { DefinePlugin, HashedModuleIdsPlugin } = webpack
 
 const {
   OccurrenceOrderPlugin,
@@ -33,10 +35,71 @@ module.exports = {
     extensions: ['.scss', '.css', '.js'],
     modules: ['node_modules']
   },
+  module: {
+    rules: [{
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      use: ['babel-loader']
+    }, {
+      test: /\.(css|scss)$/,
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: [
+          'css-loader?minimize&sourceMap',
+          'sass-loader',
+          'postcss-loader'
+        ]
+      })
+    }]
+  },
   plugins: [
-    new webpack.DefinePlugin({
+    new DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
       'APP_VERSION': JSON.stringify(pkg.version)
+    }),
+    new HashedModuleIdsPlugin(),
+    new OccurrenceOrderPlugin(),
+    new AggressiveMergingPlugin(),
+    new ExtractTextPlugin({
+      allChunks: true,
+      filename: 'assets/css/bundle.css'
+    }),
+    new PurifyCSSPlugin({
+      paths: glob.sync(path.resolve('src/www'), {nodir: true}),
+      moduleExtensions: ['.js', '.html'],
+      purifyOptions: {
+        info: true,
+        minify: true,
+        rejected: true
+      }
+    }),
+    new CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'assets/js/vendor.bundle.js',
+      minChunks: Infinity
+    }),
+    new UglifyJsPlugin({
+      sourceMap: true,
+      minimize: true,
+      compress: { warnings: false },
+      comments: false
+    }),
+    new OfflinePlugin({
+      relativePaths: false,
+      publicPath: '/',
+      caches: {
+        main: [':rest:'],
+        additional: [
+          'assets/js/vendor.bundle.js',
+          ':externals:'
+        ],
+        externals: [
+          'https://static.hotjar.com/c/hotjar-342795.js?sv=5',
+          'https://www.google-analytics.com/analytics.js'
+        ]
+      },
+      safeToUseOptionalCaches: true,
+      AppCache: false
     }),
     new HtmlWebpackPlugin(Object.assign({}, config, {
       template: path.resolve('index.ejs'),
@@ -65,67 +128,13 @@ module.exports = {
         minifyURLs: true
       }
     })),
+    new PreloadWebpackPlugin(),
     new HtmlWebpackHarddiskPlugin(),
-    new AggressiveMergingPlugin(),
-    new ExtractTextPlugin({
-      allChunks: true,
-      filename: 'assets/css/bundle.css'
-    }),
-    new PurifyCSSPlugin({
-      paths: glob.sync(path.resolve('src/www'), {nodir: true}),
-      moduleExtensions: ['.js', '.html'],
-      purifyOptions: {
-        info: true,
-        minify: true,
-        rejected: true
-      }
-    }),
-    new HashedModuleIdsPlugin(),
-    // optimizations
-    new CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'assets/js/vendor.bundle.js',
-      minChunks: Infinity
-    }),
-    new OccurrenceOrderPlugin(),
-    new UglifyJsPlugin({
-      sourceMap: true,
-      minimize: true,
-      compress: { warnings: false },
-      comments: false
-    }),
-    new OfflinePlugin({
-      relativePaths: false,
-      publicPath: '/',
-      caches: {
-        main: [':rest:'],
-        additional: [
-          'assets/js/vendor.bundle.js',
-          ':externals:'
-        ],
-        externals: [
-          'https://www.google-analytics.com/analytics.js'
-        ]
-      },
-      safeToUseOptionalCaches: true,
-      AppCache: false
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+      generateStatsFile: true,
+      logLevel: 'error'
     })
-  ],
-  module: {
-    rules: [{
-      test: /\.(js|jsx)$/,
-      exclude: /node_modules/,
-      use: ['babel-loader']
-    }, {
-      test: /\.(css|scss)$/,
-      use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: [
-          'css-loader?minimize&sourceMap',
-          'sass-loader',
-          'postcss-loader'
-        ]
-      })
-    }]
-  }
+  ]
 }
