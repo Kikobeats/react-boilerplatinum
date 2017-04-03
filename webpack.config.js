@@ -1,11 +1,12 @@
 'use strict'
 
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
-const PurifyCSSWebpackPlugin = require('purifycss-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const PurifyCSSPlugin = require('purifycss-webpack')
 const OfflinePlugin = require('offline-plugin')
 const webpack = require('webpack')
+const glob = require('glob')
 const path = require('path')
 
 const config = require('./config.json')
@@ -70,10 +71,11 @@ module.exports = {
       allChunks: true,
       filename: 'assets/css/bundle.css'
     }),
-    new PurifyCSSWebpackPlugin({
-      basePath: path.resolve('src/www'),
-      resolveExtensions: ['.js'],
+    new PurifyCSSPlugin({
+      paths: glob.sync(path.resolve('src/www'), {nodir: true}),
+      moduleExtensions: ['.js', '.html'],
       purifyOptions: {
+        info: true,
         minify: true,
         rejected: true
       }
