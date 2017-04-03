@@ -16,6 +16,7 @@ module.exports = {
     hints: false
   },
   devtool: 'eval',
+  cache: true,
   entry: [
     // bundle the client for webpack-dev-server
     // and connect to the provided endpoint
