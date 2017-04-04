@@ -1,13 +1,21 @@
 {
-  "presets": ["latest", "react"],
-  "plugins": ["transform-object-rest-spread", "react-hot-loader/babel"],
+  "presets": [
+    "latest",
+    "react",
+    "stage-1"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "react-hot-loader/babel",
+    "transform-async-to-generator",
+    "transform-decorators-legacy"
+  ],
   "env": {
     "production": {
       "presets": [
         "react-optimize"
       ],
-      "plugins": [
-      ]
+      "plugins": []
     }
   }
 }

@@ -69,7 +69,7 @@ module.exports = {
     new AggressiveMergingPlugin(),
     new ExtractTextPlugin({
       allChunks: true,
-      filename: 'assets/css/bundle.css'
+      filename: 'assets/css/[name].css'
     }),
     new PurifyCSSWebpackPlugin({
       basePath: path.resolve('src/www'),

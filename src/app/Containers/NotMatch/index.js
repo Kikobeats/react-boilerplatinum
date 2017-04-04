@@ -1,7 +1,7 @@
 import React from 'react'
 
 const NotMatch = () => (
-  <div>404 error</div>
+  <h2>404 error</h2>
 )
 
 export default NotMatch
