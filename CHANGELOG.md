@@ -1,3 +1,10 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2017-04-04)
+
+* Setup correctly purify prod css build ([db52cb8](https://github.com/Kikobeats/react-boilerplatinum/commit/db52cb8))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-04-03)
 
