@@ -65,7 +65,8 @@ module.exports = {
       filename: 'assets/css/bundle.css'
     }),
     new PurifyCSSPlugin({
-      paths: glob.sync(path.resolve('src/www'), {nodir: true}),
+      paths: glob.sync('src/app/**/*', { nodir: true }),
+      styleExtensions: ['.css'],
       moduleExtensions: ['.js', '.html'],
       purifyOptions: {
         info: true,
