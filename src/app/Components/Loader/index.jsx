@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { inject, observer } from 'mobx-react';
 
-import './loader.scss';
+import './loader.scss'
 
 @inject('store')
 @observer

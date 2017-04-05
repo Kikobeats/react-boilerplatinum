@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
+
+import { inject, observer } from 'mobx-react'
+
 import './login.scss'
 
+@inject('store')
+@observer
 class Login extends Component {
   constructor (props) {
     super(props)

@@ -6,7 +6,7 @@ import loadAbout from 'bundle-loader?lazy&name=my-chunk!../../Components/About'
 const AboutContainer = () => (
   <Bundle load={loadAbout}>
     {(About) => About
-    ? <About/>
+    ? <About />
     : <div>Loading...</div>
   }
   </Bundle>

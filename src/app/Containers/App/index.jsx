@@ -47,9 +47,9 @@ export default class App extends Component {
             <DevTools />
             <Loader />
             <Switch>
-              <Route exact path="/" component={About} />
-              <Route exact path="/login" component={Login} />
-              <PrivateRoute path="/protected" component={Home}/>
+              <Route exact path='/' component={About} />
+              <Route exact path='/login' component={Login} />
+              <PrivateRoute path='/protected' component={Home} />
               <Route component={NotMatch} />
             </Switch>
             {!!(timeToRefresh && timeToRefresh <= 4) && this.store.refreshToken()}

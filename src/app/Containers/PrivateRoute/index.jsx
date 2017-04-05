@@ -13,26 +13,26 @@ import { inject, observer } from 'mobx-react'
 @observer
 export default class PrivateRoute extends Component {
   constructor (props) {
-      super(props)
+    super(props)
 
-      this.store = this.props.store
-      this.isAuthenticated = this.store.authenticated
-    }
+    this.store = this.props.store
+    this.isAuthenticated = this.store.authenticated
+  }
 
   render () {
-      const { component, ...rest } = this.props
+    const { component, ...rest } = this.props
 
-      return (
-            <Route {...rest} render={props => (
+    return (
+      <Route {...rest} render={props => (
                 this.isAuthenticated ? (
                     React.createElement(component, props)
                 ) : (
-                        <Redirect to={{
-                          pathname: '/login',
-                          state: { from: props.location }
-                        }}/>
+                  <Redirect to={{
+                    pathname: '/login',
+                    state: { from: props.location }
+                  }} />
         )
-        )}/>
-        )
-    }
+        )} />
+    )
+  }
 }
