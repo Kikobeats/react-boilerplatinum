@@ -1,31 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
+import './login.scss'
 
-const test = () => (
-    <div className="large-3 large-centered columns">
-        <div className="login-box">
-            <div className="row">
-                <div className="large-12 columns">
-                    <form>
-                        <div className="row">
-                            <div className="large-12 columns">
-                                <input type="text" name="username" placeholder="Username" />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="large-12 columns">
-                                <input type="password" name="password" placeholder="Password" />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="large-12 large-centered columns">
-                                <input type="submit" className="button expand" value="Log In" />
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+class Login extends Component {
+  constructor (props) {
+    super(props)
+  }
+
+  render () {
+    return (
+      <div className='wrapper'>
+        <div className='form-signin'>
+          <h2 className='form-signin-heading'>Admin</h2>
+          <input type='text' className='form-control' name='username' placeholder='Email Address' required='' autoFocus='' />
+          <input type='password' className='form-control' name='password' placeholder='Password' required='' />
+
+          <button className='btn btn-lg btn-primary btn-block' type='submit'>Login</button>
         </div>
-    </div>
-)
+      </div>
+    )
+  }
+}
 
-export default test
+export default Login

@@ -10,7 +10,7 @@ const appState = new AppState()
 
 ReactDOM.render(
   <AppContainer>
-    <App store={appState}/>
+    <App store={appState} />
   </AppContainer>,
   el
 )
@@ -22,7 +22,7 @@ if (module.hot) {
     // const NextApp = require('./App').default
     ReactDOM.render(
       <AppContainer>
-        <App store={appState}/>
+        <App store={appState} />
       </AppContainer>,
       el
     )
