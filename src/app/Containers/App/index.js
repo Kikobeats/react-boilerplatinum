@@ -12,12 +12,11 @@ import NotMatch from '../../Containers/NotMatch'
 import About from '../../Containers/About' // async load route
 import Login from '../../Containers/Login'
 import Home from '../../Containers/Home'
+import Unauthorized from '../../Containers/Unauthorized'
 
 import Loader from '../../Components/Loader'
 
 import PrivateRoute from '../../Containers/PrivateRoute'
-
-const Test = () => (<div>Hello!</div>)
 
 // If you use React Router, make this component
 // render <Router> with your routes. Currently,
@@ -37,13 +36,12 @@ export default class App extends Component {
   }
   authenticate (e) {
     if (e) e.preventDefault()
-    this.props.store.authenticate()
+    this.props.store.fetchData('/posts', 1)
   }
 
 
 
   render () {
-    const { authenticated, authenticating, timeToRefresh, refreshToken } = this.store
     return (
       <Router>
         <Provider store={this.store}>
@@ -51,13 +49,14 @@ export default class App extends Component {
             <DevTools />
             <Loader />
             <Switch>
-              <Route exact path='/' component={About} />
-              <Route exact path='/test' component={Test} />
+              <Route exact path='/' component={Login} />
               <Route exact path='/login' component={Login} />
+              <Route exact path='/home' component={Home} />
               <PrivateRoute path='/protected' component={Home} />
+              <PrivateRoute isAdmin path='/protectedAdmin' component={About} />
+              <Route path='/401' component={Unauthorized} />
               <Route component={NotMatch} />
             </Switch>
-            {!!(timeToRefresh && timeToRefresh <= 4) && this.store.refreshToken()}
           </div>
         </Provider>
       </Router>
