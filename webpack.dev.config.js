@@ -62,7 +62,7 @@ module.exports = {
       {
         // prevent BrowserSync from reloading the page
         // and let Webpack Dev Server take care of this
-        reload: false
+        reload: true
       }
     )
   ],
@@ -76,8 +76,7 @@ module.exports = {
       loader: [
         'style-loader',
         'css-loader',
-        'sass-loader',
-        'postcss-loader'
+        'sass-loader'
       ]
     }]
   }

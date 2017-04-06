@@ -121,8 +121,7 @@ module.exports = {
         fallback: 'style-loader',
         use: [
           'css-loader?minimize&sourceMap',
-          'sass-loader',
-          'postcss-loader'
+          'sass-loader'
         ]
       })
     }]

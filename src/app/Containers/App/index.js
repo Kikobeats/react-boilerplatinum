@@ -17,6 +17,8 @@ import Loader from '../../Components/Loader'
 
 import PrivateRoute from '../../Containers/PrivateRoute'
 
+const Test = () => (<div>Hello!</div>)
+
 // If you use React Router, make this component
 // render <Router> with your routes. Currently,
 // only synchronous routes are hot reloaded, and
@@ -38,6 +40,8 @@ export default class App extends Component {
     this.props.store.authenticate()
   }
 
+
+
   render () {
     const { authenticated, authenticating, timeToRefresh, refreshToken } = this.store
     return (
@@ -48,6 +52,7 @@ export default class App extends Component {
             <Loader />
             <Switch>
               <Route exact path='/' component={About} />
+              <Route exact path='/test' component={Test} />
               <Route exact path='/login' component={Login} />
               <PrivateRoute path='/protected' component={Home} />
               <Route component={NotMatch} />
