@@ -74,16 +74,16 @@ module.exports = {
         rejected: true
       }
     }),
-    new CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'assets/js/vendor.bundle.js',
-      minChunks: Infinity
-    }),
     new UglifyJsPlugin({
       sourceMap: true,
       minimize: true,
       compress: { warnings: false },
       comments: false
+    }),
+    new CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'assets/js/vendor.bundle.js',
+      minChunks: Infinity
     }),
     new OfflinePlugin({
       relativePaths: false,
