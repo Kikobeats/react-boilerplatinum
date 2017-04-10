@@ -1,14 +1,15 @@
 import { AppContainer } from 'react-hot-loader'
 import ReactDOM from 'react-dom'
 import React from 'react'
+import {useStrict} from 'mobx'
 import App from './Containers/App'
-import AppState from './AppState'
+import appState from './AppState'
 import './index.scss'
 const el = document.getElementById('app')
 
+useStrict(true)
 
-
-const appState = new AppState()
+// const appState = new AppState()
 
 ReactDOM.render(
   <AppContainer>
@@ -29,6 +30,4 @@ if (module.hot) {
       el
     )
   })
-} else {
-  require('offline-plugin/runtime').install()
 }

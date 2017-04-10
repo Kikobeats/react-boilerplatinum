@@ -1,12 +1,12 @@
 import React from 'react'
 import Bundle from '../../Utils/Bundle'
-import loadLogin from 'bundle-loader?lazy&name=my-chunk!../../Components/Login'
+import loadLogin from 'bundle-loader?lazy&name=[name]!../../Components/Login'
 
 // components load their module for initial visit
-const LoginContainer = () => (
+const LoginContainer = ({...props}) => (
   <Bundle load={loadLogin}>
     {(Login) => Login
-    ? <Login/>
+    ? <Login {...props}/>
     : <div>Loading...</div>
   }
   </Bundle>

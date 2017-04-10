@@ -1,56 +1,70 @@
 import React, { PropTypes, Component } from 'react'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Redirect,
-    withRouter
-} from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 import { inject, observer } from 'mobx-react'
+
+import {Header } from '../../Components/UI/Header'
 
 @inject('store')
 @observer
 export default class PrivateRoute extends Component {
   constructor (props) {
     super(props)
-
+    // initial values
     this.path = '/login'
-    this.canAccess = false
 
     this.store = this.props.store
+
     this.isAuthenticated = this.store.authenticated
     this.isAdmin = this.store.isAdmin
+    this.isSuperAdmin = this.store.isSuperAdmin
 
+    console.log(this.isAuthenticated, this.isAdmin, this.isSuperAdmin)
+  }
+
+  _checkIfCanAccess () {
     if (this.isAuthenticated) {
       if (this.props.isAdmin) {
         this.path = '/401'
         if (this.isAdmin) {
-          this.canAccess = true
-        } else {
-          this.canAccess = false
+          return true
         }
+        return false
       }
-      this.canAccess = true
-    } else {
-      this.canAccess = false
-    }
-  }
 
+      if (this.props.isSuperAdmin) {
+        this.path = '/401'
+        if (this.isSuperAdmin) {
+          return true
+        }
+        return false
+      }
+
+      return true
+    }
+
+    return false
+  }
   render () {
     const { component, ...rest } = this.props
-
+    const canAccess = this._checkIfCanAccess()
     return (
       <Route {...rest} render={props => (
-                this.canAccess ? (
-                    React.createElement(component, props)
-                ) : (
-                  <Redirect to={{
-                    pathname: this.path,
-                    state: { from: props.location }
-                  }} />
-        )
+        canAccess ? (
+          React.createElement(component, props)
+        ) : (
+          <Redirect to={{
+            pathname: this.path,
+            state: { from: props.location }
+          }} />
+    )
         )} />
     )
   }
+}
+
+PrivateRoute.propTypes = {
+  component: PropTypes.func,
+  isAdmin: PropTypes.bool,
+  isSuperAdmin: PropTypes.bool
 }

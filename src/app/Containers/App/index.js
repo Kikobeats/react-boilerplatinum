@@ -6,7 +6,7 @@ import {
   Switch
 } from 'react-router-dom'
 import { Provider, observer } from 'mobx-react'
-import DevTools from 'mobx-react-devtools'
+// import DevTools from 'mobx-react-devtools'
 
 import NotMatch from '../../Containers/NotMatch'
 import About from '../../Containers/About' // async load route
@@ -31,35 +31,25 @@ export default class App extends Component {
     this.store = this.props.store
   }
 
-  componentDidMount () {
-    this.authenticate()
-  }
-  authenticate (e) {
-    if (e) e.preventDefault()
-    this.props.store.fetchData('/posts', 1)
-  }
-
-
-
   render () {
     return (
-      <Router>
-        <Provider store={this.store}>
+      <Provider store={this.store}>
+        <Router>
           <div>
-            <DevTools />
+            { /*<DevTools /> */}
             <Loader />
             <Switch>
               <Route exact path='/' component={Login} />
               <Route exact path='/login' component={Login} />
-              <Route exact path='/home' component={Home} />
-              <PrivateRoute path='/protected' component={Home} />
-              <PrivateRoute isAdmin path='/protectedAdmin' component={About} />
+              <PrivateRoute exact isAdmin path='/home' component={Home} />
+              <PrivateRoute exact isSuperAdmin path='/protectedAdmin' component={About} />
               <Route path='/401' component={Unauthorized} />
               <Route component={NotMatch} />
             </Switch>
           </div>
-        </Provider>
-      </Router>
+
+        </Router>
+      </Provider>
     )
   }
 }

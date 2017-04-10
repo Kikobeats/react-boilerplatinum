@@ -4,7 +4,6 @@ const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const PurifyCSSWebpackPlugin = require('purifycss-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const OfflinePlugin = require('offline-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
@@ -22,12 +21,13 @@ const {
 module.exports = {
   devtool: 'source-map',
   entry: [
+    'babel-polyfill',
     './src/app/index.js'
   ],
   output: {
     path: path.resolve('src/www'),
     filename: 'assets/js/[name].js',
-    chunkFilename: 'assets/js/[name]-[id].js'
+    chunkFilename: 'assets/js/[name].js?[hash]'
   },
   resolve: {
     extensions: ['.scss', '.css', '.js'],
@@ -90,24 +90,8 @@ module.exports = {
     new UglifyJsPlugin({
       sourceMap: true,
       minimize: true,
-      compress: { warnings: false },
+      compress: { warnings: false, drop_console: true },
       comments: false
-    }),
-    new OfflinePlugin({
-      relativePaths: false,
-      publicPath: '/',
-      caches: {
-        main: [':rest:'],
-        additional: [
-          'assets/js/vendor.bundle.js',
-          ':externals:'
-        ],
-        externals: [
-          'https://www.google-analytics.com/analytics.js'
-        ]
-      },
-      safeToUseOptionalCaches: true,
-      AppCache: false
     })
   ],
   module: {
@@ -121,7 +105,8 @@ module.exports = {
         fallback: 'style-loader',
         use: [
           'css-loader?minimize&sourceMap',
-          'sass-loader'
+          'sass-loader',
+          'postcss-loader'
         ]
       })
     }]

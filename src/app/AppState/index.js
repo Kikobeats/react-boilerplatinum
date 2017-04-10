@@ -1,34 +1,64 @@
-import { observable, action } from 'mobx'
-import axios from 'axios'
+import { observable, action, computed } from 'mobx'
 
-class appState {
-  @observable authenticated
-  @observable authenticating
-  @observable isAdmin
+class AppState {
   @observable isLoading
+  @observable authUser=
+  {
+    token: null,
+    isAdmin: false,
+    isSuperAdmin: false,
+    email: null,
+    nickName: null
+  }
+  constructor () {
+    this.authUser =
+    {
+      token: null,
+      isAdmin: false,
+      isSuperAdmin: false,
+      email: null,
+      nickName: null
+    }
 
-  constructor() {
-    this.authenticated = false
-    this.authenticating = false
-    this.isAdmin = false
     this.isLoading = false
   }
 
-  async fetchData (pathname, id) {
-    let {data} = await axios.get(`https://jsonplaceholder.typicode.com${pathname}`)
-    console.log(data)
+  @action('Set user auth')
+  setUser (user) {
+    this.authUser.token = user.token
+    this.authUser.isAdmin = user.isAdmin
+    this.authUser.email = user.emal
+    this.authUser.isSuperAdmin = user.isSuperAdmin
+    this.authUser.photo = user.photo
+    this.authUser.nickName = user.nickName
   }
 
-  @action authenticate () {
-    return new Promise((resolve, reject) => {
-      this.isLoading = true
-      setTimeout(() => {
-        this.authenticated = true
-        this.isLoading = false
-        resolve(this.authenticated)
-      }, 2000)
-    })
+  @action('Show Loader')
+  showLoader () {
+    this.isLoading = true
+  }
+  @action('Hide Loader')
+  hideLoader () {
+    this.isLoading = false
+  }
+
+  @computed get authenticated () {
+    if (this.authUser.token === null) {
+      return false
+    } else {
+      return true
+    }    
+  }
+
+  @computed get isAdmin () {
+    return this.authUser.isAdmin
+  }
+
+  @computed get isSuperAdmin () {
+    return this.authUser.isSuperAdmin
   }
 }
+
+const appState = new AppState()
 
 export default appState

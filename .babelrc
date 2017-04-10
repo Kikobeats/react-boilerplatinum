@@ -13,9 +13,16 @@
   "env": {
     "production": {
       "presets": [
-        "react-optimize"
+        "react-optimize",
+        "latest",
+        "react",
+        "stage-1"
       ],
-      "plugins": []
+      "plugins": [
+        "transform-object-rest-spread",
+        "transform-async-to-generator",
+        "transform-decorators-legacy"
+      ]
     }
   }
 }

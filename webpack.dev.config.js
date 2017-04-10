@@ -25,8 +25,8 @@ module.exports = {
   ],
   output: {
     path: path.resolve('src/www'),
-    filename: '[name].js',
-    chunkFilename: '[name].js'
+    filename: '[name].[hash].js',
+    chunkFilename: '[name].[hash].js'
   },
   resolve: {
     extensions: ['.scss', '.css', '.js', '.json'],
@@ -76,7 +76,8 @@ module.exports = {
       loader: [
         'style-loader',
         'css-loader',
-        'sass-loader'
+        'sass-loader',
+        'postcss-loader'
       ]
     }]
   }
