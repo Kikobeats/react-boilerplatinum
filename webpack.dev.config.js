@@ -9,7 +9,13 @@ const path = require('path')
 
 const pkg = require('./package.json')
 const config = require('./config.json')
-const {HotModuleReplacementPlugin, NamedModulesPlugin} = webpack
+const { HotModuleReplacementPlugin, NamedModulesPlugin } = webpack
+
+// function _isVendor (module) {
+//   return module.context && module.context.indexOf('node_modules') !== -1
+// }
+
+// const { CommonsChunkPlugin } = webpack.optimize
 
 module.exports = {
   performance: {
@@ -25,7 +31,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve('src/www'),
-    filename: '[name].[hash].js',
+    filename: 'admin.[hash].js',
     chunkFilename: '[name].[hash].js'
   },
   resolve: {
@@ -45,6 +51,14 @@ module.exports = {
       alwaysWriteToDisk: true,
       inject: false
     })),
+    // new CommonsChunkPlugin({
+    //   name: 'vendor',
+    //   filename: 'assets/js/vendor-[hash].bundle.js',
+    //   minChunks: function (module) {
+    //     // this assumes your vendor imports exist in the node_modules directory
+    //     return _isVendor(module)
+    //   }
+    // }),
     new HtmlWebpackHarddiskPlugin(),
     new BrowserSyncPlugin(
       // BrowserSync options

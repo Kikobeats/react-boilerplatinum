@@ -9,11 +9,12 @@ import { Provider, observer } from 'mobx-react'
 // import DevTools from 'mobx-react-devtools'
 
 import NotMatch from '../../Containers/NotMatch'
-import About from '../../Containers/About' // async load route
+import About from '../../Containers/About'
 import Login from '../../Containers/Login'
 import Home from '../../Containers/Home'
+import Find from '../../Containers/Find'
 import Unauthorized from '../../Containers/Unauthorized'
-
+import Header from '../../Components/UI/Header'
 import Loader from '../../Components/Loader'
 
 import PrivateRoute from '../../Containers/PrivateRoute'
@@ -36,13 +37,14 @@ export default class App extends Component {
       <Provider store={this.store}>
         <Router>
           <div>
-            { /*<DevTools /> */}
+            
             <Loader />
             <Switch>
               <Route exact path='/' component={Login} />
               <Route exact path='/login' component={Login} />
               <PrivateRoute exact isAdmin path='/home' component={Home} />
-              <PrivateRoute exact isSuperAdmin path='/protectedAdmin' component={About} />
+              <PrivateRoute exact isSuperAdmin path='/about' component={About} />
+              <PrivateRoute exact isAdmin path='/find' component={Find} />
               <Route path='/401' component={Unauthorized} />
               <Route component={NotMatch} />
             </Switch>

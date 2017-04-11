@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
+const WebpackMd5Hash = require('webpack-md5-hash')
 
 const config = require('./config.json')
 const pkg = require('./package.json')
@@ -18,16 +19,23 @@ const {
   CommonsChunkPlugin,
   UglifyJsPlugin } = webpack.optimize
 
+function _isVendor (module) {
+  return module.context && module.context.indexOf('node_modules') !== -1
+}
+
 module.exports = {
   devtool: 'source-map',
-  entry: [
-    'babel-polyfill',
-    './src/app/index.js'
-  ],
+  entry: {
+    app:
+    [
+      'babel-polyfill',
+      './src/app/index.prod.js'
+    ]
+  },
   output: {
     path: path.resolve('src/www'),
-    filename: 'assets/js/[name].js',
-    chunkFilename: 'assets/js/[name].js?[hash]'
+    filename: 'assets/js/[name]-[chunkhash].js',
+    chunkFilename: 'assets/js/[name]-[chunkhash].js'
   },
   resolve: {
     extensions: ['.scss', '.css', '.js'],
@@ -42,7 +50,7 @@ module.exports = {
       template: path.resolve('index.ejs'),
       alwaysWriteToDisk: true,
       inject: false,
-      hash: true,
+      hash: false,
       minify: {
         collapseWhitespace: true,
         decodeEntities: true,
@@ -69,7 +77,7 @@ module.exports = {
     new AggressiveMergingPlugin(),
     new ExtractTextPlugin({
       allChunks: true,
-      filename: 'assets/css/[name].css'
+      filename: 'assets/css/[name]-[chunkhash].css'
     }),
     new PurifyCSSWebpackPlugin({
       basePath: path.resolve('src/www'),
@@ -83,9 +91,14 @@ module.exports = {
     // optimizations
     new CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'assets/js/vendor.bundle.js',
-      minChunks: Infinity
+      children: true,
+      filename: 'assets/js/vendor-[chunkhash].bundle.js',
+      minChunks: function (module) {
+        // this assumes your vendor imports exist in the node_modules directory
+        return _isVendor(module)
+      }
     }),
+    new WebpackMd5Hash(),
     new OccurrenceOrderPlugin(),
     new UglifyJsPlugin({
       sourceMap: true,

@@ -10,7 +10,6 @@ const el = document.getElementById('app')
 useStrict(true)
 
 // const appState = new AppState()
-
 ReactDOM.render(
   <AppContainer>
     <App store={appState} />

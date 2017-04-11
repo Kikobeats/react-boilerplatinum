@@ -82,7 +82,6 @@
         <script<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>></script>
     <% } %>
     <% for (key in htmlWebpackPlugin.files.chunks) { %>
-    <!-- chema -->
     <script src="<%= htmlWebpackPlugin.files.chunks[key].entry %>" type="text/javascript"></script>
     <% } %>
     <% if (htmlWebpackPlugin.options.devServer) { %>

@@ -1,16 +1,21 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
-import Header from '../UI/Header'
+import jquery from 'jquery'
 
 @inject('store')
 @observer
 class Home extends Component {
+  constructor(props)
+  {
+    super(props)
+    alert(jquery)
+  }
   render () {
     return (
-      <div>        
+      <div>
         <h2>Home</h2>
-        <Link to='/protectedAdmin'>Private super admin Page 2</Link>
+        <Link to='/about'>Home</Link>
       </div>
 
     )

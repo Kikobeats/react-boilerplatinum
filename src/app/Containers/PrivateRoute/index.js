@@ -3,8 +3,6 @@ import { Route, Redirect } from 'react-router-dom'
 
 import { inject, observer } from 'mobx-react'
 
-import {Header } from '../../Components/UI/Header'
-
 @inject('store')
 @observer
 export default class PrivateRoute extends Component {

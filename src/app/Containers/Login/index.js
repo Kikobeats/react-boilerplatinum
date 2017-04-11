@@ -1,6 +1,6 @@
 import React from 'react'
 import Bundle from '../../Utils/Bundle'
-import loadLogin from 'bundle-loader?lazy&name=[name]!../../Components/Login'
+import loadLogin from 'bundle-loader?lazy&name=login!../../Components/Login'
 
 // components load their module for initial visit
 const LoginContainer = ({...props}) => (

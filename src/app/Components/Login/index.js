@@ -21,6 +21,10 @@ class Login extends Component {
     }
   }
 
+
+
+
+
   async _login () {
     if (!checkEmail(this.emailInput.value) || !checkRequired(this.passwordInput.value)) {
       this.setState({
@@ -61,7 +65,7 @@ class Login extends Component {
 
     localStorage.setItem('token', result.token)
     localStorage.setItem('expiration_date', result.user.exp)
-    this.props.history.push('/home')
+    this.props.history.push('/about')
   }
 
   render () {

@@ -1,19 +1,21 @@
-
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
-
-import {
-  Link
-} from 'react-router-dom'
+import jquery from 'jquery'
 
 @inject('store')
 @observer
 class About extends Component {
+  constructor(props)
+  {
+    super(props)
+    alert(jquery)
+  }
   render () {
     return (
       <div>
-        Loaded async way (Check network in Developer Tools)
-            <Link to='/protected'>Protected</Link>
+        <h2>About</h2>
+        <Link to='/find'>Find</Link>
       </div>
     )
   }

@@ -16,7 +16,7 @@ class Header extends Component {
               <span className='icon-bar' />
               <span className='icon-bar' />
             </button>
-            <a className='navbar-brand' href='#'><img alt='Brand' src='...' /></a>
+            <a className='navbar-brand' href='#'><img alt='Brand' src='https://genially.blob.core.windows.net/genially/assets/images/logotype/genially-symbol-color.png' /></a>
           </div>
 
           <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
