@@ -11,7 +11,7 @@ const WebpackMd5Hash = require('webpack-md5-hash')
 const config = require('./config.json')
 const pkg = require('./package.json')
 
-const { HashedModuleIdsPlugin } = webpack
+// const { HashedModuleIdsPlugin } = webpack
 
 const {
   OccurrenceOrderPlugin,
@@ -25,13 +25,10 @@ function _isVendor (module) {
 
 module.exports = {
   devtool: 'source-map',
-  entry: {
-    app:
-    [
-      'babel-polyfill',
-      './src/app/index.prod.js'
-    ]
-  },
+  entry: [
+    'babel-polyfill',
+    './src/app/index.prod.js'
+  ],
   output: {
     path: path.resolve('src/www'),
     filename: 'assets/js/[name]-[chunkhash].js',
@@ -74,7 +71,7 @@ module.exports = {
       }
     })),
     new HtmlWebpackHarddiskPlugin(),
-    new AggressiveMergingPlugin(),
+    // new AggressiveMergingPlugin(),
     new ExtractTextPlugin({
       allChunks: true,
       filename: 'assets/css/[name]-[chunkhash].css'
@@ -87,12 +84,17 @@ module.exports = {
         rejected: true
       }
     }),
-    new HashedModuleIdsPlugin(),
     // optimizations
     new CommonsChunkPlugin({
-      name: 'vendor',
       children: true,
-      filename: 'assets/js/vendor-[chunkhash].bundle.js',
+      async: 'common',
+      // filename: 'assets/js/vendor-[chunkhash].bundle.js',
+      minChunks: 2
+    }),
+    new CommonsChunkPlugin({
+      children: true,
+      async: 'vendor',
+      // filename: 'assets/js/vendor-[chunkhash].bundle.js',
       minChunks: function (module) {
         // this assumes your vendor imports exist in the node_modules directory
         return _isVendor(module)

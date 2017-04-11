@@ -14,7 +14,6 @@ import Login from '../../Containers/Login'
 import Home from '../../Containers/Home'
 import Find from '../../Containers/Find'
 import Unauthorized from '../../Containers/Unauthorized'
-import Header from '../../Components/UI/Header'
 import Loader from '../../Components/Loader'
 
 import PrivateRoute from '../../Containers/PrivateRoute'
@@ -36,8 +35,7 @@ export default class App extends Component {
     return (
       <Provider store={this.store}>
         <Router>
-          <div>
-            
+          <div>            
             <Loader />
             <Switch>
               <Route exact path='/' component={Login} />

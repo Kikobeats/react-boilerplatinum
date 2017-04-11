@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
 
 import jquery from 'jquery'
+import _ from 'lodash'
 
 @inject('store')
 @observer
