@@ -37,6 +37,30 @@ module.exports = {
     extensions: ['.scss', '.css', '.js', '.json'],
     modules: ['node_modules']
   },
+  module: {
+    rules: [{
+      test: /(\.js|\.jsx)$/,
+      exclude: /node_modules/,
+      use: ['babel-loader?cacheDirectory']
+    }, {
+      test: /(\.scss|\.css)$/,
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader',
+        options: {
+          importLoaders: 2
+        }
+      }, {
+        loader: 'postcss-loader',
+        options: {
+          parser: require('postcss-scss')
+        }
+      }, {
+        loader: 'sass-loader'
+      }]
+    }]
+  },
   plugins: [
     new HotModuleReplacementPlugin(),
     new DashboardPlugin(),
@@ -70,20 +94,5 @@ module.exports = {
         reload: false
       }
     )
-  ],
-  module: {
-    rules: [{
-      test: /(\.js|\.jsx)$/,
-      exclude: /node_modules/,
-      loader: ['react-hot-loader/webpack', 'babel-loader?cacheDirectory']
-    }, {
-      test: /(\.scss|\.css)$/,
-      loader: [
-        'style-loader',
-        'css-loader',
-        'sass-loader',
-        'postcss-loader'
-      ]
-    }]
-  }
+  ]
 }

@@ -1,6 +1,9 @@
 {
   "presets": [
-    ["env", { "targets": { "browsers": ["last 2 versions", "ie >= 9"] } }],
+    ["env", {
+      "modules": false,
+      "targets": { "browsers": ["last 2 versions", "ie >= 9"] }
+    }],
     "react"
   ],
   "plugins": [
@@ -10,8 +13,6 @@
     "production": {
       "presets": [
         "react-optimize"
-      ],
-      "plugins": [
       ]
     }
   }

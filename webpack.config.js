@@ -44,11 +44,23 @@ module.exports = {
       test: /\.(css|scss)$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        use: [
-          'css-loader?minimize&sourceMap',
-          'sass-loader',
-          'postcss-loader'
-        ]
+        use: [{
+          loader: 'css-loader',
+          options: {
+            minimize: true,
+            importLoaders: 2
+          }
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            parser: require('postcss-scss')
+          }
+        }, {
+          loader: 'sass-loader',
+          options: {
+            sourcemap: true
+          }
+        }]
       })
     }]
   },
