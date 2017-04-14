@@ -1,3 +1,12 @@
+<a name="1.1.2"></a>
+## 1.1.2 (2017-04-08)
+
+* Sort plugins ([2e4573b](https://github.com/Kikobeats/react-boilerplatinum/commit/2e4573b))
+* Update dependencies ([5a65874](https://github.com/Kikobeats/react-boilerplatinum/commit/5a65874))
+* chore(package): update babel-preset-react to version 6.24.1 ([43f2bfc](https://github.com/Kikobeats/react-boilerplatinum/commit/43f2bfc))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2017-04-04)
 
