@@ -1,3 +1,17 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2017-04-14)
+
+* Better reload and css bundle ([adb983e](https://github.com/Kikobeats/react-boilerplatinum/commit/adb983e))
+* Update deps ([9797ca5](https://github.com/Kikobeats/react-boilerplatinum/commit/9797ca5))
+* chore(package): update babel-plugin-transform-react-remove-prop-types to version 0.4.0 ([da9b14d](https://github.com/Kikobeats/react-boilerplatinum/commit/da9b14d))
+* chore(package): update babel-preset-env to version 1.4.0 ([b1c325a](https://github.com/Kikobeats/react-boilerplatinum/commit/b1c325a))
+* chore(package): update offline-plugin to version 4.7.0 ([4986c98](https://github.com/Kikobeats/react-boilerplatinum/commit/4986c98))
+* chore(package): update purifycss-webpack to version 0.6.0 ([6ac5022](https://github.com/Kikobeats/react-boilerplatinum/commit/6ac5022))
+* chore(package): update webpack to version 2.4.1 ([87dad63](https://github.com/Kikobeats/react-boilerplatinum/commit/87dad63))
+* chore(package): update webpack-bundle-analyzer to version 2.4.0 ([5ebe030](https://github.com/Kikobeats/react-boilerplatinum/commit/5ebe030))
+
+
+
 <a name="1.1.2"></a>
 ## 1.1.2 (2017-04-08)
 
