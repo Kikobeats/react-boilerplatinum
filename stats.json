@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "2.4.1",
-  "hash": "ad2d5d2f6408124117ac",
-  "time": 39219,
+  "hash": "78f40e0cb2149e02eb2f",
+  "time": 19536,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -20,7 +20,7 @@
   "assets": [
     {
       "name": "assets/js/bundle.js",
-      "size": 152570,
+      "size": 152610,
       "chunks": [
         0
       ],
@@ -53,7 +53,7 @@
     },
     {
       "name": "assets/js/bundle.js.map",
-      "size": 1653022,
+      "size": 1653139,
       "chunks": [
         0
       ],
@@ -86,7 +86,7 @@
     },
     {
       "name": "sw.js",
-      "size": 7468,
+      "size": 7938,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -122,7 +122,7 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 688340,
+      "size": 688384,
       "names": [
         "main"
       ],
@@ -132,7 +132,7 @@
         "assets/js/bundle.js.map",
         "assets/css/bundle.css.map"
       ],
-      "hash": "5378b118ba81d7d1e49d",
+      "hash": "93a40e3fa5bb88492da9",
       "parents": [
         1
       ],
@@ -1619,19 +1619,19 @@
           "loc": "13:14-38"
         },
         {
-          "moduleId": "vg0m",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
-          "module": "./~/react-dom/lib/ReactUpdates.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "14:14-38"
-        },
-        {
           "moduleId": "3imu",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactPureComponent.js",
           "module": "./~/react/lib/ReactPureComponent.js",
           "moduleName": "./~/react/lib/ReactPureComponent.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "13:14-38"
+        },
+        {
+          "moduleId": "W2D2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
+          "module": "./~/react/lib/ReactElement.js",
+          "moduleName": "./~/react/lib/ReactElement.js",
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "13:14-38"
@@ -1646,13 +1646,13 @@
           "loc": "14:14-38"
         },
         {
-          "moduleId": "W2D2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
-          "module": "./~/react/lib/ReactElement.js",
-          "moduleName": "./~/react/lib/ReactElement.js",
+          "moduleId": "vg0m",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
+          "module": "./~/react-dom/lib/ReactUpdates.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
           "type": "cjs require",
           "userRequest": "object-assign",
-          "loc": "13:14-38"
+          "loc": "14:14-38"
         },
         {
           "moduleId": "kio1",
@@ -4431,22 +4431,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-      "issuerId": "DMKF",
-      "issuerName": "./~/react-dom/lib/ReactMount.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
+      "issuerId": "Le75",
+      "issuerName": "./~/react/lib/ReactComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "DMKF",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-          "module": "./~/react-dom/lib/ReactMount.js",
-          "moduleName": "./~/react-dom/lib/ReactMount.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/emptyObject",
-          "loc": "31:18-49"
-        },
         {
           "moduleId": "Le75",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
@@ -4473,6 +4464,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyObject",
           "loc": "21:18-49"
+        },
+        {
+          "moduleId": "DMKF",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
+          "module": "./~/react-dom/lib/ReactMount.js",
+          "moduleName": "./~/react-dom/lib/ReactMount.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/emptyObject",
+          "loc": "31:18-49"
         },
         {
           "moduleId": "Bj+8",
@@ -4868,15 +4868,6 @@
           "loc": "14:19-44"
         },
         {
-          "moduleId": "4has",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactClass.js",
-          "module": "./~/react/lib/ReactClass.js",
-          "moduleName": "./~/react/lib/ReactClass.js",
-          "type": "cjs require",
-          "userRequest": "./ReactElement",
-          "loc": "17:19-44"
-        },
-        {
           "moduleId": "vUzd",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactDOMFactories.js",
           "module": "./~/react/lib/ReactDOMFactories.js",
@@ -4884,6 +4875,15 @@
           "type": "cjs require",
           "userRequest": "./ReactElement",
           "loc": "13:19-44"
+        },
+        {
+          "moduleId": "4has",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactClass.js",
+          "module": "./~/react/lib/ReactClass.js",
+          "moduleName": "./~/react/lib/ReactClass.js",
+          "type": "cjs require",
+          "userRequest": "./ReactElement",
+          "loc": "17:19-44"
         },
         {
           "moduleId": "S+kE",
@@ -5044,13 +5044,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOM.js",
-      "issuerId": "yote",
-      "issuerName": "./~/react-dom/lib/ReactDOM.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/React.js",
+      "issuerId": "G1ow",
+      "issuerName": "./~/react/lib/React.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "G1ow",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/React.js",
+          "module": "./~/react/lib/React.js",
+          "moduleName": "./~/react/lib/React.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "25:14-41"
+        },
         {
           "moduleId": "yote",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOM.js",
@@ -5061,13 +5070,31 @@
           "loc": "25:14-41"
         },
         {
-          "moduleId": "G1ow",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/React.js",
-          "module": "./~/react/lib/React.js",
-          "moduleName": "./~/react/lib/React.js",
+          "moduleId": "Le75",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
+          "module": "./~/react/lib/ReactComponent.js",
+          "moduleName": "./~/react/lib/ReactComponent.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
-          "loc": "25:14-41"
+          "loc": "20:14-41"
+        },
+        {
+          "moduleId": "W2D2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
+          "module": "./~/react/lib/ReactElement.js",
+          "moduleName": "./~/react/lib/ReactElement.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "17:14-41"
+        },
+        {
+          "moduleId": "4has",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactClass.js",
+          "module": "./~/react/lib/ReactClass.js",
+          "moduleName": "./~/react/lib/ReactClass.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "23:14-41"
         },
         {
           "moduleId": "DMKF",
@@ -5097,31 +5124,22 @@
           "loc": "21:14-41"
         },
         {
-          "moduleId": "Le75",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
-          "module": "./~/react/lib/ReactComponent.js",
-          "moduleName": "./~/react/lib/ReactComponent.js",
+          "moduleId": "MryT",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
+          "module": "./~/react/lib/traverseAllChildren.js",
+          "moduleName": "./~/react/lib/traverseAllChildren.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
-          "loc": "20:14-41"
+          "loc": "21:14-41"
         },
         {
-          "moduleId": "4has",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactClass.js",
-          "module": "./~/react/lib/ReactClass.js",
-          "moduleName": "./~/react/lib/ReactClass.js",
+          "moduleId": "CO2B",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactNoopUpdateQueue.js",
+          "module": "./~/react/lib/ReactNoopUpdateQueue.js",
+          "moduleName": "./~/react/lib/ReactNoopUpdateQueue.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
-          "loc": "23:14-41"
-        },
-        {
-          "moduleId": "W2D2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
-          "module": "./~/react/lib/ReactElement.js",
-          "moduleName": "./~/react/lib/ReactElement.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "17:14-41"
+          "loc": "13:14-41"
         },
         {
           "moduleId": "kio1",
@@ -5149,24 +5167,6 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "22:14-41"
-        },
-        {
-          "moduleId": "MryT",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
-          "module": "./~/react/lib/traverseAllChildren.js",
-          "moduleName": "./~/react/lib/traverseAllChildren.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "21:14-41"
-        },
-        {
-          "moduleId": "CO2B",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactNoopUpdateQueue.js",
-          "module": "./~/react/lib/ReactNoopUpdateQueue.js",
-          "moduleName": "./~/react/lib/ReactNoopUpdateQueue.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "13:14-41"
         },
         {
           "moduleId": "Kt1l",
@@ -5286,15 +5286,6 @@
           "loc": "14:14-41"
         },
         {
-          "moduleId": "Zzr+",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/LinkedValueUtils.js",
-          "module": "./~/react-dom/lib/LinkedValueUtils.js",
-          "moduleName": "./~/react-dom/lib/LinkedValueUtils.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "22:14-41"
-        },
-        {
           "moduleId": "yGo3",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactChildReconciler.js",
           "module": "./~/react-dom/lib/ReactChildReconciler.js",
@@ -5302,6 +5293,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "19:14-41"
+        },
+        {
+          "moduleId": "Zzr+",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/LinkedValueUtils.js",
+          "module": "./~/react-dom/lib/LinkedValueUtils.js",
+          "moduleName": "./~/react-dom/lib/LinkedValueUtils.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "22:14-41"
         },
         {
           "moduleId": "f6Df",
@@ -5322,15 +5322,6 @@
           "loc": "18:14-41"
         },
         {
-          "moduleId": "Xt9f",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/traverseAllChildren.js",
-          "module": "./~/react-dom/lib/traverseAllChildren.js",
-          "moduleName": "./~/react-dom/lib/traverseAllChildren.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "21:14-41"
-        },
-        {
           "moduleId": "5LTE",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponentTreeHook.js",
           "module": "./~/react/lib/ReactComponentTreeHook.js",
@@ -5338,6 +5329,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "19:14-41"
+        },
+        {
+          "moduleId": "Xt9f",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/traverseAllChildren.js",
+          "module": "./~/react-dom/lib/traverseAllChildren.js",
+          "moduleName": "./~/react-dom/lib/traverseAllChildren.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "21:14-41"
         }
       ],
       "usedExports": true,
@@ -5874,13 +5874,40 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponentTree.js",
-      "issuerId": "if0G",
-      "issuerName": "./~/react-dom/lib/ReactDOMComponentTree.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
+      "issuerId": "Le75",
+      "issuerName": "./~/react/lib/ReactComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "Le75",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
+          "module": "./~/react/lib/ReactComponent.js",
+          "moduleName": "./~/react/lib/ReactComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "19:16-45"
+        },
+        {
+          "moduleId": "4has",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactClass.js",
+          "module": "./~/react/lib/ReactClass.js",
+          "moduleName": "./~/react/lib/ReactClass.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "22:16-45"
+        },
+        {
+          "moduleId": "5WN7",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/onlyChild.js",
+          "module": "./~/react/lib/onlyChild.js",
+          "moduleName": "./~/react/lib/onlyChild.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "16:16-45"
+        },
         {
           "moduleId": "if0G",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponentTree.js",
@@ -5918,40 +5945,22 @@
           "loc": "20:16-45"
         },
         {
-          "moduleId": "Le75",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
-          "module": "./~/react/lib/ReactComponent.js",
-          "moduleName": "./~/react/lib/ReactComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "19:16-45"
-        },
-        {
-          "moduleId": "4has",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactClass.js",
-          "module": "./~/react/lib/ReactClass.js",
-          "moduleName": "./~/react/lib/ReactClass.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "22:16-45"
-        },
-        {
-          "moduleId": "5WN7",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/onlyChild.js",
-          "module": "./~/react/lib/onlyChild.js",
-          "moduleName": "./~/react/lib/onlyChild.js",
+          "moduleId": "9SWq",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/PooledClass.js",
+          "module": "./~/react/lib/PooledClass.js",
+          "moduleName": "./~/react/lib/PooledClass.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "16:16-45"
         },
         {
-          "moduleId": "y2pp",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMProperty.js",
-          "module": "./~/react-dom/lib/DOMProperty.js",
-          "moduleName": "./~/react-dom/lib/DOMProperty.js",
+          "moduleId": "MryT",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
+          "module": "./~/react/lib/traverseAllChildren.js",
+          "moduleName": "./~/react/lib/traverseAllChildren.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
-          "loc": "15:16-45"
+          "loc": "19:16-45"
         },
         {
           "moduleId": "kio1",
@@ -5990,6 +5999,15 @@
           "loc": "33:16-45"
         },
         {
+          "moduleId": "y2pp",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMProperty.js",
+          "module": "./~/react-dom/lib/DOMProperty.js",
+          "moduleName": "./~/react-dom/lib/DOMProperty.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "15:16-45"
+        },
+        {
           "moduleId": "lZ3b",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
           "module": "./~/react-dom/lib/ReactUpdateQueue.js",
@@ -6026,15 +6044,6 @@
           "loc": "16:16-45"
         },
         {
-          "moduleId": "kbwd",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
-          "module": "./~/react-dom/lib/Transaction.js",
-          "moduleName": "./~/react-dom/lib/Transaction.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "16:16-45"
-        },
-        {
           "moduleId": "/762",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactNodeTypes.js",
           "module": "./~/react-dom/lib/ReactNodeTypes.js",
@@ -6044,22 +6053,13 @@
           "loc": "18:16-45"
         },
         {
-          "moduleId": "9SWq",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/PooledClass.js",
-          "module": "./~/react/lib/PooledClass.js",
-          "moduleName": "./~/react/lib/PooledClass.js",
+          "moduleId": "kbwd",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
+          "module": "./~/react-dom/lib/Transaction.js",
+          "moduleName": "./~/react-dom/lib/Transaction.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "16:16-45"
-        },
-        {
-          "moduleId": "MryT",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
-          "module": "./~/react/lib/traverseAllChildren.js",
-          "moduleName": "./~/react/lib/traverseAllChildren.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "19:16-45"
         },
         {
           "moduleId": "PESh",
@@ -6134,15 +6134,6 @@
           "loc": "15:16-45"
         },
         {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "30:16-45"
-        },
-        {
           "moduleId": "S4Fj",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactOwner.js",
           "module": "./~/react-dom/lib/ReactOwner.js",
@@ -6150,6 +6141,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "16:16-45"
+        },
+        {
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "30:16-45"
         },
         {
           "moduleId": "JtmH",
@@ -6197,15 +6197,6 @@
           "loc": "20:16-38"
         },
         {
-          "moduleId": "Xt9f",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/traverseAllChildren.js",
-          "module": "./~/react-dom/lib/traverseAllChildren.js",
-          "moduleName": "./~/react-dom/lib/traverseAllChildren.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "19:16-45"
-        },
-        {
           "moduleId": "5LTE",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponentTreeHook.js",
           "module": "./~/react/lib/ReactComponentTreeHook.js",
@@ -6213,6 +6204,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "18:16-45"
+        },
+        {
+          "moduleId": "Xt9f",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/traverseAllChildren.js",
+          "module": "./~/react-dom/lib/traverseAllChildren.js",
+          "moduleName": "./~/react-dom/lib/traverseAllChildren.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "19:16-45"
         },
         {
           "moduleId": "E6DY",
@@ -6901,15 +6901,6 @@
           "loc": "13:21-52"
         },
         {
-          "moduleId": "y2pp",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMProperty.js",
-          "module": "./~/react-dom/lib/DOMProperty.js",
-          "moduleName": "./~/react-dom/lib/DOMProperty.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "13:21-52"
-        },
-        {
           "moduleId": "kio1",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
           "module": "./~/react-dom/lib/ReactDOMComponent.js",
@@ -6944,6 +6935,15 @@
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "14:21-52"
+        },
+        {
+          "moduleId": "y2pp",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMProperty.js",
+          "module": "./~/react-dom/lib/DOMProperty.js",
+          "moduleName": "./~/react-dom/lib/DOMProperty.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "13:21-52"
         },
         {
           "moduleId": "lZ3b",
@@ -6982,19 +6982,19 @@
           "loc": "14:21-52"
         },
         {
-          "moduleId": "kbwd",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
-          "module": "./~/react-dom/lib/Transaction.js",
-          "moduleName": "./~/react-dom/lib/Transaction.js",
+          "moduleId": "/762",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactNodeTypes.js",
+          "module": "./~/react-dom/lib/ReactNodeTypes.js",
+          "moduleName": "./~/react-dom/lib/ReactNodeTypes.js",
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "14:21-52"
         },
         {
-          "moduleId": "/762",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactNodeTypes.js",
-          "module": "./~/react-dom/lib/ReactNodeTypes.js",
-          "moduleName": "./~/react-dom/lib/ReactNodeTypes.js",
+          "moduleId": "kbwd",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
+          "module": "./~/react-dom/lib/Transaction.js",
+          "moduleName": "./~/react-dom/lib/Transaction.js",
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "14:21-52"
@@ -7072,15 +7072,6 @@
           "loc": "13:21-52"
         },
         {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "13:21-52"
-        },
-        {
           "moduleId": "S4Fj",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactOwner.js",
           "module": "./~/react-dom/lib/ReactOwner.js",
@@ -7088,6 +7079,15 @@
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "14:21-52"
+        },
+        {
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "13:21-52"
         },
         {
           "moduleId": "+VAZ",
@@ -7795,13 +7795,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-      "issuerId": "DMKF",
-      "issuerName": "./~/react-dom/lib/ReactMount.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
+      "issuerId": "W2D2",
+      "issuerName": "./~/react/lib/ReactElement.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "W2D2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
+          "module": "./~/react/lib/ReactElement.js",
+          "moduleName": "./~/react/lib/ReactElement.js",
+          "type": "cjs require",
+          "userRequest": "./ReactCurrentOwner",
+          "loc": "15:24-54"
+        },
         {
           "moduleId": "DMKF",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
@@ -7821,10 +7830,10 @@
           "loc": "15:24-62"
         },
         {
-          "moduleId": "W2D2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
-          "module": "./~/react/lib/ReactElement.js",
-          "moduleName": "./~/react/lib/ReactElement.js",
+          "moduleId": "MryT",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
+          "module": "./~/react/lib/traverseAllChildren.js",
+          "moduleName": "./~/react/lib/traverseAllChildren.js",
           "type": "cjs require",
           "userRequest": "./ReactCurrentOwner",
           "loc": "15:24-54"
@@ -7837,15 +7846,6 @@
           "type": "cjs require",
           "userRequest": "react/lib/ReactCurrentOwner",
           "loc": "15:24-62"
-        },
-        {
-          "moduleId": "MryT",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
-          "module": "./~/react/lib/traverseAllChildren.js",
-          "moduleName": "./~/react/lib/traverseAllChildren.js",
-          "type": "cjs require",
-          "userRequest": "./ReactCurrentOwner",
-          "loc": "15:24-54"
         },
         {
           "moduleId": "4fju",
@@ -7866,15 +7866,6 @@
           "loc": "18:24-62"
         },
         {
-          "moduleId": "Xt9f",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/traverseAllChildren.js",
-          "module": "./~/react-dom/lib/traverseAllChildren.js",
-          "moduleName": "./~/react-dom/lib/traverseAllChildren.js",
-          "type": "cjs require",
-          "userRequest": "react/lib/ReactCurrentOwner",
-          "loc": "15:24-62"
-        },
-        {
           "moduleId": "5LTE",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponentTreeHook.js",
           "module": "./~/react/lib/ReactComponentTreeHook.js",
@@ -7882,6 +7873,15 @@
           "type": "cjs require",
           "userRequest": "./ReactCurrentOwner",
           "loc": "16:24-54"
+        },
+        {
+          "moduleId": "Xt9f",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/traverseAllChildren.js",
+          "module": "./~/react-dom/lib/traverseAllChildren.js",
+          "moduleName": "./~/react-dom/lib/traverseAllChildren.js",
+          "type": "cjs require",
+          "userRequest": "react/lib/ReactCurrentOwner",
+          "loc": "15:24-62"
         }
       ],
       "usedExports": true,
@@ -8780,7 +8780,7 @@
       "name": "./~/offline-plugin/runtime.js",
       "index": 178,
       "index2": 176,
-      "size": 966,
+      "size": 1010,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -8809,7 +8809,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 2,
-      "source": "var appCacheIframe;\n\nfunction hasSW() {\n  return 'serviceWorker' in navigator &&\n    // This is how I block Chrome 40 and detect Chrome 41, because first has\n    // bugs with history.pustState and/or hashchange\n    (window.fetch || 'imageRendering' in document.documentElement.style) &&\n    (window.location.protocol === 'https:' || window.location.hostname === 'localhost')\n}\n\nfunction install(options) {\n  options || (options = {});\n\n  \n    if (hasSW()) {\n      var registration = navigator.serviceWorker\n        .register(\n          \"/sw.js\"\n          \n        );\n\n      \n\n      return;\n    }\n  \n\n  \n}\n\nfunction applyUpdate(callback, errback) {\n  \n\n  \n}\n\nfunction update() {\n  \n    if (hasSW()) {\n      navigator.serviceWorker.getRegistration().then(function(registration) {\n        if (!registration) return;\n        return registration.update();\n      });\n    }\n  \n\n  \n}\n\n\n\nexports.install = install;\nexports.applyUpdate = applyUpdate;\nexports.update = update;\n"
+      "source": "var appCacheIframe;\n\nfunction hasSW() {\n  return 'serviceWorker' in navigator &&\n    // This is how I block Chrome 40 and detect Chrome 41, because first has\n    // bugs with history.pustState and/or hashchange\n    (window.fetch || 'imageRendering' in document.documentElement.style) &&\n    (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')\n}\n\nfunction install(options) {\n  options || (options = {});\n\n  \n    if (hasSW()) {\n      var registration = navigator.serviceWorker\n        .register(\n          \"/sw.js\"\n          \n        );\n\n      \n\n      return;\n    }\n  \n\n  \n}\n\nfunction applyUpdate(callback, errback) {\n  \n\n  \n}\n\nfunction update() {\n  \n    if (hasSW()) {\n      navigator.serviceWorker.getRegistration().then(function(registration) {\n        if (!registration) return;\n        return registration.update();\n      });\n    }\n  \n\n  \n}\n\n\n\nexports.install = install;\nexports.applyUpdate = applyUpdate;\nexports.update = update;\n"
     },
     {
       "id": "thcD",
@@ -9817,7 +9817,7 @@
       "assets": [
         {
           "name": "__offline_serviceworker",
-          "size": 6930,
+          "size": 7400,
           "chunks": [
             0
           ],
@@ -9843,14 +9843,14 @@
           "initial": true,
           "entry": true,
           "extraAsync": false,
-          "size": 16226,
+          "size": 17490,
           "names": [
             "__offline_serviceworker"
           ],
           "files": [
             "__offline_serviceworker"
           ],
-          "hash": "52b0259863d4eff6bd71",
+          "hash": "83300565554b05c53605",
           "parents": [],
           "origins": [
             {
@@ -9895,7 +9895,7 @@
               "moduleName": "./~/offline-plugin/lib/misc/sw-loader.js?json=%7B%22data_var_name%22%3A%22__wpo%22%2C%22loaders%22%3A%5B%5D%2C%22cacheMaps%22%3A%5B%5D%7D!./~/offline-plugin/empty-entry.js",
               "type": "cjs require",
               "userRequest": "./empty-entry.js",
-              "loc": "615:23-50"
+              "loc": "652:23-50"
             }
           ],
           "usedExports": true,
@@ -9909,7 +9909,7 @@
           "name": "./~/offline-plugin/lib/misc/sw-loader.js?json=%7B%22data_var_name%22%3A%22__wpo%22%2C%22loaders%22%3A%5B%5D%2C%22cacheMaps%22%3A%5B%5D%7D!./~/offline-plugin/empty-entry.js",
           "index": 0,
           "index2": 1,
-          "size": 16226,
+          "size": 17490,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9928,7 +9928,7 @@
           "usedExports": true,
           "providedExports": null,
           "depth": 0,
-          "source": "\n      'use strict';\n\nif (typeof DEBUG === 'undefined') {\n  var DEBUG = false;\n}\n\nfunction WebpackServiceWorker(params, helpers) {\n  var loaders = helpers.loaders;\n  var cacheMaps = helpers.cacheMaps;\n\n  var strategy = params.strategy;\n  var responseStrategy = params.responseStrategy;\n\n  var assets = params.assets;\n  var loadersMap = params.loaders || {};\n\n  var hashesMap = params.hashesMap;\n  var externals = params.externals;\n\n  // Not used yet\n  // const alwaysRevalidate = params.alwaysRevalidate;\n  // const ignoreSearch = params.ignoreSearch;\n  // const preferOnline = params.preferOnline;\n\n  var CACHE_PREFIX = params.name;\n  var CACHE_TAG = params.version;\n  var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG;\n\n  var STORED_DATA_KEY = '__offline_webpack__data';\n\n  mapAssets();\n\n  var allAssets = [].concat(assets.main, assets.additional, assets.optional);\n  var navigateFallbackURL = params.navigateFallbackURL;\n\n  self.addEventListener('install', function (event) {\n    console.log('[SW]:', 'Install event');\n\n    var installing = undefined;\n\n    if (strategy === 'changed') {\n      installing = cacheChanged('main');\n    } else {\n      installing = cacheAssets('main');\n    }\n\n    event.waitUntil(installing);\n  });\n\n  self.addEventListener('activate', function (event) {\n    console.log('[SW]:', 'Activate event');\n\n    var activation = cacheAdditional();\n\n    // Delete all assets which name starts with CACHE_PREFIX and\n    // is not current cache (CACHE_NAME)\n    activation = activation.then(storeCacheData);\n    activation = activation.then(deleteObsolete);\n    activation = activation.then(function () {\n      if (self.clients && self.clients.claim) {\n        return self.clients.claim();\n      }\n    });\n\n    event.waitUntil(activation);\n  });\n\n  function cacheAdditional() {\n    if (!assets.additional.length) {\n      return Promise.resolve();\n    }\n\n    if (DEBUG) {\n      console.log('[SW]:', 'Caching additional');\n    }\n\n    var operation = undefined;\n\n    if (strategy === 'changed') {\n      operation = cacheChanged('additional');\n    } else {\n      operation = cacheAssets('additional');\n    }\n\n    // Ignore fail of `additional` cache section\n    return operation['catch'](function (e) {\n      console.error('[SW]:', 'Cache section `additional` failed to load');\n    });\n  }\n\n  function cacheAssets(section) {\n    var batch = assets[section];\n\n    return caches.open(CACHE_NAME).then(function (cache) {\n      return addAllNormalized(cache, batch, {\n        bust: params.version,\n        request: params.prefetchRequest\n      });\n    }).then(function () {\n      logGroup('Cached assets: ' + section, batch);\n    })['catch'](function (e) {\n      console.error(e);\n      throw e;\n    });\n  }\n\n  function cacheChanged(section) {\n    return getLastCache().then(function (args) {\n      if (!args) {\n        return cacheAssets(section);\n      }\n\n      var lastCache = args[0];\n      var lastKeys = args[1];\n      var lastData = args[2];\n\n      var lastMap = lastData.hashmap;\n      var lastVersion = lastData.version;\n\n      if (!lastData.hashmap || lastVersion === params.version) {\n        return cacheAssets(section);\n      }\n\n      var lastHashedAssets = Object.keys(lastMap).map(function (hash) {\n        return lastMap[hash];\n      });\n\n      var lastUrls = lastKeys.map(function (req) {\n        var url = new URL(req.url);\n        url.search = '';\n\n        return url.toString();\n      });\n\n      var sectionAssets = assets[section];\n      var moved = [];\n      var changed = sectionAssets.filter(function (url) {\n        if (lastUrls.indexOf(url) === -1 || lastHashedAssets.indexOf(url) === -1) {\n          return true;\n        }\n\n        return false;\n      });\n\n      Object.keys(hashesMap).forEach(function (hash) {\n        var asset = hashesMap[hash];\n\n        // Return if not in sectionAssets or in changed or moved array\n        if (sectionAssets.indexOf(asset) === -1 || changed.indexOf(asset) !== -1 || moved.indexOf(asset) !== -1) return;\n\n        var lastAsset = lastMap[hash];\n\n        if (lastAsset && lastUrls.indexOf(lastAsset) !== -1) {\n          moved.push([lastAsset, asset]);\n        } else {\n          changed.push(asset);\n        }\n      });\n\n      logGroup('Changed assets: ' + section, changed);\n      logGroup('Moved assets: ' + section, moved);\n\n      var movedResponses = Promise.all(moved.map(function (pair) {\n        return lastCache.match(pair[0]).then(function (response) {\n          return [pair[1], response];\n        });\n      }));\n\n      return caches.open(CACHE_NAME).then(function (cache) {\n        var move = movedResponses.then(function (responses) {\n          return Promise.all(responses.map(function (pair) {\n            return cache.put(pair[0], pair[1]);\n          }));\n        });\n\n        return Promise.all([move, addAllNormalized(cache, changed, {\n          bust: params.version,\n          request: params.prefetchRequest\n        })]);\n      });\n    });\n  }\n\n  function deleteObsolete() {\n    return caches.keys().then(function (keys) {\n      var all = keys.map(function (key) {\n        if (key.indexOf(CACHE_PREFIX) !== 0 || key.indexOf(CACHE_NAME) === 0) return;\n\n        console.log('[SW]:', 'Delete cache:', key);\n        return caches['delete'](key);\n      });\n\n      return Promise.all(all);\n    });\n  }\n\n  function getLastCache() {\n    return caches.keys().then(function (keys) {\n      var index = keys.length;\n      var key = undefined;\n\n      while (index--) {\n        key = keys[index];\n\n        if (key.indexOf(CACHE_PREFIX) === 0) {\n          break;\n        }\n      }\n\n      if (!key) return;\n\n      var cache = undefined;\n\n      return caches.open(key).then(function (_cache) {\n        cache = _cache;\n        return _cache.match(new URL(STORED_DATA_KEY, location).toString());\n      }).then(function (response) {\n        if (!response) return;\n\n        return Promise.all([cache, cache.keys(), response.json()]);\n      });\n    });\n  }\n\n  function storeCacheData() {\n    return caches.open(CACHE_NAME).then(function (cache) {\n      var data = new Response(JSON.stringify({\n        version: params.version,\n        hashmap: hashesMap\n      }));\n\n      return cache.put(new URL(STORED_DATA_KEY, location).toString(), data);\n    });\n  }\n\n  self.addEventListener('fetch', function (event) {\n    var requestUrl = event.request.url;\n    var url = new URL(requestUrl);\n    var urlString = undefined;\n\n    if (externals.indexOf(requestUrl) !== -1) {\n      urlString = requestUrl;\n    } else {\n      url.search = '';\n      urlString = url.toString();\n    }\n\n    // Handle only GET requests\n    var isGET = event.request.method === 'GET';\n    var assetMatches = allAssets.indexOf(urlString) !== -1;\n    var cacheUrl = urlString;\n\n    if (!assetMatches) {\n      var cacheRewrite = matchCacheMap(event.request);\n\n      if (cacheRewrite) {\n        cacheUrl = cacheRewrite;\n        assetMatches = true;\n      }\n    }\n\n    if (!assetMatches && isGET) {\n      // If isn't a cached asset and is a navigation request,\n      // fallback to navigateFallbackURL if available\n      if (navigateFallbackURL && isNavigateRequest(event.request)) {\n        event.respondWith(handleNavigateFallback(fetch(event.request)));\n\n        return;\n      }\n    }\n\n    if (!assetMatches || !isGET) {\n      // Fix for https://twitter.com/wanderview/status/696819243262873600\n      if (url.origin !== location.origin && navigator.userAgent.indexOf('Firefox/44.') !== -1) {\n        event.respondWith(fetch(event.request));\n      }\n\n      return;\n    }\n\n    // Logic of caching / fetching is here\n    // * urlString -- url to match from the CACHE_NAME\n    // * event.request -- original Request to perform fetch() if necessary\n    var resource = undefined;\n\n    if (responseStrategy === \"network-first\") {\n      resource = networkFirstResponse(event, urlString, cacheUrl);\n    }\n    // \"cache-first\"\n    // (responseStrategy has been validated before)\n    else {\n        resource = cacheFirstResponse(event, urlString, cacheUrl);\n      }\n\n    if (navigateFallbackURL && isNavigateRequest(event.request)) {\n      resource = handleNavigateFallback(resource);\n    }\n\n    event.respondWith(resource);\n  });\n\n  self.addEventListener('message', function (e) {\n    var data = e.data;\n    if (!data) return;\n\n    switch (data.action) {\n      case 'skipWaiting':\n        {\n          if (self.skipWaiting) self.skipWaiting();\n        }break;\n    }\n  });\n\n  function cacheFirstResponse(event, urlString, cacheUrl) {\n    return cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {\n      if (response) {\n        if (DEBUG) {\n          console.log('[SW]:', 'URL [' + cacheUrl + '](' + urlString + ') from cache');\n        }\n\n        return response;\n      }\n\n      // Load and cache known assets\n      var fetching = fetch(event.request).then(function (response) {\n        if (!response.ok) {\n          if (DEBUG) {\n            console.log('[SW]:', 'URL [' + urlString + '] wrong response: [' + response.status + '] ' + response.type);\n          }\n\n          return response;\n        }\n\n        if (DEBUG) {\n          console.log('[SW]:', 'URL [' + urlString + '] from network');\n        }\n\n        if (cacheUrl === urlString) {\n          (function () {\n            var responseClone = response.clone();\n\n            caches.open(CACHE_NAME).then(function (cache) {\n              return cache.put(urlString, responseClone);\n            }).then(function () {\n              console.log('[SW]:', 'Cache asset: ' + urlString);\n            });\n          })();\n        }\n\n        return response;\n      });\n\n      return fetching;\n    });\n  }\n\n  function networkFirstResponse(event, urlString, cacheUrl) {\n    return fetch(event.request).then(function (response) {\n      if (response.ok) {\n        if (DEBUG) {\n          console.log('[SW]:', 'URL [' + urlString + '] from network');\n        }\n\n        return response;\n      }\n\n      // throw to reach the code in the catch below\n      throw new Error(\"response is not ok\");\n    })\n    // this needs to be in a catch() and not just in the then() above\n    // cause if your network is down, the fetch() will throw\n    ['catch'](function () {\n      if (DEBUG) {\n        console.log('[SW]:', 'URL [' + urlString + '] from cache if possible');\n      }\n\n      return cachesMatch(cacheUrl, CACHE_NAME);\n    });\n  }\n\n  function handleNavigateFallback(fetching) {\n    return fetching['catch'](function () {}).then(function (response) {\n      if (!response || !response.ok) {\n        if (DEBUG) {\n          console.log('[SW]:', 'Loading navigation fallback [' + navigateFallbackURL + '] from cache');\n        }\n\n        return cachesMatch(navigateFallbackURL, CACHE_NAME);\n      }\n\n      return response;\n    });\n  }\n\n  function mapAssets() {\n    Object.keys(assets).forEach(function (key) {\n      assets[key] = assets[key].map(function (path) {\n        var url = new URL(path, location);\n\n        if (externals.indexOf(path) === -1) {\n          url.search = '';\n        } else {\n          // Remove hash from possible passed externals\n          url.hash = '';\n        }\n\n        return url.toString();\n      });\n    });\n\n    Object.keys(loadersMap).forEach(function (key) {\n      loadersMap[key] = loadersMap[key].map(function (path) {\n        var url = new URL(path, location);\n\n        if (externals.indexOf(path) === -1) {\n          url.search = '';\n        } else {\n          // Remove hash from possible passed externals\n          url.hash = '';\n        }\n\n        return url.toString();\n      });\n    });\n\n    hashesMap = Object.keys(hashesMap).reduce(function (result, hash) {\n      var url = new URL(hashesMap[hash], location);\n      url.search = '';\n\n      result[hash] = url.toString();\n      return result;\n    }, {});\n\n    externals = externals.map(function (path) {\n      var url = new URL(path, location);\n      url.hash = '';\n\n      return url.toString();\n    });\n  }\n\n  function addAllNormalized(cache, requests, options) {\n    var allowLoaders = options.allowLoaders !== false;\n    var bustValue = options && options.bust;\n    var requestInit = options.request || {\n      credentials: 'omit',\n      mode: 'cors'\n    };\n\n    return Promise.all(requests.map(function (request) {\n      if (bustValue) {\n        request = applyCacheBust(request, bustValue);\n      }\n\n      return fetch(request, requestInit);\n    })).then(function (responses) {\n      if (responses.some(function (response) {\n        return !response.ok;\n      })) {\n        return Promise.reject(new Error('Wrong response status'));\n      }\n\n      var extracted = [];\n      var addAll = responses.map(function (response, i) {\n        if (allowLoaders) {\n          extracted.push(extractAssetsWithLoaders(requests[i], response));\n        }\n\n        return cache.put(requests[i], response);\n      });\n\n      if (extracted.length) {\n        (function () {\n          var newOptions = copyObject(options);\n          newOptions.allowLoaders = false;\n\n          var waitAll = addAll;\n\n          addAll = Promise.all(extracted).then(function (all) {\n            var extractedRequests = [].concat.apply([], all);\n\n            if (requests.length) {\n              waitAll = waitAll.concat(addAllNormalized(cache, extractedRequests, newOptions));\n            }\n\n            return Promise.all(waitAll);\n          });\n        })();\n      } else {\n        addAll = Promise.all(addAll);\n      }\n\n      return addAll;\n    });\n  }\n\n  function extractAssetsWithLoaders(request, response) {\n    var all = Object.keys(loadersMap).map(function (key) {\n      var loader = loadersMap[key];\n\n      if (loader.indexOf(request) !== -1 && loaders[key]) {\n        return loaders[key](response.clone());\n      }\n    }).filter(function (a) {\n      return !!a;\n    });\n\n    return Promise.all(all).then(function (all) {\n      return [].concat.apply([], all);\n    });\n  }\n\n  function matchCacheMap(request) {\n    var urlString = request.url;\n    var url = new URL(urlString);\n\n    var requestType = undefined;\n\n    if (request.mode === 'navigate') {\n      requestType = 'navigate';\n    } else if (url.origin === location.origin) {\n      requestType = 'same-origin';\n    } else {\n      requestType = 'cross-origin';\n    }\n\n    for (var i = 0; i < cacheMaps.length; i++) {\n      var map = cacheMaps[i];\n\n      if (!map) continue;\n      if (map.requestTypes && map.requestTypes.indexOf(requestType) === -1) {\n        continue;\n      }\n\n      var newString = undefined;\n\n      if (typeof map.match === 'function') {\n        newString = map.match(url, request);\n      } else {\n        newString = urlString.replace(map.match, map.to);\n      }\n\n      if (newString && newString !== urlString) {\n        return newString;\n      }\n    }\n  }\n}\n\nfunction cachesMatch(request, cacheName) {\n  return caches.match(request, {\n    cacheName: cacheName\n  })\n  // Return void if error happened (cache not found)\n  ['catch'](function () {});\n}\n\nfunction applyCacheBust(asset, key) {\n  var hasQuery = asset.indexOf('?') !== -1;\n  return asset + (hasQuery ? '&' : '?') + '__uncache=' + encodeURIComponent(key);\n}\n\nfunction getClientsURLs() {\n  if (!self.clients) {\n    return Promise.resolve([]);\n  }\n\n  return self.clients.matchAll({\n    includeUncontrolled: true\n  }).then(function (clients) {\n    if (!clients.length) return [];\n\n    var result = [];\n\n    clients.forEach(function (client) {\n      var url = new URL(client.url);\n      url.search = '';\n      url.hash = '';\n      var urlString = url.toString();\n\n      if (!result.length || result.indexOf(urlString) === -1) {\n        result.push(urlString);\n      }\n    });\n\n    return result;\n  });\n}\n\nfunction isNavigateRequest(request) {\n  return request.mode === 'navigate' || request.headers.get('Upgrade-Insecure-Requests') || (request.headers.get('Accept') || '').indexOf('text/html') !== -1;\n}\n\nfunction copyObject(original) {\n  return Object.keys(original).reduce(function (result, key) {\n    result[key] = original[key];\n    return result;\n  }, {});\n}\n\nfunction logGroup(title, assets) {\n  console.groupCollapsed('[SW]:', title);\n\n  assets.forEach(function (asset) {\n    console.log('Asset:', asset);\n  });\n\n  console.groupEnd();\n}\n      WebpackServiceWorker(__wpo, {\nloaders: {},\ncacheMaps: [],\n});\n      module.exports = require(\"./empty-entry.js\")\n    "
+          "source": "\n      'use strict';\n\nif (typeof DEBUG === 'undefined') {\n  var DEBUG = false;\n}\n\nfunction WebpackServiceWorker(params, helpers) {\n  var loaders = helpers.loaders;\n  var cacheMaps = helpers.cacheMaps;\n\n  var strategy = params.strategy;\n  var responseStrategy = params.responseStrategy;\n\n  var assets = params.assets;\n  var loadersMap = params.loaders || {};\n\n  var hashesMap = params.hashesMap;\n  var externals = params.externals;\n\n  // Not used yet\n  // const alwaysRevalidate = params.alwaysRevalidate;\n  // const ignoreSearch = params.ignoreSearch;\n  // const preferOnline = params.preferOnline;\n\n  var CACHE_PREFIX = params.name;\n  var CACHE_TAG = params.version;\n  var CACHE_NAME = CACHE_PREFIX + ':' + CACHE_TAG;\n\n  var STORED_DATA_KEY = '__offline_webpack__data';\n\n  mapAssets();\n\n  var allAssets = [].concat(assets.main, assets.additional, assets.optional);\n  var navigateFallbackURL = params.navigateFallbackURL;\n  var navigateFallbackForRedirects = params.navigateFallbackForRedirects;\n\n  self.addEventListener('install', function (event) {\n    console.log('[SW]:', 'Install event');\n\n    var installing = undefined;\n\n    if (strategy === 'changed') {\n      installing = cacheChanged('main');\n    } else {\n      installing = cacheAssets('main');\n    }\n\n    event.waitUntil(installing);\n  });\n\n  self.addEventListener('activate', function (event) {\n    console.log('[SW]:', 'Activate event');\n\n    var activation = cacheAdditional();\n\n    // Delete all assets which name starts with CACHE_PREFIX and\n    // is not current cache (CACHE_NAME)\n    activation = activation.then(storeCacheData);\n    activation = activation.then(deleteObsolete);\n    activation = activation.then(function () {\n      if (self.clients && self.clients.claim) {\n        return self.clients.claim();\n      }\n    });\n\n    event.waitUntil(activation);\n  });\n\n  function cacheAdditional() {\n    if (!assets.additional.length) {\n      return Promise.resolve();\n    }\n\n    if (DEBUG) {\n      console.log('[SW]:', 'Caching additional');\n    }\n\n    var operation = undefined;\n\n    if (strategy === 'changed') {\n      operation = cacheChanged('additional');\n    } else {\n      operation = cacheAssets('additional');\n    }\n\n    // Ignore fail of `additional` cache section\n    return operation['catch'](function (e) {\n      console.error('[SW]:', 'Cache section `additional` failed to load');\n    });\n  }\n\n  function cacheAssets(section) {\n    var batch = assets[section];\n\n    return caches.open(CACHE_NAME).then(function (cache) {\n      return addAllNormalized(cache, batch, {\n        bust: params.version,\n        request: params.prefetchRequest\n      });\n    }).then(function () {\n      logGroup('Cached assets: ' + section, batch);\n    })['catch'](function (e) {\n      console.error(e);\n      throw e;\n    });\n  }\n\n  function cacheChanged(section) {\n    return getLastCache().then(function (args) {\n      if (!args) {\n        return cacheAssets(section);\n      }\n\n      var lastCache = args[0];\n      var lastKeys = args[1];\n      var lastData = args[2];\n\n      var lastMap = lastData.hashmap;\n      var lastVersion = lastData.version;\n\n      if (!lastData.hashmap || lastVersion === params.version) {\n        return cacheAssets(section);\n      }\n\n      var lastHashedAssets = Object.keys(lastMap).map(function (hash) {\n        return lastMap[hash];\n      });\n\n      var lastUrls = lastKeys.map(function (req) {\n        var url = new URL(req.url);\n        url.search = '';\n\n        return url.toString();\n      });\n\n      var sectionAssets = assets[section];\n      var moved = [];\n      var changed = sectionAssets.filter(function (url) {\n        if (lastUrls.indexOf(url) === -1 || lastHashedAssets.indexOf(url) === -1) {\n          return true;\n        }\n\n        return false;\n      });\n\n      Object.keys(hashesMap).forEach(function (hash) {\n        var asset = hashesMap[hash];\n\n        // Return if not in sectionAssets or in changed or moved array\n        if (sectionAssets.indexOf(asset) === -1 || changed.indexOf(asset) !== -1 || moved.indexOf(asset) !== -1) return;\n\n        var lastAsset = lastMap[hash];\n\n        if (lastAsset && lastUrls.indexOf(lastAsset) !== -1) {\n          moved.push([lastAsset, asset]);\n        } else {\n          changed.push(asset);\n        }\n      });\n\n      logGroup('Changed assets: ' + section, changed);\n      logGroup('Moved assets: ' + section, moved);\n\n      var movedResponses = Promise.all(moved.map(function (pair) {\n        return lastCache.match(pair[0]).then(function (response) {\n          return [pair[1], response];\n        });\n      }));\n\n      return caches.open(CACHE_NAME).then(function (cache) {\n        var move = movedResponses.then(function (responses) {\n          return Promise.all(responses.map(function (pair) {\n            return cache.put(pair[0], pair[1]);\n          }));\n        });\n\n        return Promise.all([move, addAllNormalized(cache, changed, {\n          bust: params.version,\n          request: params.prefetchRequest\n        })]);\n      });\n    });\n  }\n\n  function deleteObsolete() {\n    return caches.keys().then(function (keys) {\n      var all = keys.map(function (key) {\n        if (key.indexOf(CACHE_PREFIX) !== 0 || key.indexOf(CACHE_NAME) === 0) return;\n\n        console.log('[SW]:', 'Delete cache:', key);\n        return caches['delete'](key);\n      });\n\n      return Promise.all(all);\n    });\n  }\n\n  function getLastCache() {\n    return caches.keys().then(function (keys) {\n      var index = keys.length;\n      var key = undefined;\n\n      while (index--) {\n        key = keys[index];\n\n        if (key.indexOf(CACHE_PREFIX) === 0) {\n          break;\n        }\n      }\n\n      if (!key) return;\n\n      var cache = undefined;\n\n      return caches.open(key).then(function (_cache) {\n        cache = _cache;\n        return _cache.match(new URL(STORED_DATA_KEY, location).toString());\n      }).then(function (response) {\n        if (!response) return;\n\n        return Promise.all([cache, cache.keys(), response.json()]);\n      });\n    });\n  }\n\n  function storeCacheData() {\n    return caches.open(CACHE_NAME).then(function (cache) {\n      var data = new Response(JSON.stringify({\n        version: params.version,\n        hashmap: hashesMap\n      }));\n\n      return cache.put(new URL(STORED_DATA_KEY, location).toString(), data);\n    });\n  }\n\n  self.addEventListener('fetch', function (event) {\n    var requestUrl = event.request.url;\n    var url = new URL(requestUrl);\n    var urlString = undefined;\n\n    if (externals.indexOf(requestUrl) !== -1) {\n      urlString = requestUrl;\n    } else {\n      url.search = '';\n      urlString = url.toString();\n    }\n\n    // Handle only GET requests\n    var isGET = event.request.method === 'GET';\n    var assetMatches = allAssets.indexOf(urlString) !== -1;\n    var cacheUrl = urlString;\n\n    if (!assetMatches) {\n      var cacheRewrite = matchCacheMap(event.request);\n\n      if (cacheRewrite) {\n        cacheUrl = cacheRewrite;\n        assetMatches = true;\n      }\n    }\n\n    if (!assetMatches && isGET) {\n      // If isn't a cached asset and is a navigation request,\n      // fallback to navigateFallbackURL if available\n      if (navigateFallbackURL && isNavigateRequest(event.request)) {\n        event.respondWith(handleNavigateFallback(fetch(event.request)));\n\n        return;\n      }\n    }\n\n    if (!assetMatches || !isGET) {\n      // Fix for https://twitter.com/wanderview/status/696819243262873600\n      if (url.origin !== location.origin && navigator.userAgent.indexOf('Firefox/44.') !== -1) {\n        event.respondWith(fetch(event.request));\n      }\n\n      return;\n    }\n\n    // Logic of caching / fetching is here\n    // * urlString -- url to match from the CACHE_NAME\n    // * event.request -- original Request to perform fetch() if necessary\n    var resource = undefined;\n\n    if (responseStrategy === 'network-first') {\n      resource = networkFirstResponse(event, urlString, cacheUrl);\n    }\n    // 'cache-first'\n    // (responseStrategy has been validated before)\n    else {\n        resource = cacheFirstResponse(event, urlString, cacheUrl);\n      }\n\n    if (navigateFallbackURL && isNavigateRequest(event.request)) {\n      resource = handleNavigateFallback(resource);\n    }\n\n    event.respondWith(resource);\n  });\n\n  self.addEventListener('message', function (e) {\n    var data = e.data;\n    if (!data) return;\n\n    switch (data.action) {\n      case 'skipWaiting':\n        {\n          if (self.skipWaiting) self.skipWaiting();\n        }break;\n    }\n  });\n\n  function cacheFirstResponse(event, urlString, cacheUrl) {\n    return cachesMatch(cacheUrl, CACHE_NAME).then(function (response) {\n      if (response) {\n        if (DEBUG) {\n          console.log('[SW]:', 'URL [' + cacheUrl + '](' + urlString + ') from cache');\n        }\n\n        return response;\n      }\n\n      // Load and cache known assets\n      var fetching = fetch(event.request).then(function (response) {\n        if (!response.ok) {\n          if (DEBUG) {\n            console.log('[SW]:', 'URL [' + urlString + '] wrong response: [' + response.status + '] ' + response.type);\n          }\n\n          return response;\n        }\n\n        if (DEBUG) {\n          console.log('[SW]:', 'URL [' + urlString + '] from network');\n        }\n\n        if (cacheUrl === urlString) {\n          (function () {\n            var responseClone = response.clone();\n\n            caches.open(CACHE_NAME).then(function (cache) {\n              return cache.put(urlString, responseClone);\n            }).then(function () {\n              console.log('[SW]:', 'Cache asset: ' + urlString);\n            });\n          })();\n        }\n\n        return response;\n      });\n\n      return fetching;\n    });\n  }\n\n  function networkFirstResponse(event, urlString, cacheUrl) {\n    return fetch(event.request).then(function (response) {\n      if (response.ok) {\n        if (DEBUG) {\n          console.log('[SW]:', 'URL [' + urlString + '] from network');\n        }\n\n        return response;\n      }\n\n      // Throw to reach the code in the catch below\n      throw new Error('Response is not ok');\n    })\n    // This needs to be in a catch() and not just in the then() above\n    // cause if your network is down, the fetch() will throw\n    ['catch'](function () {\n      if (DEBUG) {\n        console.log('[SW]:', 'URL [' + urlString + '] from cache if possible');\n      }\n\n      return cachesMatch(cacheUrl, CACHE_NAME);\n    });\n  }\n\n  function handleNavigateFallback(fetching) {\n    return fetching['catch'](function () {}).then(function (response) {\n      var isOk = response && response.ok;\n      var isRedirect = response && response.type === 'opaqueredirect';\n\n      if (isOk || isRedirect && !navigateFallbackForRedirects) {\n        return response;\n      }\n\n      if (DEBUG) {\n        console.log('[SW]:', 'Loading navigation fallback [' + navigateFallbackURL + '] from cache');\n      }\n\n      return cachesMatch(navigateFallbackURL, CACHE_NAME);\n    });\n  }\n\n  function mapAssets() {\n    Object.keys(assets).forEach(function (key) {\n      assets[key] = assets[key].map(function (path) {\n        var url = new URL(path, location);\n\n        if (externals.indexOf(path) === -1) {\n          url.search = '';\n        } else {\n          // Remove hash from possible passed externals\n          url.hash = '';\n        }\n\n        return url.toString();\n      });\n    });\n\n    Object.keys(loadersMap).forEach(function (key) {\n      loadersMap[key] = loadersMap[key].map(function (path) {\n        var url = new URL(path, location);\n\n        if (externals.indexOf(path) === -1) {\n          url.search = '';\n        } else {\n          // Remove hash from possible passed externals\n          url.hash = '';\n        }\n\n        return url.toString();\n      });\n    });\n\n    hashesMap = Object.keys(hashesMap).reduce(function (result, hash) {\n      var url = new URL(hashesMap[hash], location);\n      url.search = '';\n\n      result[hash] = url.toString();\n      return result;\n    }, {});\n\n    externals = externals.map(function (path) {\n      var url = new URL(path, location);\n      url.hash = '';\n\n      return url.toString();\n    });\n  }\n\n  function addAllNormalized(cache, requests, options) {\n    var allowLoaders = options.allowLoaders !== false;\n    var bustValue = options && options.bust;\n    var requestInit = options.request || {\n      credentials: 'omit',\n      mode: 'cors'\n    };\n\n    return Promise.all(requests.map(function (request) {\n      if (bustValue) {\n        request = applyCacheBust(request, bustValue);\n      }\n\n      return fetch(request, requestInit).then(fixRedirectedResponse);\n    })).then(function (responses) {\n      if (responses.some(function (response) {\n        return !response.ok;\n      })) {\n        return Promise.reject(new Error('Wrong response status'));\n      }\n\n      var extracted = [];\n      var addAll = responses.map(function (response, i) {\n        if (allowLoaders) {\n          extracted.push(extractAssetsWithLoaders(requests[i], response));\n        }\n\n        return cache.put(requests[i], response);\n      });\n\n      if (extracted.length) {\n        (function () {\n          var newOptions = copyObject(options);\n          newOptions.allowLoaders = false;\n\n          var waitAll = addAll;\n\n          addAll = Promise.all(extracted).then(function (all) {\n            var extractedRequests = [].concat.apply([], all);\n\n            if (requests.length) {\n              waitAll = waitAll.concat(addAllNormalized(cache, extractedRequests, newOptions));\n            }\n\n            return Promise.all(waitAll);\n          });\n        })();\n      } else {\n        addAll = Promise.all(addAll);\n      }\n\n      return addAll;\n    });\n  }\n\n  function extractAssetsWithLoaders(request, response) {\n    var all = Object.keys(loadersMap).map(function (key) {\n      var loader = loadersMap[key];\n\n      if (loader.indexOf(request) !== -1 && loaders[key]) {\n        return loaders[key](response.clone());\n      }\n    }).filter(function (a) {\n      return !!a;\n    });\n\n    return Promise.all(all).then(function (all) {\n      return [].concat.apply([], all);\n    });\n  }\n\n  function matchCacheMap(request) {\n    var urlString = request.url;\n    var url = new URL(urlString);\n\n    var requestType = undefined;\n\n    if (request.mode === 'navigate') {\n      requestType = 'navigate';\n    } else if (url.origin === location.origin) {\n      requestType = 'same-origin';\n    } else {\n      requestType = 'cross-origin';\n    }\n\n    for (var i = 0; i < cacheMaps.length; i++) {\n      var map = cacheMaps[i];\n\n      if (!map) continue;\n      if (map.requestTypes && map.requestTypes.indexOf(requestType) === -1) {\n        continue;\n      }\n\n      var newString = undefined;\n\n      if (typeof map.match === 'function') {\n        newString = map.match(url, request);\n      } else {\n        newString = urlString.replace(map.match, map.to);\n      }\n\n      if (newString && newString !== urlString) {\n        return newString;\n      }\n    }\n  }\n}\n\nfunction cachesMatch(request, cacheName) {\n  return caches.match(request, {\n    cacheName: cacheName\n  }).then(function (response) {\n    if (isNotRedirectedResponse()) {\n      return response;\n    }\n\n    // Fix already cached redirected responses\n    return fixRedirectedResponse(response).then(function (fixedResponse) {\n      return caches.open(cacheName).then(function (cache) {\n        return cache.put(request, fixedResponse);\n      }).then(function () {\n        return fixedResponse;\n      });\n    });\n  })\n  // Return void if error happened (cache not found)\n  ['catch'](function () {});\n}\n\nfunction applyCacheBust(asset, key) {\n  var hasQuery = asset.indexOf('?') !== -1;\n  return asset + (hasQuery ? '&' : '?') + '__uncache=' + encodeURIComponent(key);\n}\n\nfunction getClientsURLs() {\n  if (!self.clients) {\n    return Promise.resolve([]);\n  }\n\n  return self.clients.matchAll({\n    includeUncontrolled: true\n  }).then(function (clients) {\n    if (!clients.length) return [];\n\n    var result = [];\n\n    clients.forEach(function (client) {\n      var url = new URL(client.url);\n      url.search = '';\n      url.hash = '';\n      var urlString = url.toString();\n\n      if (!result.length || result.indexOf(urlString) === -1) {\n        result.push(urlString);\n      }\n    });\n\n    return result;\n  });\n}\n\nfunction isNavigateRequest(request) {\n  return request.mode === 'navigate' || request.headers.get('Upgrade-Insecure-Requests') || (request.headers.get('Accept') || '').indexOf('text/html') !== -1;\n}\n\nfunction isNotRedirectedResponse(response) {\n  return !response || !response.redirected || !response.ok || response.type === 'opaqueredirect';\n}\n\n// Based on https://github.com/GoogleChrome/sw-precache/pull/241/files#diff-3ee9060dc7a312c6a822cac63a8c630bR85\nfunction fixRedirectedResponse(response) {\n  if (isNotRedirectedResponse(response)) {\n    return Promise.resolve(response);\n  }\n\n  var body = 'body' in response ? Promise.resolve(response.body) : response.blob();\n\n  return body.then(function (data) {\n    return new Response(data, {\n      headers: response.headers,\n      status: response.status\n    });\n  });\n}\n\nfunction copyObject(original) {\n  return Object.keys(original).reduce(function (result, key) {\n    result[key] = original[key];\n    return result;\n  }, {});\n}\n\nfunction logGroup(title, assets) {\n  console.groupCollapsed('[SW]:', title);\n\n  assets.forEach(function (asset) {\n    console.log('Asset:', asset);\n  });\n\n  console.groupEnd();\n}\n      WebpackServiceWorker(__wpo, {\nloaders: {},\ncacheMaps: [],\n});\n      module.exports = require(\"./empty-entry.js\")\n    "
         }
       ],
       "filteredModules": 0,
