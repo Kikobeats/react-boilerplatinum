@@ -68,12 +68,12 @@
     "webpack-dev-server": "latest"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6"
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --progress --debug --config webpack.config.js",
     "lint": "standard",
-    "start": "webpack-dashboard -- node bin/server",
+    "dev": "webpack-dashboard -- node bin/server",
     "test": "echo 'not yet implemented, wanna help?'"
   },
   "license": "MIT"
