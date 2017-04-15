@@ -1,3 +1,10 @@
+<a name="1.2.2"></a>
+## 1.2.2 (2017-04-15)
+
+* Fix typo ([3657c39](https://github.com/Kikobeats/react-boilerplatinum/commit/3657c39))
+
+
+
 <a name="1.2.1"></a>
 ## 1.2.1 (2017-04-15)
 
