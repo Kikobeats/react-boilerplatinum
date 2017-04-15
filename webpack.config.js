@@ -59,7 +59,7 @@ module.exports = {
         }, {
           loader: 'sass-loader',
           options: {
-            sourcemap: true
+            sourceMap: true
           }
         }]
       })
