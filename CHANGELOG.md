@@ -1,3 +1,12 @@
+<a name="1.2.1"></a>
+## 1.2.1 (2017-04-15)
+
+* Enable postcss sourcemap ([3ebf1f2](https://github.com/Kikobeats/react-boilerplatinum/commit/3ebf1f2))
+* Remove unnecessary files ([3dadd19](https://github.com/Kikobeats/react-boilerplatinum/commit/3dadd19))
+* Upgrade node version ([8185798](https://github.com/Kikobeats/react-boilerplatinum/commit/8185798))
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2017-04-14)
 

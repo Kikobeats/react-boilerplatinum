@@ -2,7 +2,7 @@
   "name": "react-boilerplatinum",
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "homepage": "https://github.com/Kikobeats/react-boilerplatinum",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -72,8 +72,8 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --progress --debug --config webpack.config.js",
-    "lint": "standard",
     "dev": "webpack-dashboard -- node bin/server",
+    "lint": "standard",
     "test": "echo 'not yet implemented, wanna help?'"
   },
   "license": "MIT"
