@@ -56,7 +56,7 @@
     "style-loader": "~0.17.0",
     "tachyons-sass": "~4.7.1",
     "travis-after-all": "~1.4.4",
-    "webpack": "~2.4.1",
+    "webpack": "~2.5.0",
     "webpack-bundle-analyzer": "~2.4.0"
   },
   "devDependencies": {
