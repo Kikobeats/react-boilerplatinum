@@ -1,9 +1,11 @@
 {
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "OfflinePlugin: Cache asset [index.html] is not found in the output assets,if it's an external asset, put it to the |externals| option to remove this warning"
+  ],
   "version": "2.5.1",
-  "hash": "9a0cde367e3a8ebb45b2",
-  "time": 21346,
+  "hash": "77bfa8512fa66820b3b6",
+  "time": 13211,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -20,7 +22,7 @@
   "assets": [
     {
       "name": "assets/js/bundle.js",
-      "size": 151182,
+      "size": 151913,
       "chunks": [
         0
       ],
@@ -42,7 +44,7 @@
     },
     {
       "name": "assets/css/bundle.css",
-      "size": 24199,
+      "size": 32265,
       "chunks": [
         0
       ],
@@ -53,7 +55,7 @@
     },
     {
       "name": "assets/js/bundle.js.map",
-      "size": 1651917,
+      "size": 1656185,
       "chunks": [
         0
       ],
@@ -86,14 +88,28 @@
     },
     {
       "name": "sw.js",
-      "size": 7937,
+      "size": 8222,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "appcache/manifest.appcache",
+      "size": 117,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "appcache/manifest.html",
+      "size": 58,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "index.html",
-      "size": 2104,
+      "size": 2389,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -122,7 +138,7 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 686056,
+      "size": 687736,
       "names": [
         "main"
       ],
@@ -132,7 +148,7 @@
         "assets/js/bundle.js.map",
         "assets/css/bundle.css.map"
       ],
-      "hash": "396926daa883db49d1a4",
+      "hash": "039debd4463e762d85e0",
       "parents": [
         1
       ],
@@ -791,13 +807,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ChangeEventPlugin.js",
-      "issuerId": "Fd0m",
-      "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactBrowserEventEmitter.js",
+      "issuerId": "AU5s",
+      "issuerName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "AU5s",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactBrowserEventEmitter.js",
+          "module": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
+          "moduleName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
+          "type": "cjs require",
+          "userRequest": "./isEventSupported",
+          "loc": "20:23-52"
+        },
         {
           "moduleId": "Fd0m",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ChangeEventPlugin.js",
@@ -815,15 +840,6 @@
           "type": "cjs require",
           "userRequest": "./isEventSupported",
           "loc": "40:23-52"
-        },
-        {
-          "moduleId": "AU5s",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactBrowserEventEmitter.js",
-          "module": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
-          "moduleName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
-          "type": "cjs require",
-          "userRequest": "./isEventSupported",
-          "loc": "20:23-52"
         }
       ],
       "usedExports": true,
@@ -846,22 +862,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactInjection.js",
-      "issuerId": "HKgI",
-      "issuerName": "./~/react-dom/lib/ReactInjection.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
+      "issuerId": "5nY2",
+      "issuerName": "./~/react-dom/lib/instantiateReactComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "HKgI",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactInjection.js",
-          "module": "./~/react-dom/lib/ReactInjection.js",
-          "moduleName": "./~/react-dom/lib/ReactInjection.js",
-          "type": "cjs require",
-          "userRequest": "./ReactHostComponent",
-          "loc": "19:25-56"
-        },
         {
           "moduleId": "5nY2",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
@@ -870,6 +877,15 @@
           "type": "cjs require",
           "userRequest": "./ReactHostComponent",
           "loc": "18:25-56"
+        },
+        {
+          "moduleId": "HKgI",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactInjection.js",
+          "module": "./~/react-dom/lib/ReactInjection.js",
+          "moduleName": "./~/react-dom/lib/ReactInjection.js",
+          "type": "cjs require",
+          "userRequest": "./ReactHostComponent",
+          "loc": "19:25-56"
         }
       ],
       "usedExports": true,
@@ -1619,15 +1635,6 @@
           "loc": "13:14-38"
         },
         {
-          "moduleId": "vg0m",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
-          "module": "./~/react-dom/lib/ReactUpdates.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "14:14-38"
-        },
-        {
           "moduleId": "3imu",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactPureComponent.js",
           "module": "./~/react/lib/ReactPureComponent.js",
@@ -1655,58 +1662,13 @@
           "loc": "13:14-38"
         },
         {
-          "moduleId": "wFuS",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMEmptyComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "13:14-38"
-        },
-        {
-          "moduleId": "kio1",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "16:14-38"
-        },
-        {
-          "moduleId": "LR//",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMTextComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTextComponent.js",
+          "moduleId": "vg0m",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
+          "module": "./~/react-dom/lib/ReactUpdates.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "14:14-38"
-        },
-        {
-          "moduleId": "5KoS",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactEventListener.js",
-          "module": "./~/react-dom/lib/ReactEventListener.js",
-          "moduleName": "./~/react-dom/lib/ReactEventListener.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "13:14-38"
-        },
-        {
-          "moduleId": "vdcO",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js",
-          "module": "./~/react-dom/lib/ReactDefaultBatchingStrategy.js",
-          "moduleName": "./~/react-dom/lib/ReactDefaultBatchingStrategy.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "13:14-38"
-        },
-        {
-          "moduleId": "LTYS",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactReconcileTransaction.js",
-          "module": "./~/react-dom/lib/ReactReconcileTransaction.js",
-          "moduleName": "./~/react-dom/lib/ReactReconcileTransaction.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "13:14-38"
         },
         {
           "moduleId": "AU5s",
@@ -1727,19 +1689,91 @@
           "loc": "14:14-38"
         },
         {
-          "moduleId": "Jk1L",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/FallbackCompositionState.js",
-          "module": "./~/react-dom/lib/FallbackCompositionState.js",
-          "moduleName": "./~/react-dom/lib/FallbackCompositionState.js",
+          "moduleId": "kio1",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "16:14-38"
+        },
+        {
+          "moduleId": "wFuS",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMEmptyComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "13:14-38"
+        },
+        {
+          "moduleId": "LR//",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMTextComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTextComponent.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "14:14-38"
+        },
+        {
+          "moduleId": "vdcO",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js",
+          "module": "./~/react-dom/lib/ReactDefaultBatchingStrategy.js",
+          "moduleName": "./~/react-dom/lib/ReactDefaultBatchingStrategy.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "13:14-38"
+        },
+        {
+          "moduleId": "5KoS",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactEventListener.js",
+          "module": "./~/react-dom/lib/ReactEventListener.js",
+          "moduleName": "./~/react-dom/lib/ReactEventListener.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "13:14-38"
+        },
+        {
+          "moduleId": "LTYS",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactReconcileTransaction.js",
+          "module": "./~/react-dom/lib/ReactReconcileTransaction.js",
+          "moduleName": "./~/react-dom/lib/ReactReconcileTransaction.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "13:14-38"
+        },
+        {
+          "moduleId": "SBlo",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/validateDOMNesting.js",
+          "module": "./~/react-dom/lib/validateDOMNesting.js",
+          "moduleName": "./~/react-dom/lib/validateDOMNesting.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "13:14-38"
+        },
+        {
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "14:14-38"
         },
         {
           "moduleId": "ZhCu",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticEvent.js",
           "module": "./~/react-dom/lib/SyntheticEvent.js",
           "moduleName": "./~/react-dom/lib/SyntheticEvent.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "13:14-38"
+        },
+        {
+          "moduleId": "Jk1L",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/FallbackCompositionState.js",
+          "module": "./~/react-dom/lib/FallbackCompositionState.js",
+          "moduleName": "./~/react-dom/lib/FallbackCompositionState.js",
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "13:14-38"
@@ -1763,6 +1797,15 @@
           "loc": "13:14-38"
         },
         {
+          "moduleId": "ShAC",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
+          "module": "./~/react-dom/lib/ReactDOMSelect.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "13:14-38"
+        },
+        {
           "moduleId": "c1IZ",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
           "module": "./~/react-dom/lib/ReactDOMTextarea.js",
@@ -1779,33 +1822,6 @@
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "13:14-38"
-        },
-        {
-          "moduleId": "ShAC",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
-          "module": "./~/react-dom/lib/ReactDOMSelect.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "13:14-38"
-        },
-        {
-          "moduleId": "SBlo",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/validateDOMNesting.js",
-          "module": "./~/react-dom/lib/validateDOMNesting.js",
-          "moduleName": "./~/react-dom/lib/validateDOMNesting.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "13:14-38"
-        },
-        {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "14:14-38"
         }
       ],
       "usedExports": true,
@@ -1865,22 +1881,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
-      "issuerId": "Le75",
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactPureComponent.js",
+      "issuerId": "3imu",
+      "issuerName": "./~/react/lib/ReactPureComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "Le75",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
-          "module": "./~/react/lib/ReactComponent.js",
-          "moduleName": "./~/react/lib/ReactComponent.js",
-          "type": "cjs require",
-          "userRequest": "./ReactNoopUpdateQueue",
-          "loc": "15:27-60"
-        },
         {
           "moduleId": "3imu",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactPureComponent.js",
@@ -1889,6 +1896,15 @@
           "type": "cjs require",
           "userRequest": "./ReactNoopUpdateQueue",
           "loc": "16:27-60"
+        },
+        {
+          "moduleId": "Le75",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
+          "module": "./~/react/lib/ReactComponent.js",
+          "moduleName": "./~/react/lib/ReactComponent.js",
+          "type": "cjs require",
+          "userRequest": "./ReactNoopUpdateQueue",
+          "loc": "15:27-60"
         },
         {
           "moduleId": "4has",
@@ -2351,15 +2367,6 @@
           "loc": "16:12-38"
         },
         {
-          "moduleId": "FQvv",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
-          "module": "./~/react-dom/lib/ReactDOMOption.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
-          "type": "cjs require",
-          "userRequest": "react/lib/React",
-          "loc": "15:12-38"
-        },
-        {
           "moduleId": "Bj+8",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
           "module": "./~/react-dom/lib/ReactCompositeComponent.js",
@@ -2367,6 +2374,15 @@
           "type": "cjs require",
           "userRequest": "react/lib/React",
           "loc": "16:12-38"
+        },
+        {
+          "moduleId": "FQvv",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
+          "module": "./~/react-dom/lib/ReactDOMOption.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
+          "type": "cjs require",
+          "userRequest": "react/lib/React",
+          "loc": "15:12-38"
         },
         {
           "moduleId": "Zzr+",
@@ -2701,19 +2717,19 @@
           "loc": "18:18-42"
         },
         {
-          "moduleId": "Jk1L",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/FallbackCompositionState.js",
-          "module": "./~/react-dom/lib/FallbackCompositionState.js",
-          "moduleName": "./~/react-dom/lib/FallbackCompositionState.js",
+          "moduleId": "ZhCu",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticEvent.js",
+          "module": "./~/react-dom/lib/SyntheticEvent.js",
+          "moduleName": "./~/react-dom/lib/SyntheticEvent.js",
           "type": "cjs require",
           "userRequest": "./PooledClass",
           "loc": "15:18-42"
         },
         {
-          "moduleId": "ZhCu",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticEvent.js",
-          "module": "./~/react-dom/lib/SyntheticEvent.js",
-          "moduleName": "./~/react-dom/lib/SyntheticEvent.js",
+          "moduleId": "Jk1L",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/FallbackCompositionState.js",
+          "module": "./~/react-dom/lib/FallbackCompositionState.js",
+          "moduleName": "./~/react-dom/lib/FallbackCompositionState.js",
           "type": "cjs require",
           "userRequest": "./PooledClass",
           "loc": "15:18-42"
@@ -2896,7 +2912,7 @@
       "name": "./~/prop-types/factoryWithTypeCheckers.js",
       "index": 33,
       "index2": 24,
-      "size": 17621,
+      "size": 18600,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2925,7 +2941,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 6,
-      "source": "/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n */\n\n'use strict';\n\nvar emptyFunction = require('fbjs/lib/emptyFunction');\nvar invariant = require('fbjs/lib/invariant');\nvar warning = require('fbjs/lib/warning');\n\nvar ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');\nvar checkPropTypes = require('./checkPropTypes');\n\nmodule.exports = function(isValidElement, throwOnDirectAccess) {\n  /* global Symbol */\n  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;\n  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.\n\n  /**\n   * Returns the iterator method function contained on the iterable object.\n   *\n   * Be sure to invoke the function with the iterable as context:\n   *\n   *     var iteratorFn = getIteratorFn(myIterable);\n   *     if (iteratorFn) {\n   *       var iterator = iteratorFn.call(myIterable);\n   *       ...\n   *     }\n   *\n   * @param {?object} maybeIterable\n   * @return {?function}\n   */\n  function getIteratorFn(maybeIterable) {\n    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);\n    if (typeof iteratorFn === 'function') {\n      return iteratorFn;\n    }\n  }\n\n  /**\n   * Collection of methods that allow declaration and validation of props that are\n   * supplied to React components. Example usage:\n   *\n   *   var Props = require('ReactPropTypes');\n   *   var MyArticle = React.createClass({\n   *     propTypes: {\n   *       // An optional string prop named \"description\".\n   *       description: Props.string,\n   *\n   *       // A required enum prop named \"category\".\n   *       category: Props.oneOf(['News','Photos']).isRequired,\n   *\n   *       // A prop named \"dialog\" that requires an instance of Dialog.\n   *       dialog: Props.instanceOf(Dialog).isRequired\n   *     },\n   *     render: function() { ... }\n   *   });\n   *\n   * A more formal specification of how these methods are used:\n   *\n   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)\n   *   decl := ReactPropTypes.{type}(.isRequired)?\n   *\n   * Each and every declaration produces a function with the same signature. This\n   * allows the creation of custom validation functions. For example:\n   *\n   *  var MyLink = React.createClass({\n   *    propTypes: {\n   *      // An optional string or URI prop named \"href\".\n   *      href: function(props, propName, componentName) {\n   *        var propValue = props[propName];\n   *        if (propValue != null && typeof propValue !== 'string' &&\n   *            !(propValue instanceof URI)) {\n   *          return new Error(\n   *            'Expected a string or an URI for ' + propName + ' in ' +\n   *            componentName\n   *          );\n   *        }\n   *      }\n   *    },\n   *    render: function() {...}\n   *  });\n   *\n   * @internal\n   */\n\n  var ANONYMOUS = '<<anonymous>>';\n\n  // Important!\n  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.\n  var ReactPropTypes = {\n    array: createPrimitiveTypeChecker('array'),\n    bool: createPrimitiveTypeChecker('boolean'),\n    func: createPrimitiveTypeChecker('function'),\n    number: createPrimitiveTypeChecker('number'),\n    object: createPrimitiveTypeChecker('object'),\n    string: createPrimitiveTypeChecker('string'),\n    symbol: createPrimitiveTypeChecker('symbol'),\n\n    any: createAnyTypeChecker(),\n    arrayOf: createArrayOfTypeChecker,\n    element: createElementTypeChecker(),\n    instanceOf: createInstanceTypeChecker,\n    node: createNodeChecker(),\n    objectOf: createObjectOfTypeChecker,\n    oneOf: createEnumTypeChecker,\n    oneOfType: createUnionTypeChecker,\n    shape: createShapeTypeChecker\n  };\n\n  /**\n   * inlined Object.is polyfill to avoid requiring consumers ship their own\n   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is\n   */\n  /*eslint-disable no-self-compare*/\n  function is(x, y) {\n    // SameValue algorithm\n    if (x === y) {\n      // Steps 1-5, 7-10\n      // Steps 6.b-6.e: +0 != -0\n      return x !== 0 || 1 / x === 1 / y;\n    } else {\n      // Step 6.a: NaN == NaN\n      return x !== x && y !== y;\n    }\n  }\n  /*eslint-enable no-self-compare*/\n\n  /**\n   * We use an Error-like object for backward compatibility as people may call\n   * PropTypes directly and inspect their output. However, we don't use real\n   * Errors anymore. We don't inspect their stack anyway, and creating them\n   * is prohibitively expensive if they are created too often, such as what\n   * happens in oneOfType() for any type before the one that matched.\n   */\n  function PropTypeError(message) {\n    this.message = message;\n    this.stack = '';\n  }\n  // Make `instanceof Error` still work for returned errors.\n  PropTypeError.prototype = Error.prototype;\n\n  function createChainableTypeChecker(validate) {\n    if (process.env.NODE_ENV !== 'production') {\n      var manualPropTypeCallCache = {};\n      var manualPropTypeWarningCount = 0;\n    }\n    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {\n      componentName = componentName || ANONYMOUS;\n      propFullName = propFullName || propName;\n\n      if (secret !== ReactPropTypesSecret) {\n        if (throwOnDirectAccess) {\n          // New behavior only for users of `prop-types` package\n          invariant(\n            false,\n            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +\n            'Use `PropTypes.checkPropTypes()` to call them. ' +\n            'Read more at http://fb.me/use-check-prop-types'\n          );\n        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {\n          // Old behavior for people using React.PropTypes\n          var cacheKey = componentName + ':' + propName;\n          if (\n            !manualPropTypeCallCache[cacheKey] &&\n            // Avoid spamming the console because they are often not actionable except for lib authors\n            manualPropTypeWarningCount < 3\n          ) {\n            warning(\n              false,\n              'You are manually calling a React.PropTypes validation ' +\n              'function for the `%s` prop on `%s`. This is deprecated ' +\n              'and will throw in the standalone `prop-types` package. ' +\n              'You may be seeing this warning due to a third-party PropTypes ' +\n              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.',\n              propFullName,\n              componentName\n            );\n            manualPropTypeCallCache[cacheKey] = true;\n            manualPropTypeWarningCount++;\n          }\n        }\n      }\n      if (props[propName] == null) {\n        if (isRequired) {\n          if (props[propName] === null) {\n            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));\n          }\n          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));\n        }\n        return null;\n      } else {\n        return validate(props, propName, componentName, location, propFullName);\n      }\n    }\n\n    var chainedCheckType = checkType.bind(null, false);\n    chainedCheckType.isRequired = checkType.bind(null, true);\n\n    return chainedCheckType;\n  }\n\n  function createPrimitiveTypeChecker(expectedType) {\n    function validate(props, propName, componentName, location, propFullName, secret) {\n      var propValue = props[propName];\n      var propType = getPropType(propValue);\n      if (propType !== expectedType) {\n        // `propValue` being instance of, say, date/regexp, pass the 'object'\n        // check, but we can offer a more precise error message here rather than\n        // 'of type `object`'.\n        var preciseType = getPreciseType(propValue);\n\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createAnyTypeChecker() {\n    return createChainableTypeChecker(emptyFunction.thatReturnsNull);\n  }\n\n  function createArrayOfTypeChecker(typeChecker) {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (typeof typeChecker !== 'function') {\n        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');\n      }\n      var propValue = props[propName];\n      if (!Array.isArray(propValue)) {\n        var propType = getPropType(propValue);\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));\n      }\n      for (var i = 0; i < propValue.length; i++) {\n        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);\n        if (error instanceof Error) {\n          return error;\n        }\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createElementTypeChecker() {\n    function validate(props, propName, componentName, location, propFullName) {\n      var propValue = props[propName];\n      if (!isValidElement(propValue)) {\n        var propType = getPropType(propValue);\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createInstanceTypeChecker(expectedClass) {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (!(props[propName] instanceof expectedClass)) {\n        var expectedClassName = expectedClass.name || ANONYMOUS;\n        var actualClassName = getClassName(props[propName]);\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createEnumTypeChecker(expectedValues) {\n    if (!Array.isArray(expectedValues)) {\n      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;\n      return emptyFunction.thatReturnsNull;\n    }\n\n    function validate(props, propName, componentName, location, propFullName) {\n      var propValue = props[propName];\n      for (var i = 0; i < expectedValues.length; i++) {\n        if (is(propValue, expectedValues[i])) {\n          return null;\n        }\n      }\n\n      var valuesString = JSON.stringify(expectedValues);\n      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createObjectOfTypeChecker(typeChecker) {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (typeof typeChecker !== 'function') {\n        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');\n      }\n      var propValue = props[propName];\n      var propType = getPropType(propValue);\n      if (propType !== 'object') {\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));\n      }\n      for (var key in propValue) {\n        if (propValue.hasOwnProperty(key)) {\n          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);\n          if (error instanceof Error) {\n            return error;\n          }\n        }\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createUnionTypeChecker(arrayOfTypeCheckers) {\n    if (!Array.isArray(arrayOfTypeCheckers)) {\n      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;\n      return emptyFunction.thatReturnsNull;\n    }\n\n    function validate(props, propName, componentName, location, propFullName) {\n      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {\n        var checker = arrayOfTypeCheckers[i];\n        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {\n          return null;\n        }\n      }\n\n      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createNodeChecker() {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (!isNode(props[propName])) {\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createShapeTypeChecker(shapeTypes) {\n    function validate(props, propName, componentName, location, propFullName) {\n      var propValue = props[propName];\n      var propType = getPropType(propValue);\n      if (propType !== 'object') {\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));\n      }\n      for (var key in shapeTypes) {\n        var checker = shapeTypes[key];\n        if (!checker) {\n          continue;\n        }\n        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);\n        if (error) {\n          return error;\n        }\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function isNode(propValue) {\n    switch (typeof propValue) {\n      case 'number':\n      case 'string':\n      case 'undefined':\n        return true;\n      case 'boolean':\n        return !propValue;\n      case 'object':\n        if (Array.isArray(propValue)) {\n          return propValue.every(isNode);\n        }\n        if (propValue === null || isValidElement(propValue)) {\n          return true;\n        }\n\n        var iteratorFn = getIteratorFn(propValue);\n        if (iteratorFn) {\n          var iterator = iteratorFn.call(propValue);\n          var step;\n          if (iteratorFn !== propValue.entries) {\n            while (!(step = iterator.next()).done) {\n              if (!isNode(step.value)) {\n                return false;\n              }\n            }\n          } else {\n            // Iterator will provide entry [k,v] tuples rather than values.\n            while (!(step = iterator.next()).done) {\n              var entry = step.value;\n              if (entry) {\n                if (!isNode(entry[1])) {\n                  return false;\n                }\n              }\n            }\n          }\n        } else {\n          return false;\n        }\n\n        return true;\n      default:\n        return false;\n    }\n  }\n\n  function isSymbol(propType, propValue) {\n    // Native Symbol.\n    if (propType === 'symbol') {\n      return true;\n    }\n\n    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'\n    if (propValue['@@toStringTag'] === 'Symbol') {\n      return true;\n    }\n\n    // Fallback for non-spec compliant Symbols which are polyfilled.\n    if (typeof Symbol === 'function' && propValue instanceof Symbol) {\n      return true;\n    }\n\n    return false;\n  }\n\n  // Equivalent of `typeof` but with special handling for array and regexp.\n  function getPropType(propValue) {\n    var propType = typeof propValue;\n    if (Array.isArray(propValue)) {\n      return 'array';\n    }\n    if (propValue instanceof RegExp) {\n      // Old webkits (at least until Android 4.0) return 'function' rather than\n      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/\n      // passes PropTypes.object.\n      return 'object';\n    }\n    if (isSymbol(propType, propValue)) {\n      return 'symbol';\n    }\n    return propType;\n  }\n\n  // This handles more types than `getPropType`. Only used for error messages.\n  // See `createPrimitiveTypeChecker`.\n  function getPreciseType(propValue) {\n    var propType = getPropType(propValue);\n    if (propType === 'object') {\n      if (propValue instanceof Date) {\n        return 'date';\n      } else if (propValue instanceof RegExp) {\n        return 'regexp';\n      }\n    }\n    return propType;\n  }\n\n  // Returns class name of the object, if any.\n  function getClassName(propValue) {\n    if (!propValue.constructor || !propValue.constructor.name) {\n      return ANONYMOUS;\n    }\n    return propValue.constructor.name;\n  }\n\n  ReactPropTypes.checkPropTypes = checkPropTypes;\n  ReactPropTypes.PropTypes = ReactPropTypes;\n\n  return ReactPropTypes;\n};\n"
+      "source": "/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n */\n\n'use strict';\n\nvar emptyFunction = require('fbjs/lib/emptyFunction');\nvar invariant = require('fbjs/lib/invariant');\nvar warning = require('fbjs/lib/warning');\n\nvar ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');\nvar checkPropTypes = require('./checkPropTypes');\n\nmodule.exports = function(isValidElement, throwOnDirectAccess) {\n  /* global Symbol */\n  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;\n  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.\n\n  /**\n   * Returns the iterator method function contained on the iterable object.\n   *\n   * Be sure to invoke the function with the iterable as context:\n   *\n   *     var iteratorFn = getIteratorFn(myIterable);\n   *     if (iteratorFn) {\n   *       var iterator = iteratorFn.call(myIterable);\n   *       ...\n   *     }\n   *\n   * @param {?object} maybeIterable\n   * @return {?function}\n   */\n  function getIteratorFn(maybeIterable) {\n    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);\n    if (typeof iteratorFn === 'function') {\n      return iteratorFn;\n    }\n  }\n\n  /**\n   * Collection of methods that allow declaration and validation of props that are\n   * supplied to React components. Example usage:\n   *\n   *   var Props = require('ReactPropTypes');\n   *   var MyArticle = React.createClass({\n   *     propTypes: {\n   *       // An optional string prop named \"description\".\n   *       description: Props.string,\n   *\n   *       // A required enum prop named \"category\".\n   *       category: Props.oneOf(['News','Photos']).isRequired,\n   *\n   *       // A prop named \"dialog\" that requires an instance of Dialog.\n   *       dialog: Props.instanceOf(Dialog).isRequired\n   *     },\n   *     render: function() { ... }\n   *   });\n   *\n   * A more formal specification of how these methods are used:\n   *\n   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)\n   *   decl := ReactPropTypes.{type}(.isRequired)?\n   *\n   * Each and every declaration produces a function with the same signature. This\n   * allows the creation of custom validation functions. For example:\n   *\n   *  var MyLink = React.createClass({\n   *    propTypes: {\n   *      // An optional string or URI prop named \"href\".\n   *      href: function(props, propName, componentName) {\n   *        var propValue = props[propName];\n   *        if (propValue != null && typeof propValue !== 'string' &&\n   *            !(propValue instanceof URI)) {\n   *          return new Error(\n   *            'Expected a string or an URI for ' + propName + ' in ' +\n   *            componentName\n   *          );\n   *        }\n   *      }\n   *    },\n   *    render: function() {...}\n   *  });\n   *\n   * @internal\n   */\n\n  var ANONYMOUS = '<<anonymous>>';\n\n  // Important!\n  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.\n  var ReactPropTypes = {\n    array: createPrimitiveTypeChecker('array'),\n    bool: createPrimitiveTypeChecker('boolean'),\n    func: createPrimitiveTypeChecker('function'),\n    number: createPrimitiveTypeChecker('number'),\n    object: createPrimitiveTypeChecker('object'),\n    string: createPrimitiveTypeChecker('string'),\n    symbol: createPrimitiveTypeChecker('symbol'),\n\n    any: createAnyTypeChecker(),\n    arrayOf: createArrayOfTypeChecker,\n    element: createElementTypeChecker(),\n    instanceOf: createInstanceTypeChecker,\n    node: createNodeChecker(),\n    objectOf: createObjectOfTypeChecker,\n    oneOf: createEnumTypeChecker,\n    oneOfType: createUnionTypeChecker,\n    shape: createShapeTypeChecker\n  };\n\n  /**\n   * inlined Object.is polyfill to avoid requiring consumers ship their own\n   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is\n   */\n  /*eslint-disable no-self-compare*/\n  function is(x, y) {\n    // SameValue algorithm\n    if (x === y) {\n      // Steps 1-5, 7-10\n      // Steps 6.b-6.e: +0 != -0\n      return x !== 0 || 1 / x === 1 / y;\n    } else {\n      // Step 6.a: NaN == NaN\n      return x !== x && y !== y;\n    }\n  }\n  /*eslint-enable no-self-compare*/\n\n  /**\n   * We use an Error-like object for backward compatibility as people may call\n   * PropTypes directly and inspect their output. However, we don't use real\n   * Errors anymore. We don't inspect their stack anyway, and creating them\n   * is prohibitively expensive if they are created too often, such as what\n   * happens in oneOfType() for any type before the one that matched.\n   */\n  function PropTypeError(message) {\n    this.message = message;\n    this.stack = '';\n  }\n  // Make `instanceof Error` still work for returned errors.\n  PropTypeError.prototype = Error.prototype;\n\n  function createChainableTypeChecker(validate) {\n    if (process.env.NODE_ENV !== 'production') {\n      var manualPropTypeCallCache = {};\n      var manualPropTypeWarningCount = 0;\n    }\n    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {\n      componentName = componentName || ANONYMOUS;\n      propFullName = propFullName || propName;\n\n      if (secret !== ReactPropTypesSecret) {\n        if (throwOnDirectAccess) {\n          // New behavior only for users of `prop-types` package\n          invariant(\n            false,\n            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +\n            'Use `PropTypes.checkPropTypes()` to call them. ' +\n            'Read more at http://fb.me/use-check-prop-types'\n          );\n        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {\n          // Old behavior for people using React.PropTypes\n          var cacheKey = componentName + ':' + propName;\n          if (\n            !manualPropTypeCallCache[cacheKey] &&\n            // Avoid spamming the console because they are often not actionable except for lib authors\n            manualPropTypeWarningCount < 3\n          ) {\n            warning(\n              false,\n              'You are manually calling a React.PropTypes validation ' +\n              'function for the `%s` prop on `%s`. This is deprecated ' +\n              'and will throw in the standalone `prop-types` package. ' +\n              'You may be seeing this warning due to a third-party PropTypes ' +\n              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.',\n              propFullName,\n              componentName\n            );\n            manualPropTypeCallCache[cacheKey] = true;\n            manualPropTypeWarningCount++;\n          }\n        }\n      }\n      if (props[propName] == null) {\n        if (isRequired) {\n          if (props[propName] === null) {\n            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));\n          }\n          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));\n        }\n        return null;\n      } else {\n        return validate(props, propName, componentName, location, propFullName);\n      }\n    }\n\n    var chainedCheckType = checkType.bind(null, false);\n    chainedCheckType.isRequired = checkType.bind(null, true);\n\n    return chainedCheckType;\n  }\n\n  function createPrimitiveTypeChecker(expectedType) {\n    function validate(props, propName, componentName, location, propFullName, secret) {\n      var propValue = props[propName];\n      var propType = getPropType(propValue);\n      if (propType !== expectedType) {\n        // `propValue` being instance of, say, date/regexp, pass the 'object'\n        // check, but we can offer a more precise error message here rather than\n        // 'of type `object`'.\n        var preciseType = getPreciseType(propValue);\n\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createAnyTypeChecker() {\n    return createChainableTypeChecker(emptyFunction.thatReturnsNull);\n  }\n\n  function createArrayOfTypeChecker(typeChecker) {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (typeof typeChecker !== 'function') {\n        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');\n      }\n      var propValue = props[propName];\n      if (!Array.isArray(propValue)) {\n        var propType = getPropType(propValue);\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));\n      }\n      for (var i = 0; i < propValue.length; i++) {\n        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);\n        if (error instanceof Error) {\n          return error;\n        }\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createElementTypeChecker() {\n    function validate(props, propName, componentName, location, propFullName) {\n      var propValue = props[propName];\n      if (!isValidElement(propValue)) {\n        var propType = getPropType(propValue);\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createInstanceTypeChecker(expectedClass) {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (!(props[propName] instanceof expectedClass)) {\n        var expectedClassName = expectedClass.name || ANONYMOUS;\n        var actualClassName = getClassName(props[propName]);\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createEnumTypeChecker(expectedValues) {\n    if (!Array.isArray(expectedValues)) {\n      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;\n      return emptyFunction.thatReturnsNull;\n    }\n\n    function validate(props, propName, componentName, location, propFullName) {\n      var propValue = props[propName];\n      for (var i = 0; i < expectedValues.length; i++) {\n        if (is(propValue, expectedValues[i])) {\n          return null;\n        }\n      }\n\n      var valuesString = JSON.stringify(expectedValues);\n      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createObjectOfTypeChecker(typeChecker) {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (typeof typeChecker !== 'function') {\n        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');\n      }\n      var propValue = props[propName];\n      var propType = getPropType(propValue);\n      if (propType !== 'object') {\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));\n      }\n      for (var key in propValue) {\n        if (propValue.hasOwnProperty(key)) {\n          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);\n          if (error instanceof Error) {\n            return error;\n          }\n        }\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createUnionTypeChecker(arrayOfTypeCheckers) {\n    if (!Array.isArray(arrayOfTypeCheckers)) {\n      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;\n      return emptyFunction.thatReturnsNull;\n    }\n\n    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {\n      var checker = arrayOfTypeCheckers[i];\n      if (typeof checker !== 'function') {\n        warning(\n          false,\n          'Invalid argument supplid to oneOfType. Expected an array of check functions, but ' +\n          'received %s at index %s.',\n          getPostfixForTypeWarning(checker),\n          i\n        );\n        return emptyFunction.thatReturnsNull;\n      }\n    }\n\n    function validate(props, propName, componentName, location, propFullName) {\n      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {\n        var checker = arrayOfTypeCheckers[i];\n        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {\n          return null;\n        }\n      }\n\n      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createNodeChecker() {\n    function validate(props, propName, componentName, location, propFullName) {\n      if (!isNode(props[propName])) {\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function createShapeTypeChecker(shapeTypes) {\n    function validate(props, propName, componentName, location, propFullName) {\n      var propValue = props[propName];\n      var propType = getPropType(propValue);\n      if (propType !== 'object') {\n        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));\n      }\n      for (var key in shapeTypes) {\n        var checker = shapeTypes[key];\n        if (!checker) {\n          continue;\n        }\n        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);\n        if (error) {\n          return error;\n        }\n      }\n      return null;\n    }\n    return createChainableTypeChecker(validate);\n  }\n\n  function isNode(propValue) {\n    switch (typeof propValue) {\n      case 'number':\n      case 'string':\n      case 'undefined':\n        return true;\n      case 'boolean':\n        return !propValue;\n      case 'object':\n        if (Array.isArray(propValue)) {\n          return propValue.every(isNode);\n        }\n        if (propValue === null || isValidElement(propValue)) {\n          return true;\n        }\n\n        var iteratorFn = getIteratorFn(propValue);\n        if (iteratorFn) {\n          var iterator = iteratorFn.call(propValue);\n          var step;\n          if (iteratorFn !== propValue.entries) {\n            while (!(step = iterator.next()).done) {\n              if (!isNode(step.value)) {\n                return false;\n              }\n            }\n          } else {\n            // Iterator will provide entry [k,v] tuples rather than values.\n            while (!(step = iterator.next()).done) {\n              var entry = step.value;\n              if (entry) {\n                if (!isNode(entry[1])) {\n                  return false;\n                }\n              }\n            }\n          }\n        } else {\n          return false;\n        }\n\n        return true;\n      default:\n        return false;\n    }\n  }\n\n  function isSymbol(propType, propValue) {\n    // Native Symbol.\n    if (propType === 'symbol') {\n      return true;\n    }\n\n    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'\n    if (propValue['@@toStringTag'] === 'Symbol') {\n      return true;\n    }\n\n    // Fallback for non-spec compliant Symbols which are polyfilled.\n    if (typeof Symbol === 'function' && propValue instanceof Symbol) {\n      return true;\n    }\n\n    return false;\n  }\n\n  // Equivalent of `typeof` but with special handling for array and regexp.\n  function getPropType(propValue) {\n    var propType = typeof propValue;\n    if (Array.isArray(propValue)) {\n      return 'array';\n    }\n    if (propValue instanceof RegExp) {\n      // Old webkits (at least until Android 4.0) return 'function' rather than\n      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/\n      // passes PropTypes.object.\n      return 'object';\n    }\n    if (isSymbol(propType, propValue)) {\n      return 'symbol';\n    }\n    return propType;\n  }\n\n  // This handles more types than `getPropType`. Only used for error messages.\n  // See `createPrimitiveTypeChecker`.\n  function getPreciseType(propValue) {\n    if (typeof propValue === 'undefined' || propValue === null) {\n      return '' + propValue;\n    }\n    var propType = getPropType(propValue);\n    if (propType === 'object') {\n      if (propValue instanceof Date) {\n        return 'date';\n      } else if (propValue instanceof RegExp) {\n        return 'regexp';\n      }\n    }\n    return propType;\n  }\n\n  // Returns a string that is postfixed to a warning about an invalid type.\n  // For example, \"undefined\" or \"of type array\"\n  function getPostfixForTypeWarning(value) {\n    var type = getPreciseType(value);\n    switch (type) {\n      case 'array':\n      case 'object':\n        return 'an ' + type;\n      case 'boolean':\n      case 'date':\n      case 'regexp':\n        return 'a ' + type;\n      default:\n        return type;\n    }\n  }\n\n  // Returns class name of the object, if any.\n  function getClassName(propValue) {\n    if (!propValue.constructor || !propValue.constructor.name) {\n      return ANONYMOUS;\n    }\n    return propValue.constructor.name;\n  }\n\n  ReactPropTypes.checkPropTypes = checkPropTypes;\n  ReactPropTypes.PropTypes = ReactPropTypes;\n\n  return ReactPropTypes;\n};\n"
     },
     {
       "id": "KFm+",
@@ -3336,15 +3352,6 @@
           "loc": "14:19-44"
         },
         {
-          "moduleId": "rbSI",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMChildrenOperations.js",
-          "module": "./~/react-dom/lib/DOMChildrenOperations.js",
-          "moduleName": "./~/react-dom/lib/DOMChildrenOperations.js",
-          "type": "cjs require",
-          "userRequest": "./setInnerHTML",
-          "loc": "19:19-44"
-        },
-        {
           "moduleId": "/bNP",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setTextContent.js",
           "module": "./~/react-dom/lib/setTextContent.js",
@@ -3352,6 +3359,15 @@
           "type": "cjs require",
           "userRequest": "./setInnerHTML",
           "loc": "15:19-44"
+        },
+        {
+          "moduleId": "rbSI",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMChildrenOperations.js",
+          "module": "./~/react-dom/lib/DOMChildrenOperations.js",
+          "moduleName": "./~/react-dom/lib/DOMChildrenOperations.js",
+          "type": "cjs require",
+          "userRequest": "./setInnerHTML",
+          "loc": "19:19-44"
         }
       ],
       "usedExports": true,
@@ -3791,22 +3807,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-      "issuerId": "kio1",
-      "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMLazyTree.js",
+      "issuerId": "hMln",
+      "issuerName": "./~/react-dom/lib/DOMLazyTree.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "kio1",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
-          "type": "cjs require",
-          "userRequest": "./DOMNamespaces",
-          "loc": "21:20-46"
-        },
         {
           "moduleId": "hMln",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMLazyTree.js",
@@ -3824,6 +3831,15 @@
           "type": "cjs require",
           "userRequest": "./DOMNamespaces",
           "loc": "14:20-46"
+        },
+        {
+          "moduleId": "kio1",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
+          "type": "cjs require",
+          "userRequest": "./DOMNamespaces",
+          "loc": "21:20-46"
         }
       ],
       "usedExports": true,
@@ -3881,19 +3897,19 @@
           "loc": "14:21-48"
         },
         {
-          "moduleId": "Kt1l",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPropagators.js",
-          "module": "./~/react-dom/lib/EventPropagators.js",
-          "moduleName": "./~/react-dom/lib/EventPropagators.js",
+          "moduleId": "mHDS",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactEventEmitterMixin.js",
+          "module": "./~/react-dom/lib/ReactEventEmitterMixin.js",
+          "moduleName": "./~/react-dom/lib/ReactEventEmitterMixin.js",
           "type": "cjs require",
           "userRequest": "./EventPluginHub",
           "loc": "13:21-48"
         },
         {
-          "moduleId": "mHDS",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactEventEmitterMixin.js",
-          "module": "./~/react-dom/lib/ReactEventEmitterMixin.js",
-          "moduleName": "./~/react-dom/lib/ReactEventEmitterMixin.js",
+          "moduleId": "Kt1l",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPropagators.js",
+          "module": "./~/react-dom/lib/EventPropagators.js",
+          "moduleName": "./~/react-dom/lib/EventPropagators.js",
           "type": "cjs require",
           "userRequest": "./EventPluginHub",
           "loc": "13:21-48"
@@ -4010,15 +4026,6 @@
           "loc": "16:32-70"
         },
         {
-          "moduleId": "4fju",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMultiChild.js",
-          "module": "./~/react-dom/lib/ReactMultiChild.js",
-          "moduleName": "./~/react-dom/lib/ReactMultiChild.js",
-          "type": "cjs require",
-          "userRequest": "./ReactComponentEnvironment",
-          "loc": "15:32-70"
-        },
-        {
           "moduleId": "Bj+8",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
           "module": "./~/react-dom/lib/ReactCompositeComponent.js",
@@ -4026,6 +4033,15 @@
           "type": "cjs require",
           "userRequest": "./ReactComponentEnvironment",
           "loc": "17:32-70"
+        },
+        {
+          "moduleId": "4fju",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMultiChild.js",
+          "module": "./~/react-dom/lib/ReactMultiChild.js",
+          "moduleName": "./~/react-dom/lib/ReactMultiChild.js",
+          "type": "cjs require",
+          "userRequest": "./ReactComponentEnvironment",
+          "loc": "15:32-70"
         }
       ],
       "usedExports": true,
@@ -4205,13 +4221,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-      "issuerId": "kio1",
-      "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMContainerInfo.js",
+      "issuerId": "H24R",
+      "issuerName": "./~/react-dom/lib/ReactDOMContainerInfo.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "H24R",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMContainerInfo.js",
+          "module": "./~/react-dom/lib/ReactDOMContainerInfo.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMContainerInfo.js",
+          "type": "cjs require",
+          "userRequest": "./validateDOMNesting",
+          "loc": "13:25-56"
+        },
         {
           "moduleId": "kio1",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
@@ -4229,15 +4254,6 @@
           "type": "cjs require",
           "userRequest": "./validateDOMNesting",
           "loc": "22:25-56"
-        },
-        {
-          "moduleId": "H24R",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMContainerInfo.js",
-          "module": "./~/react-dom/lib/ReactDOMContainerInfo.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMContainerInfo.js",
-          "type": "cjs require",
-          "userRequest": "./validateDOMNesting",
-          "loc": "13:25-56"
         }
       ],
       "usedExports": true,
@@ -4398,36 +4414,27 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-      "issuerId": "DMKF",
-      "issuerName": "./~/react-dom/lib/ReactMount.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactPureComponent.js",
+      "issuerId": "3imu",
+      "issuerName": "./~/react/lib/ReactPureComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": "DMKF",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-          "module": "./~/react-dom/lib/ReactMount.js",
-          "moduleName": "./~/react-dom/lib/ReactMount.js",
+          "moduleId": "3imu",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactPureComponent.js",
+          "module": "./~/react/lib/ReactPureComponent.js",
+          "moduleName": "./~/react/lib/ReactPureComponent.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyObject",
-          "loc": "31:18-49"
+          "loc": "18:18-49"
         },
         {
           "moduleId": "Le75",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
           "module": "./~/react/lib/ReactComponent.js",
           "moduleName": "./~/react/lib/ReactComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/emptyObject",
-          "loc": "18:18-49"
-        },
-        {
-          "moduleId": "3imu",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactPureComponent.js",
-          "module": "./~/react/lib/ReactPureComponent.js",
-          "moduleName": "./~/react/lib/ReactPureComponent.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyObject",
           "loc": "18:18-49"
@@ -4440,6 +4447,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyObject",
           "loc": "21:18-49"
+        },
+        {
+          "moduleId": "DMKF",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
+          "module": "./~/react-dom/lib/ReactMount.js",
+          "moduleName": "./~/react-dom/lib/ReactMount.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/emptyObject",
+          "loc": "31:18-49"
         },
         {
           "moduleId": "Bj+8",
@@ -4627,13 +4643,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-      "issuerId": "DMKF",
-      "issuerName": "./~/react-dom/lib/ReactMount.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactReconciler.js",
+      "issuerId": "xWyi",
+      "issuerName": "./~/react-dom/lib/ReactReconciler.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "xWyi",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactReconciler.js",
+          "module": "./~/react-dom/lib/ReactReconciler.js",
+          "moduleName": "./~/react-dom/lib/ReactReconciler.js",
+          "type": "cjs require",
+          "userRequest": "./ReactInstrumentation",
+          "loc": "14:27-60"
+        },
         {
           "moduleId": "DMKF",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
@@ -4644,13 +4669,13 @@
           "loc": "25:27-60"
         },
         {
-          "moduleId": "xWyi",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactReconciler.js",
-          "module": "./~/react-dom/lib/ReactReconciler.js",
-          "moduleName": "./~/react-dom/lib/ReactReconciler.js",
+          "moduleId": "lZ3b",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
+          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
           "type": "cjs require",
           "userRequest": "./ReactInstrumentation",
-          "loc": "14:27-60"
+          "loc": "17:27-60"
         },
         {
           "moduleId": "kio1",
@@ -4671,13 +4696,13 @@
           "loc": "19:27-60"
         },
         {
-          "moduleId": "lZ3b",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
-          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
           "type": "cjs require",
           "userRequest": "./ReactInstrumentation",
-          "loc": "17:27-60"
+          "loc": "21:27-60"
         },
         {
           "moduleId": "rbSI",
@@ -4689,19 +4714,19 @@
           "loc": "16:27-60"
         },
         {
-          "moduleId": "RVQV",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/CSSPropertyOperations.js",
-          "module": "./~/react-dom/lib/CSSPropertyOperations.js",
-          "moduleName": "./~/react-dom/lib/CSSPropertyOperations.js",
+          "moduleId": "zt3U",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMPropertyOperations.js",
+          "module": "./~/react-dom/lib/DOMPropertyOperations.js",
+          "moduleName": "./~/react-dom/lib/DOMPropertyOperations.js",
           "type": "cjs require",
           "userRequest": "./ReactInstrumentation",
           "loc": "15:27-60"
         },
         {
-          "moduleId": "zt3U",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMPropertyOperations.js",
-          "module": "./~/react-dom/lib/DOMPropertyOperations.js",
-          "moduleName": "./~/react-dom/lib/DOMPropertyOperations.js",
+          "moduleId": "RVQV",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/CSSPropertyOperations.js",
+          "module": "./~/react-dom/lib/CSSPropertyOperations.js",
+          "moduleName": "./~/react-dom/lib/CSSPropertyOperations.js",
           "type": "cjs require",
           "userRequest": "./ReactInstrumentation",
           "loc": "15:27-60"
@@ -4723,15 +4748,6 @@
           "type": "cjs require",
           "userRequest": "./ReactInstrumentation",
           "loc": "17:27-60"
-        },
-        {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "./ReactInstrumentation",
-          "loc": "21:27-60"
         }
       ],
       "usedExports": true,
@@ -5011,22 +5027,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOM.js",
-      "issuerId": "yote",
-      "issuerName": "./~/react-dom/lib/ReactDOM.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/React.js",
+      "issuerId": "G1ow",
+      "issuerName": "./~/react/lib/React.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "yote",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOM.js",
-          "module": "./~/react-dom/lib/ReactDOM.js",
-          "moduleName": "./~/react-dom/lib/ReactDOM.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "25:14-41"
-        },
         {
           "moduleId": "G1ow",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/React.js",
@@ -5037,31 +5044,13 @@
           "loc": "25:14-41"
         },
         {
-          "moduleId": "DMKF",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-          "module": "./~/react-dom/lib/ReactMount.js",
-          "moduleName": "./~/react-dom/lib/ReactMount.js",
+          "moduleId": "yote",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOM.js",
+          "module": "./~/react-dom/lib/ReactDOM.js",
+          "moduleName": "./~/react-dom/lib/ReactDOM.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
-          "loc": "36:14-41"
-        },
-        {
-          "moduleId": "xWyi",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactReconciler.js",
-          "module": "./~/react-dom/lib/ReactReconciler.js",
-          "moduleName": "./~/react-dom/lib/ReactReconciler.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "16:14-41"
-        },
-        {
-          "moduleId": "9ahc",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/findDOMNode.js",
-          "module": "./~/react-dom/lib/findDOMNode.js",
-          "moduleName": "./~/react-dom/lib/findDOMNode.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "21:14-41"
+          "loc": "25:14-41"
         },
         {
           "moduleId": "Le75",
@@ -5091,28 +5080,28 @@
           "loc": "17:14-41"
         },
         {
-          "moduleId": "kio1",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
+          "moduleId": "xWyi",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactReconciler.js",
+          "module": "./~/react-dom/lib/ReactReconciler.js",
+          "moduleName": "./~/react-dom/lib/ReactReconciler.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
-          "loc": "43:14-41"
+          "loc": "16:14-41"
         },
         {
-          "moduleId": "5nY2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
-          "module": "./~/react-dom/lib/instantiateReactComponent.js",
-          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
+          "moduleId": "DMKF",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
+          "module": "./~/react-dom/lib/ReactMount.js",
+          "moduleName": "./~/react-dom/lib/ReactMount.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
-          "loc": "22:14-41"
+          "loc": "36:14-41"
         },
         {
-          "moduleId": "lZ3b",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
-          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "moduleId": "9ahc",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/findDOMNode.js",
+          "module": "./~/react-dom/lib/findDOMNode.js",
+          "moduleName": "./~/react-dom/lib/findDOMNode.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "21:14-41"
@@ -5136,6 +5125,51 @@
           "loc": "13:14-41"
         },
         {
+          "moduleId": "lZ3b",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
+          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "21:14-41"
+        },
+        {
+          "moduleId": "5nY2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
+          "module": "./~/react-dom/lib/instantiateReactComponent.js",
+          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "22:14-41"
+        },
+        {
+          "moduleId": "kio1",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "43:14-41"
+        },
+        {
+          "moduleId": "SBlo",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/validateDOMNesting.js",
+          "module": "./~/react-dom/lib/validateDOMNesting.js",
+          "moduleName": "./~/react-dom/lib/validateDOMNesting.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "16:14-41"
+        },
+        {
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "33:14-41"
+        },
+        {
           "moduleId": "Kt1l",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPropagators.js",
           "module": "./~/react-dom/lib/EventPropagators.js",
@@ -5152,15 +5186,6 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "18:14-41"
-        },
-        {
-          "moduleId": "RVQV",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/CSSPropertyOperations.js",
-          "module": "./~/react-dom/lib/CSSPropertyOperations.js",
-          "moduleName": "./~/react-dom/lib/CSSPropertyOperations.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "21:14-41"
         },
         {
           "moduleId": "zt3U",
@@ -5190,15 +5215,6 @@
           "loc": "19:14-41"
         },
         {
-          "moduleId": "c1IZ",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
-          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "21:14-41"
-        },
-        {
           "moduleId": "ShAC",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
           "module": "./~/react-dom/lib/ReactDOMSelect.js",
@@ -5208,13 +5224,22 @@
           "loc": "19:14-41"
         },
         {
-          "moduleId": "SBlo",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/validateDOMNesting.js",
-          "module": "./~/react-dom/lib/validateDOMNesting.js",
-          "moduleName": "./~/react-dom/lib/validateDOMNesting.js",
+          "moduleId": "c1IZ",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
+          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
-          "loc": "16:14-41"
+          "loc": "21:14-41"
+        },
+        {
+          "moduleId": "RVQV",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/CSSPropertyOperations.js",
+          "module": "./~/react-dom/lib/CSSPropertyOperations.js",
+          "moduleName": "./~/react-dom/lib/CSSPropertyOperations.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "21:14-41"
         },
         {
           "moduleId": "VoX8",
@@ -5224,51 +5249,6 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "18:14-41"
-        },
-        {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "33:14-41"
-        },
-        {
-          "moduleId": "f6Df",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/flattenChildren.js",
-          "module": "./~/react-dom/lib/flattenChildren.js",
-          "moduleName": "./~/react-dom/lib/flattenChildren.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "16:14-41"
-        },
-        {
-          "moduleId": "yGo3",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactChildReconciler.js",
-          "module": "./~/react-dom/lib/ReactChildReconciler.js",
-          "moduleName": "./~/react-dom/lib/ReactChildReconciler.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "19:14-41"
-        },
-        {
-          "moduleId": "O15z",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactServerUpdateQueue.js",
-          "module": "./~/react-dom/lib/ReactServerUpdateQueue.js",
-          "moduleName": "./~/react-dom/lib/ReactServerUpdateQueue.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "18:14-41"
-        },
-        {
-          "moduleId": "n7kv",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/dangerousStyleValue.js",
-          "module": "./~/react-dom/lib/dangerousStyleValue.js",
-          "moduleName": "./~/react-dom/lib/dangerousStyleValue.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "14:14-41"
         },
         {
           "moduleId": "JtmH",
@@ -5287,6 +5267,42 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "22:14-41"
+        },
+        {
+          "moduleId": "n7kv",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/dangerousStyleValue.js",
+          "module": "./~/react-dom/lib/dangerousStyleValue.js",
+          "moduleName": "./~/react-dom/lib/dangerousStyleValue.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "14:14-41"
+        },
+        {
+          "moduleId": "f6Df",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/flattenChildren.js",
+          "module": "./~/react-dom/lib/flattenChildren.js",
+          "moduleName": "./~/react-dom/lib/flattenChildren.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "16:14-41"
+        },
+        {
+          "moduleId": "O15z",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactServerUpdateQueue.js",
+          "module": "./~/react-dom/lib/ReactServerUpdateQueue.js",
+          "moduleName": "./~/react-dom/lib/ReactServerUpdateQueue.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "18:14-41"
+        },
+        {
+          "moduleId": "yGo3",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactChildReconciler.js",
+          "module": "./~/react-dom/lib/ReactChildReconciler.js",
+          "moduleName": "./~/react-dom/lib/ReactChildReconciler.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "19:14-41"
         },
         {
           "moduleId": "Xt9f",
@@ -5417,15 +5433,6 @@
           "loc": "13:21-48"
         },
         {
-          "moduleId": "wbUH",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
-          "module": "./~/react-dom/lib/SyntheticAnimationEvent.js",
-          "moduleName": "./~/react-dom/lib/SyntheticAnimationEvent.js",
-          "type": "cjs require",
-          "userRequest": "./SyntheticEvent",
-          "loc": "13:21-48"
-        },
-        {
           "moduleId": "U5Eh",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticClipboardEvent.js",
           "module": "./~/react-dom/lib/SyntheticClipboardEvent.js",
@@ -5435,10 +5442,10 @@
           "loc": "13:21-48"
         },
         {
-          "moduleId": "lmOh",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticTransitionEvent.js",
-          "module": "./~/react-dom/lib/SyntheticTransitionEvent.js",
-          "moduleName": "./~/react-dom/lib/SyntheticTransitionEvent.js",
+          "moduleId": "wbUH",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+          "module": "./~/react-dom/lib/SyntheticAnimationEvent.js",
+          "moduleName": "./~/react-dom/lib/SyntheticAnimationEvent.js",
           "type": "cjs require",
           "userRequest": "./SyntheticEvent",
           "loc": "13:21-48"
@@ -5448,6 +5455,15 @@
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticUIEvent.js",
           "module": "./~/react-dom/lib/SyntheticUIEvent.js",
           "moduleName": "./~/react-dom/lib/SyntheticUIEvent.js",
+          "type": "cjs require",
+          "userRequest": "./SyntheticEvent",
+          "loc": "13:21-48"
+        },
+        {
+          "moduleId": "lmOh",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticTransitionEvent.js",
+          "module": "./~/react-dom/lib/SyntheticTransitionEvent.js",
+          "moduleName": "./~/react-dom/lib/SyntheticTransitionEvent.js",
           "type": "cjs require",
           "userRequest": "./SyntheticEvent",
           "loc": "13:21-48"
@@ -5490,15 +5506,6 @@
           "loc": "17:23-52"
         },
         {
-          "moduleId": "c1IZ",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
-          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "type": "cjs require",
-          "userRequest": "./LinkedValueUtils",
-          "loc": "16:23-52"
-        },
-        {
           "moduleId": "ShAC",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
           "module": "./~/react-dom/lib/ReactDOMSelect.js",
@@ -5506,6 +5513,15 @@
           "type": "cjs require",
           "userRequest": "./LinkedValueUtils",
           "loc": "15:23-52"
+        },
+        {
+          "moduleId": "c1IZ",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
+          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
+          "type": "cjs require",
+          "userRequest": "./LinkedValueUtils",
+          "loc": "16:23-52"
         }
       ],
       "usedExports": true,
@@ -5845,49 +5861,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponentTree.js",
-      "issuerId": "if0G",
-      "issuerName": "./~/react-dom/lib/ReactDOMComponentTree.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
+      "issuerId": "Le75",
+      "issuerName": "./~/react/lib/ReactComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "if0G",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponentTree.js",
-          "module": "./~/react-dom/lib/ReactDOMComponentTree.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMComponentTree.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "18:16-45"
-        },
-        {
-          "moduleId": "DMKF",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-          "module": "./~/react-dom/lib/ReactMount.js",
-          "moduleName": "./~/react-dom/lib/ReactMount.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "33:16-45"
-        },
-        {
-          "moduleId": "vg0m",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
-          "module": "./~/react-dom/lib/ReactUpdates.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "22:16-45"
-        },
-        {
-          "moduleId": "9ahc",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/findDOMNode.js",
-          "module": "./~/react-dom/lib/findDOMNode.js",
-          "moduleName": "./~/react-dom/lib/findDOMNode.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "20:16-45"
-        },
         {
           "moduleId": "Le75",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactComponent.js",
@@ -5916,103 +5896,40 @@
           "loc": "16:16-45"
         },
         {
-          "moduleId": "y2pp",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMProperty.js",
-          "module": "./~/react-dom/lib/DOMProperty.js",
-          "moduleName": "./~/react-dom/lib/DOMProperty.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "15:16-45"
-        },
-        {
-          "moduleId": "cUIy",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTreeTraversal.js",
-          "module": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "15:16-45"
-        },
-        {
-          "moduleId": "kio1",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "39:16-45"
-        },
-        {
-          "moduleId": "LR//",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMTextComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTextComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "21:16-45"
-        },
-        {
-          "moduleId": "Nc5M",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SimpleEventPlugin.js",
-          "module": "./~/react-dom/lib/SimpleEventPlugin.js",
-          "moduleName": "./~/react-dom/lib/SimpleEventPlugin.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "33:16-45"
-        },
-        {
-          "moduleId": "5nY2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
-          "module": "./~/react-dom/lib/instantiateReactComponent.js",
-          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "21:16-45"
-        },
-        {
-          "moduleId": "lZ3b",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
-          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "20:16-45"
-        },
-        {
-          "moduleId": "er+d",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/CallbackQueue.js",
-          "module": "./~/react-dom/lib/CallbackQueue.js",
-          "moduleName": "./~/react-dom/lib/CallbackQueue.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "20:16-45"
-        },
-        {
-          "moduleId": "IjcK",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/PooledClass.js",
-          "module": "./~/react-dom/lib/PooledClass.js",
-          "moduleName": "./~/react-dom/lib/PooledClass.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "16:16-45"
-        },
-        {
-          "moduleId": "/762",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactNodeTypes.js",
-          "module": "./~/react-dom/lib/ReactNodeTypes.js",
-          "moduleName": "./~/react-dom/lib/ReactNodeTypes.js",
+          "moduleId": "if0G",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponentTree.js",
+          "module": "./~/react-dom/lib/ReactDOMComponentTree.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMComponentTree.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "18:16-45"
         },
         {
-          "moduleId": "kbwd",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
-          "module": "./~/react-dom/lib/Transaction.js",
-          "moduleName": "./~/react-dom/lib/Transaction.js",
+          "moduleId": "DMKF",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
+          "module": "./~/react-dom/lib/ReactMount.js",
+          "moduleName": "./~/react-dom/lib/ReactMount.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
-          "loc": "16:16-45"
+          "loc": "33:16-45"
+        },
+        {
+          "moduleId": "9ahc",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/findDOMNode.js",
+          "module": "./~/react-dom/lib/findDOMNode.js",
+          "moduleName": "./~/react-dom/lib/findDOMNode.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "20:16-45"
+        },
+        {
+          "moduleId": "vg0m",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
+          "module": "./~/react-dom/lib/ReactUpdates.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "22:16-45"
         },
         {
           "moduleId": "9SWq",
@@ -6033,6 +5950,114 @@
           "loc": "19:16-45"
         },
         {
+          "moduleId": "y2pp",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMProperty.js",
+          "module": "./~/react-dom/lib/DOMProperty.js",
+          "moduleName": "./~/react-dom/lib/DOMProperty.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "15:16-45"
+        },
+        {
+          "moduleId": "lZ3b",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
+          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "20:16-45"
+        },
+        {
+          "moduleId": "5nY2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
+          "module": "./~/react-dom/lib/instantiateReactComponent.js",
+          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "21:16-45"
+        },
+        {
+          "moduleId": "kio1",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "39:16-45"
+        },
+        {
+          "moduleId": "cUIy",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTreeTraversal.js",
+          "module": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "15:16-45"
+        },
+        {
+          "moduleId": "LR//",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMTextComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTextComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "21:16-45"
+        },
+        {
+          "moduleId": "Nc5M",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SimpleEventPlugin.js",
+          "module": "./~/react-dom/lib/SimpleEventPlugin.js",
+          "moduleName": "./~/react-dom/lib/SimpleEventPlugin.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "33:16-45"
+        },
+        {
+          "moduleId": "er+d",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/CallbackQueue.js",
+          "module": "./~/react-dom/lib/CallbackQueue.js",
+          "moduleName": "./~/react-dom/lib/CallbackQueue.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "20:16-45"
+        },
+        {
+          "moduleId": "IjcK",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/PooledClass.js",
+          "module": "./~/react-dom/lib/PooledClass.js",
+          "moduleName": "./~/react-dom/lib/PooledClass.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "16:16-45"
+        },
+        {
+          "moduleId": "kbwd",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
+          "module": "./~/react-dom/lib/Transaction.js",
+          "moduleName": "./~/react-dom/lib/Transaction.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "16:16-45"
+        },
+        {
+          "moduleId": "/762",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactNodeTypes.js",
+          "module": "./~/react-dom/lib/ReactNodeTypes.js",
+          "moduleName": "./~/react-dom/lib/ReactNodeTypes.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "18:16-45"
+        },
+        {
+          "moduleId": "S4Fj",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactOwner.js",
+          "module": "./~/react-dom/lib/ReactOwner.js",
+          "moduleName": "./~/react-dom/lib/ReactOwner.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "16:16-45"
+        },
+        {
           "moduleId": "inoO",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginRegistry.js",
           "module": "./~/react-dom/lib/EventPluginRegistry.js",
@@ -6040,6 +6065,33 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "16:16-45"
+        },
+        {
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "30:16-45"
+        },
+        {
+          "moduleId": "4HPq",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactHostComponent.js",
+          "module": "./~/react-dom/lib/ReactHostComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactHostComponent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "15:16-45"
+        },
+        {
+          "moduleId": "PESh",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginHub.js",
+          "module": "./~/react-dom/lib/EventPluginHub.js",
+          "moduleName": "./~/react-dom/lib/EventPluginHub.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "21:16-45"
         },
         {
           "moduleId": "1WsN",
@@ -6069,13 +6121,13 @@
           "loc": "25:16-45"
         },
         {
-          "moduleId": "PESh",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginHub.js",
-          "module": "./~/react-dom/lib/EventPluginHub.js",
-          "moduleName": "./~/react-dom/lib/EventPluginHub.js",
+          "moduleId": "VoX8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginUtils.js",
+          "module": "./~/react-dom/lib/EventPluginUtils.js",
+          "moduleName": "./~/react-dom/lib/EventPluginUtils.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
-          "loc": "21:16-45"
+          "loc": "17:16-45"
         },
         {
           "moduleId": "QVRU",
@@ -6087,40 +6139,13 @@
           "loc": "16:16-45"
         },
         {
-          "moduleId": "VoX8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginUtils.js",
-          "module": "./~/react-dom/lib/EventPluginUtils.js",
-          "moduleName": "./~/react-dom/lib/EventPluginUtils.js",
+          "moduleId": "JtmH",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/prop-types/factoryWithTypeCheckers.js",
+          "module": "./~/prop-types/factoryWithTypeCheckers.js",
+          "moduleName": "./~/prop-types/factoryWithTypeCheckers.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
-          "loc": "17:16-45"
-        },
-        {
-          "moduleId": "4HPq",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactHostComponent.js",
-          "module": "./~/react-dom/lib/ReactHostComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactHostComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "15:16-45"
-        },
-        {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "30:16-45"
-        },
-        {
-          "moduleId": "S4Fj",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactOwner.js",
-          "module": "./~/react-dom/lib/ReactOwner.js",
-          "moduleName": "./~/react-dom/lib/ReactOwner.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "16:16-45"
+          "loc": "13:16-45"
         },
         {
           "moduleId": "+VAZ",
@@ -6139,15 +6164,6 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "20:16-45"
-        },
-        {
-          "moduleId": "JtmH",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/prop-types/factoryWithTypeCheckers.js",
-          "module": "./~/prop-types/factoryWithTypeCheckers.js",
-          "moduleName": "./~/prop-types/factoryWithTypeCheckers.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/invariant",
-          "loc": "13:16-45"
         },
         {
           "moduleId": "Zzr+",
@@ -6186,15 +6202,6 @@
           "loc": "18:16-45"
         },
         {
-          "moduleId": "E6DY",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/fbjs/lib/createArrayFromMixed.js",
-          "module": "./~/fbjs/lib/createArrayFromMixed.js",
-          "moduleName": "./~/fbjs/lib/createArrayFromMixed.js",
-          "type": "cjs require",
-          "userRequest": "./invariant",
-          "loc": "14:16-38"
-        },
-        {
           "moduleId": "ZGRu",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/fbjs/lib/getMarkupWrap.js",
           "module": "./~/fbjs/lib/getMarkupWrap.js",
@@ -6202,6 +6209,15 @@
           "type": "cjs require",
           "userRequest": "./invariant",
           "loc": "17:16-38"
+        },
+        {
+          "moduleId": "E6DY",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/fbjs/lib/createArrayFromMixed.js",
+          "module": "./~/fbjs/lib/createArrayFromMixed.js",
+          "moduleName": "./~/fbjs/lib/createArrayFromMixed.js",
+          "type": "cjs require",
+          "userRequest": "./invariant",
+          "loc": "14:16-38"
         }
       ],
       "usedExports": true,
@@ -6224,13 +6240,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/BeforeInputEventPlugin.js",
-      "issuerId": "d+JT",
-      "issuerName": "./~/react-dom/lib/BeforeInputEventPlugin.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
+      "issuerId": "Li0w",
+      "issuerName": "./~/react-dom/lib/setInnerHTML.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "Li0w",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
+          "module": "./~/react-dom/lib/setInnerHTML.js",
+          "moduleName": "./~/react-dom/lib/setInnerHTML.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/ExecutionEnvironment",
+          "loc": "13:27-67"
+        },
         {
           "moduleId": "d+JT",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/BeforeInputEventPlugin.js",
@@ -6268,10 +6293,19 @@
           "loc": "14:27-67"
         },
         {
-          "moduleId": "Li0w",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
-          "module": "./~/react-dom/lib/setInnerHTML.js",
-          "moduleName": "./~/react-dom/lib/setInnerHTML.js",
+          "moduleId": "/bNP",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setTextContent.js",
+          "module": "./~/react-dom/lib/setTextContent.js",
+          "moduleName": "./~/react-dom/lib/setTextContent.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/ExecutionEnvironment",
+          "loc": "13:27-67"
+        },
+        {
+          "moduleId": "+KdC",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/getVendorPrefixedEventName.js",
+          "module": "./~/react-dom/lib/getVendorPrefixedEventName.js",
+          "moduleName": "./~/react-dom/lib/getVendorPrefixedEventName.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/ExecutionEnvironment",
           "loc": "13:27-67"
@@ -6293,24 +6327,6 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/ExecutionEnvironment",
           "loc": "14:27-67"
-        },
-        {
-          "moduleId": "/bNP",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setTextContent.js",
-          "module": "./~/react-dom/lib/setTextContent.js",
-          "moduleName": "./~/react-dom/lib/setTextContent.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/ExecutionEnvironment",
-          "loc": "13:27-67"
-        },
-        {
-          "moduleId": "+KdC",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/getVendorPrefixedEventName.js",
-          "module": "./~/react-dom/lib/getVendorPrefixedEventName.js",
-          "moduleName": "./~/react-dom/lib/getVendorPrefixedEventName.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/ExecutionEnvironment",
-          "loc": "13:27-67"
         },
         {
           "moduleId": "0AML",
@@ -6514,6 +6530,15 @@
           "loc": "31:20-53"
         },
         {
+          "moduleId": "SBlo",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/validateDOMNesting.js",
+          "module": "./~/react-dom/lib/validateDOMNesting.js",
+          "moduleName": "./~/react-dom/lib/validateDOMNesting.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/emptyFunction",
+          "loc": "15:20-53"
+        },
+        {
           "moduleId": "ZhCu",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticEvent.js",
           "module": "./~/react-dom/lib/SyntheticEvent.js",
@@ -6541,13 +6566,13 @@
           "loc": "21:20-46"
         },
         {
-          "moduleId": "SBlo",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/validateDOMNesting.js",
-          "module": "./~/react-dom/lib/validateDOMNesting.js",
-          "moduleName": "./~/react-dom/lib/validateDOMNesting.js",
+          "moduleId": "JtmH",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/prop-types/factoryWithTypeCheckers.js",
+          "module": "./~/prop-types/factoryWithTypeCheckers.js",
+          "moduleName": "./~/prop-types/factoryWithTypeCheckers.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyFunction",
-          "loc": "15:20-53"
+          "loc": "12:20-53"
         },
         {
           "moduleId": "YJUA",
@@ -6557,15 +6582,6 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyFunction",
           "loc": "19:20-53"
-        },
-        {
-          "moduleId": "JtmH",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/prop-types/factoryWithTypeCheckers.js",
-          "module": "./~/prop-types/factoryWithTypeCheckers.js",
-          "moduleName": "./~/prop-types/factoryWithTypeCheckers.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/emptyFunction",
-          "loc": "12:20-53"
         }
       ],
       "usedExports": true,
@@ -6845,27 +6861,27 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactInjection.js",
-      "issuerId": "HKgI",
-      "issuerName": "./~/react-dom/lib/ReactInjection.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
+      "issuerId": "5nY2",
+      "issuerName": "./~/react-dom/lib/instantiateReactComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": "HKgI",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactInjection.js",
-          "module": "./~/react-dom/lib/ReactInjection.js",
-          "moduleName": "./~/react-dom/lib/ReactInjection.js",
+          "moduleId": "5nY2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
+          "module": "./~/react-dom/lib/instantiateReactComponent.js",
+          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
           "type": "cjs require",
           "userRequest": "./ReactEmptyComponent",
           "loc": "17:26-58"
         },
         {
-          "moduleId": "5nY2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
-          "module": "./~/react-dom/lib/instantiateReactComponent.js",
-          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
+          "moduleId": "HKgI",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactInjection.js",
+          "module": "./~/react-dom/lib/ReactInjection.js",
+          "moduleName": "./~/react-dom/lib/ReactInjection.js",
           "type": "cjs require",
           "userRequest": "./ReactEmptyComponent",
           "loc": "17:26-58"
@@ -6963,19 +6979,19 @@
           "loc": "13:21-52"
         },
         {
-          "moduleId": "vg0m",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
-          "module": "./~/react-dom/lib/ReactUpdates.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
+          "moduleId": "9ahc",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/findDOMNode.js",
+          "module": "./~/react-dom/lib/findDOMNode.js",
+          "moduleName": "./~/react-dom/lib/findDOMNode.js",
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "13:21-52"
         },
         {
-          "moduleId": "9ahc",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/findDOMNode.js",
-          "module": "./~/react-dom/lib/findDOMNode.js",
-          "moduleName": "./~/react-dom/lib/findDOMNode.js",
+          "moduleId": "vg0m",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdates.js",
+          "module": "./~/react-dom/lib/ReactUpdates.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdates.js",
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "13:21-52"
@@ -6990,10 +7006,19 @@
           "loc": "13:21-52"
         },
         {
-          "moduleId": "cUIy",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTreeTraversal.js",
-          "module": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
+          "moduleId": "lZ3b",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
+          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "13:21-52"
+        },
+        {
+          "moduleId": "5nY2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
+          "module": "./~/react-dom/lib/instantiateReactComponent.js",
+          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "13:21-52"
@@ -7006,6 +7031,15 @@
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "15:21-52"
+        },
+        {
+          "moduleId": "cUIy",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTreeTraversal.js",
+          "module": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTreeTraversal.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "13:21-52"
         },
         {
           "moduleId": "LR//",
@@ -7026,24 +7060,6 @@
           "loc": "14:21-52"
         },
         {
-          "moduleId": "5nY2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/instantiateReactComponent.js",
-          "module": "./~/react-dom/lib/instantiateReactComponent.js",
-          "moduleName": "./~/react-dom/lib/instantiateReactComponent.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "13:21-52"
-        },
-        {
-          "moduleId": "lZ3b",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
-          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "13:21-52"
-        },
-        {
           "moduleId": "er+d",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/CallbackQueue.js",
           "module": "./~/react-dom/lib/CallbackQueue.js",
@@ -7062,6 +7078,15 @@
           "loc": "14:21-52"
         },
         {
+          "moduleId": "kbwd",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
+          "module": "./~/react-dom/lib/Transaction.js",
+          "moduleName": "./~/react-dom/lib/Transaction.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "14:21-52"
+        },
+        {
           "moduleId": "/762",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactNodeTypes.js",
           "module": "./~/react-dom/lib/ReactNodeTypes.js",
@@ -7071,10 +7096,10 @@
           "loc": "14:21-52"
         },
         {
-          "moduleId": "kbwd",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/Transaction.js",
-          "module": "./~/react-dom/lib/Transaction.js",
-          "moduleName": "./~/react-dom/lib/Transaction.js",
+          "moduleId": "S4Fj",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactOwner.js",
+          "module": "./~/react-dom/lib/ReactOwner.js",
+          "moduleName": "./~/react-dom/lib/ReactOwner.js",
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "14:21-52"
@@ -7087,6 +7112,33 @@
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "14:21-52"
+        },
+        {
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "13:21-52"
+        },
+        {
+          "moduleId": "4HPq",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactHostComponent.js",
+          "module": "./~/react-dom/lib/ReactHostComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactHostComponent.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "13:21-52"
+        },
+        {
+          "moduleId": "PESh",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginHub.js",
+          "module": "./~/react-dom/lib/EventPluginHub.js",
+          "moduleName": "./~/react-dom/lib/EventPluginHub.js",
+          "type": "cjs require",
+          "userRequest": "./reactProdInvariant",
+          "loc": "13:21-52"
         },
         {
           "moduleId": "1WsN",
@@ -7116,24 +7168,6 @@
           "loc": "13:21-52"
         },
         {
-          "moduleId": "PESh",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginHub.js",
-          "module": "./~/react-dom/lib/EventPluginHub.js",
-          "moduleName": "./~/react-dom/lib/EventPluginHub.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "13:21-52"
-        },
-        {
-          "moduleId": "QVRU",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactComponentEnvironment.js",
-          "module": "./~/react-dom/lib/ReactComponentEnvironment.js",
-          "moduleName": "./~/react-dom/lib/ReactComponentEnvironment.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "14:21-52"
-        },
-        {
           "moduleId": "VoX8",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginUtils.js",
           "module": "./~/react-dom/lib/EventPluginUtils.js",
@@ -7143,28 +7177,10 @@
           "loc": "13:21-52"
         },
         {
-          "moduleId": "4HPq",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactHostComponent.js",
-          "module": "./~/react-dom/lib/ReactHostComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactHostComponent.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "13:21-52"
-        },
-        {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "./reactProdInvariant",
-          "loc": "13:21-52"
-        },
-        {
-          "moduleId": "S4Fj",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactOwner.js",
-          "module": "./~/react-dom/lib/ReactOwner.js",
-          "moduleName": "./~/react-dom/lib/ReactOwner.js",
+          "moduleId": "QVRU",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactComponentEnvironment.js",
+          "module": "./~/react-dom/lib/ReactComponentEnvironment.js",
+          "moduleName": "./~/react-dom/lib/ReactComponentEnvironment.js",
           "type": "cjs require",
           "userRequest": "./reactProdInvariant",
           "loc": "14:21-52"
@@ -7317,15 +7333,6 @@
           "loc": "15:18-42"
         },
         {
-          "moduleId": "wFuS",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMEmptyComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
-          "type": "cjs require",
-          "userRequest": "./DOMLazyTree",
-          "loc": "15:18-42"
-        },
-        {
           "moduleId": "kio1",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
           "module": "./~/react-dom/lib/ReactDOMComponent.js",
@@ -7333,6 +7340,15 @@
           "type": "cjs require",
           "userRequest": "./DOMLazyTree",
           "loc": "20:18-42"
+        },
+        {
+          "moduleId": "wFuS",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMEmptyComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
+          "type": "cjs require",
+          "userRequest": "./DOMLazyTree",
+          "loc": "15:18-42"
         },
         {
           "moduleId": "LR//",
@@ -7382,13 +7398,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginHub.js",
-      "issuerId": "PESh",
-      "issuerName": "./~/react-dom/lib/EventPluginHub.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+      "issuerId": "Bj+8",
+      "issuerName": "./~/react-dom/lib/ReactCompositeComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "type": "cjs require",
+          "userRequest": "./ReactErrorUtils",
+          "loc": "19:22-50"
+        },
         {
           "moduleId": "PESh",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/EventPluginHub.js",
@@ -7406,15 +7431,6 @@
           "type": "cjs require",
           "userRequest": "./ReactErrorUtils",
           "loc": "15:22-50"
-        },
-        {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "./ReactErrorUtils",
-          "loc": "19:22-50"
         }
       ],
       "usedExports": true,
@@ -7491,15 +7507,6 @@
           "loc": "15:28-62"
         },
         {
-          "moduleId": "ag9w",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDefaultInjection.js",
-          "module": "./~/react-dom/lib/ReactDefaultInjection.js",
-          "moduleName": "./~/react-dom/lib/ReactDefaultInjection.js",
-          "type": "cjs require",
-          "userRequest": "./ReactDOMComponentTree",
-          "loc": "21:28-62"
-        },
-        {
           "moduleId": "DMKF",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
           "module": "./~/react-dom/lib/ReactMount.js",
@@ -7507,6 +7514,15 @@
           "type": "cjs require",
           "userRequest": "./ReactDOMComponentTree",
           "loc": "20:28-62"
+        },
+        {
+          "moduleId": "ag9w",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDefaultInjection.js",
+          "module": "./~/react-dom/lib/ReactDefaultInjection.js",
+          "moduleName": "./~/react-dom/lib/ReactDefaultInjection.js",
+          "type": "cjs require",
+          "userRequest": "./ReactDOMComponentTree",
+          "loc": "21:28-62"
         },
         {
           "moduleId": "9ahc",
@@ -7536,15 +7552,6 @@
           "loc": "14:28-62"
         },
         {
-          "moduleId": "wFuS",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMEmptyComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
-          "type": "cjs require",
-          "userRequest": "./ReactDOMComponentTree",
-          "loc": "16:28-62"
-        },
-        {
           "moduleId": "kio1",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
           "module": "./~/react-dom/lib/ReactDOMComponent.js",
@@ -7552,6 +7559,15 @@
           "type": "cjs require",
           "userRequest": "./ReactDOMComponentTree",
           "loc": "28:28-62"
+        },
+        {
+          "moduleId": "wFuS",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMEmptyComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMEmptyComponent.js",
+          "type": "cjs require",
+          "userRequest": "./ReactDOMComponentTree",
+          "loc": "16:28-62"
         },
         {
           "moduleId": "LR//",
@@ -7644,15 +7660,6 @@
           "loc": "16:28-62"
         },
         {
-          "moduleId": "c1IZ",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
-          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "type": "cjs require",
-          "userRequest": "./ReactDOMComponentTree",
-          "loc": "17:28-62"
-        },
-        {
           "moduleId": "ShAC",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
           "module": "./~/react-dom/lib/ReactDOMSelect.js",
@@ -7660,6 +7667,15 @@
           "type": "cjs require",
           "userRequest": "./ReactDOMComponentTree",
           "loc": "16:28-62"
+        },
+        {
+          "moduleId": "c1IZ",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
+          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
+          "type": "cjs require",
+          "userRequest": "./ReactDOMComponentTree",
+          "loc": "17:28-62"
         }
       ],
       "usedExports": true,
@@ -7682,22 +7698,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-      "issuerId": "kio1",
-      "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactBrowserEventEmitter.js",
+      "issuerId": "AU5s",
+      "issuerName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "kio1",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
-          "module": "./~/react-dom/lib/ReactDOMComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
-          "type": "cjs require",
-          "userRequest": "./EventPluginRegistry",
-          "loc": "25:26-58"
-        },
         {
           "moduleId": "AU5s",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactBrowserEventEmitter.js",
@@ -7706,6 +7713,15 @@
           "type": "cjs require",
           "userRequest": "./EventPluginRegistry",
           "loc": "15:26-58"
+        },
+        {
+          "moduleId": "kio1",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMComponent.js",
+          "module": "./~/react-dom/lib/ReactDOMComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMComponent.js",
+          "type": "cjs require",
+          "userRequest": "./EventPluginRegistry",
+          "loc": "25:26-58"
         },
         {
           "moduleId": "PESh",
@@ -7875,13 +7891,22 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
-      "issuerId": "DMKF",
-      "issuerName": "./~/react-dom/lib/ReactMount.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
+      "issuerId": "W2D2",
+      "issuerName": "./~/react/lib/ReactElement.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
+        {
+          "moduleId": "W2D2",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
+          "module": "./~/react/lib/ReactElement.js",
+          "moduleName": "./~/react/lib/ReactElement.js",
+          "type": "cjs require",
+          "userRequest": "./ReactCurrentOwner",
+          "loc": "15:24-54"
+        },
         {
           "moduleId": "DMKF",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMount.js",
@@ -7901,10 +7926,10 @@
           "loc": "15:24-62"
         },
         {
-          "moduleId": "W2D2",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/ReactElement.js",
-          "module": "./~/react/lib/ReactElement.js",
-          "moduleName": "./~/react/lib/ReactElement.js",
+          "moduleId": "MryT",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
+          "module": "./~/react/lib/traverseAllChildren.js",
+          "moduleName": "./~/react/lib/traverseAllChildren.js",
           "type": "cjs require",
           "userRequest": "./ReactCurrentOwner",
           "loc": "15:24-54"
@@ -7919,13 +7944,13 @@
           "loc": "15:24-62"
         },
         {
-          "moduleId": "MryT",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/lib/traverseAllChildren.js",
-          "module": "./~/react/lib/traverseAllChildren.js",
-          "moduleName": "./~/react/lib/traverseAllChildren.js",
+          "moduleId": "Bj+8",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
+          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
+          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
           "type": "cjs require",
-          "userRequest": "./ReactCurrentOwner",
-          "loc": "15:24-54"
+          "userRequest": "react/lib/ReactCurrentOwner",
+          "loc": "18:24-62"
         },
         {
           "moduleId": "4fju",
@@ -7935,15 +7960,6 @@
           "type": "cjs require",
           "userRequest": "react/lib/ReactCurrentOwner",
           "loc": "19:24-62"
-        },
-        {
-          "moduleId": "Bj+8",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
-          "module": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "moduleName": "./~/react-dom/lib/ReactCompositeComponent.js",
-          "type": "cjs require",
-          "userRequest": "react/lib/ReactCurrentOwner",
-          "loc": "18:24-62"
         },
         {
           "moduleId": "Xt9f",
@@ -8870,7 +8886,7 @@
       "name": "./~/offline-plugin/runtime.js",
       "index": 179,
       "index2": 177,
-      "size": 1010,
+      "size": 1711,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -8899,7 +8915,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 2,
-      "source": "var appCacheIframe;\n\nfunction hasSW() {\n  return 'serviceWorker' in navigator &&\n    // This is how I block Chrome 40 and detect Chrome 41, because first has\n    // bugs with history.pustState and/or hashchange\n    (window.fetch || 'imageRendering' in document.documentElement.style) &&\n    (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')\n}\n\nfunction install(options) {\n  options || (options = {});\n\n  \n    if (hasSW()) {\n      var registration = navigator.serviceWorker\n        .register(\n          \"/sw.js\"\n          \n        );\n\n      \n\n      return;\n    }\n  \n\n  \n}\n\nfunction applyUpdate(callback, errback) {\n  \n\n  \n}\n\nfunction update() {\n  \n    if (hasSW()) {\n      navigator.serviceWorker.getRegistration().then(function(registration) {\n        if (!registration) return;\n        return registration.update();\n      });\n    }\n  \n\n  \n}\n\n\n\nexports.install = install;\nexports.applyUpdate = applyUpdate;\nexports.update = update;\n"
+      "source": "var appCacheIframe;\n\nfunction hasSW() {\n  return 'serviceWorker' in navigator &&\n    // This is how I block Chrome 40 and detect Chrome 41, because first has\n    // bugs with history.pustState and/or hashchange\n    (window.fetch || 'imageRendering' in document.documentElement.style) &&\n    (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')\n}\n\nfunction install(options) {\n  options || (options = {});\n\n  \n    if (hasSW()) {\n      var registration = navigator.serviceWorker\n        .register(\n          \"sw.js\"\n          \n        );\n\n      \n\n      return;\n    }\n  \n\n  \n    if (window.applicationCache) {\n      var directory = \"appcache/\";\n      var name = \"manifest\";\n\n      var doLoad = function() {\n        var page = directory + name + '.html';\n        var iframe = document.createElement('iframe');\n\n        \n\n        iframe.src = page;\n        iframe.style.display = 'none';\n\n        appCacheIframe = iframe;\n        document.body.appendChild(iframe);\n      };\n\n      if (document.readyState === 'complete') {\n        setTimeout(doLoad);\n      } else {\n        window.addEventListener('load', doLoad);\n      }\n\n      return;\n    }\n  \n}\n\nfunction applyUpdate(callback, errback) {\n  \n\n  \n}\n\nfunction update() {\n  \n    if (hasSW()) {\n      navigator.serviceWorker.getRegistration().then(function(registration) {\n        if (!registration) return;\n        return registration.update();\n      });\n    }\n  \n\n  \n    if (appCacheIframe) {\n      try {\n        appCacheIframe.contentWindow.applicationCache.update();\n      } catch (e) {}\n    }\n  \n}\n\n\n\nexports.install = install;\nexports.applyUpdate = applyUpdate;\nexports.update = update;\n"
     },
     {
       "id": "thcD",
@@ -9127,6 +9143,15 @@
           "loc": "29:19-44"
         },
         {
+          "moduleId": "lZ3b",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
+          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
+          "type": "cjs require",
+          "userRequest": "./ReactUpdates",
+          "loc": "18:19-44"
+        },
+        {
           "moduleId": "Fd0m",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ChangeEventPlugin.js",
           "module": "./~/react-dom/lib/ChangeEventPlugin.js",
@@ -9134,15 +9159,6 @@
           "type": "cjs require",
           "userRequest": "./ReactUpdates",
           "loc": "17:19-44"
-        },
-        {
-          "moduleId": "5KoS",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactEventListener.js",
-          "module": "./~/react-dom/lib/ReactEventListener.js",
-          "moduleName": "./~/react-dom/lib/ReactEventListener.js",
-          "type": "cjs require",
-          "userRequest": "./ReactUpdates",
-          "loc": "19:19-44"
         },
         {
           "moduleId": "vdcO",
@@ -9154,6 +9170,15 @@
           "loc": "15:19-44"
         },
         {
+          "moduleId": "5KoS",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactEventListener.js",
+          "module": "./~/react-dom/lib/ReactEventListener.js",
+          "moduleName": "./~/react-dom/lib/ReactEventListener.js",
+          "type": "cjs require",
+          "userRequest": "./ReactUpdates",
+          "loc": "19:19-44"
+        },
+        {
           "moduleId": "HKgI",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactInjection.js",
           "module": "./~/react-dom/lib/ReactInjection.js",
@@ -9161,15 +9186,6 @@
           "type": "cjs require",
           "userRequest": "./ReactUpdates",
           "loc": "20:19-44"
-        },
-        {
-          "moduleId": "lZ3b",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactUpdateQueue.js",
-          "module": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "moduleName": "./~/react-dom/lib/ReactUpdateQueue.js",
-          "type": "cjs require",
-          "userRequest": "./ReactUpdates",
-          "loc": "18:19-44"
         },
         {
           "moduleId": "1WsN",
@@ -9181,15 +9197,6 @@
           "loc": "19:19-44"
         },
         {
-          "moduleId": "c1IZ",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
-          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
-          "type": "cjs require",
-          "userRequest": "./ReactUpdates",
-          "loc": "18:19-44"
-        },
-        {
           "moduleId": "ShAC",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
           "module": "./~/react-dom/lib/ReactDOMSelect.js",
@@ -9197,6 +9204,15 @@
           "type": "cjs require",
           "userRequest": "./ReactUpdates",
           "loc": "17:19-44"
+        },
+        {
+          "moduleId": "c1IZ",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMTextarea.js",
+          "module": "./~/react-dom/lib/ReactDOMTextarea.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMTextarea.js",
+          "type": "cjs require",
+          "userRequest": "./ReactUpdates",
+          "loc": "18:19-44"
         }
       ],
       "usedExports": true,
@@ -9402,15 +9418,6 @@
           "loc": "19:22-50"
         },
         {
-          "moduleId": "4fju",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMultiChild.js",
-          "module": "./~/react-dom/lib/ReactMultiChild.js",
-          "moduleName": "./~/react-dom/lib/ReactMultiChild.js",
-          "type": "cjs require",
-          "userRequest": "./ReactReconciler",
-          "loc": "20:22-50"
-        },
-        {
           "moduleId": "Bj+8",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
           "module": "./~/react-dom/lib/ReactCompositeComponent.js",
@@ -9418,6 +9425,15 @@
           "type": "cjs require",
           "userRequest": "./ReactReconciler",
           "loc": "23:22-50"
+        },
+        {
+          "moduleId": "4fju",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMultiChild.js",
+          "module": "./~/react-dom/lib/ReactMultiChild.js",
+          "moduleName": "./~/react-dom/lib/ReactMultiChild.js",
+          "type": "cjs require",
+          "userRequest": "./ReactReconciler",
+          "loc": "20:22-50"
         },
         {
           "moduleId": "yGo3",
@@ -9603,15 +9619,6 @@
           "loc": "16:23-52"
         },
         {
-          "moduleId": "4fju",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMultiChild.js",
-          "module": "./~/react-dom/lib/ReactMultiChild.js",
-          "moduleName": "./~/react-dom/lib/ReactMultiChild.js",
-          "type": "cjs require",
-          "userRequest": "./ReactInstanceMap",
-          "loc": "16:23-52"
-        },
-        {
           "moduleId": "Bj+8",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactCompositeComponent.js",
           "module": "./~/react-dom/lib/ReactCompositeComponent.js",
@@ -9619,6 +9626,15 @@
           "type": "cjs require",
           "userRequest": "./ReactInstanceMap",
           "loc": "20:23-52"
+        },
+        {
+          "moduleId": "4fju",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactMultiChild.js",
+          "module": "./~/react-dom/lib/ReactMultiChild.js",
+          "moduleName": "./~/react-dom/lib/ReactMultiChild.js",
+          "type": "cjs require",
+          "userRequest": "./ReactInstanceMap",
+          "loc": "16:23-52"
         }
       ],
       "usedExports": true,
@@ -10211,14 +10227,14 @@
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "04e04ee290440fc05ace",
+          "hash": "5c6b387b53b3886ee164",
           "parents": [],
           "origins": [
             {
-              "moduleId": "P3qx",
-              "module": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":{},\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":{},\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
-              "moduleName": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":{},\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
+              "moduleId": "Xo7B",
+              "module": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
+              "moduleName": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
               "loc": "",
               "reasons": []
             }
@@ -10241,18 +10257,18 @@
             0
           ],
           "assets": [],
-          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":{},\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
-          "issuerId": "P3qx",
-          "issuerName": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":{},\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
+          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
+          "issuerId": "Xo7B",
+          "issuerName": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
             {
-              "moduleId": "P3qx",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":{},\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
-              "module": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":{},\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
-              "moduleName": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":{},\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
+              "moduleId": "Xo7B",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
+              "module": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
+              "moduleName": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
               "type": "cjs require",
               "userRequest": "../../node_modules/css-loader/lib/css-base.js",
               "loc": "1:27-83"
@@ -10264,9 +10280,9 @@
           "source": "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
         },
         {
-          "id": "P3qx",
-          "identifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":{},\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
-          "name": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":{},\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
+          "id": "Xo7B",
+          "identifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/css-loader/index.js?{\"minimize\":true,\"importLoaders\":2}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/postcss-loader/lib/index.js?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/sass-loader/lib/loader.js?{\"sourceMap\":true}!/home/travis/build/Kikobeats/react-boilerplatinum/src/app/index.scss",
+          "name": "./~/css-loader?{\"minimize\":true,\"importLoaders\":2}!./~/postcss-loader/lib?{\"parser\":\"postcss-scss\",\"sourceMap\":true}!./~/sass-loader/lib/loader.js?{\"sourceMap\":true}!./src/app/index.scss",
           "index": 0,
           "index2": 1,
           "size": 80033,
