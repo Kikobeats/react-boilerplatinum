@@ -1,3 +1,24 @@
+<a name="1.2.3"></a>
+## 1.2.3 (2017-05-17)
+
+* Add purify as dependency ([f1c1f24](https://github.com/Kikobeats/react-boilerplatinum/commit/f1c1f24))
+* Updaate postcss parser loader ([82b7b4a](https://github.com/Kikobeats/react-boilerplatinum/commit/82b7b4a))
+* Update offline settings ([4fbd223](https://github.com/Kikobeats/react-boilerplatinum/commit/4fbd223))
+* chore(package): update autoprefixer to version 7.0.0 ([e6c178f](https://github.com/Kikobeats/react-boilerplatinum/commit/e6c178f))
+* chore(package): update autoprefixer to version 7.1.0 ([4fd30ce](https://github.com/Kikobeats/react-boilerplatinum/commit/4fd30ce))
+* chore(package): update babel-loader to version 7.0.0 ([c0344ab](https://github.com/Kikobeats/react-boilerplatinum/commit/c0344ab))
+* chore(package): update postcss-focus to version 2.0.0 ([4bc89b1](https://github.com/Kikobeats/react-boilerplatinum/commit/4bc89b1))
+* chore(package): update postcss-loader to version 2.0.1 ([93a3c35](https://github.com/Kikobeats/react-boilerplatinum/commit/93a3c35))
+* chore(package): update postcss-scss to version 1.0.0 ([de4a0ce](https://github.com/Kikobeats/react-boilerplatinum/commit/de4a0ce))
+* chore(package): update purifycss-webpack to version 0.7.0 ([8119fd5](https://github.com/Kikobeats/react-boilerplatinum/commit/8119fd5))
+* chore(package): update style-loader to version 0.17.0 ([8062c79](https://github.com/Kikobeats/react-boilerplatinum/commit/8062c79))
+* chore(package): update webpack to version 2.5.0 ([ef72684](https://github.com/Kikobeats/react-boilerplatinum/commit/ef72684))
+* chore(package): update webpack-bundle-analyzer to version 2.6.0 ([b9f088a](https://github.com/Kikobeats/react-boilerplatinum/commit/b9f088a))
+* chore(package): update webpack-bundle-analyzer to version 2.7.0 ([255e6e9](https://github.com/Kikobeats/react-boilerplatinum/commit/255e6e9))
+* chore(package): update webpack-bundle-analyzer to version 2.8.1 ([d47b38c](https://github.com/Kikobeats/react-boilerplatinum/commit/d47b38c))
+
+
+
 <a name="1.2.2"></a>
 ## 1.2.2 (2017-04-15)
 
