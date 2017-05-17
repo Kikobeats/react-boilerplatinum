@@ -99,21 +99,32 @@ module.exports = {
       minChunks: Infinity
     }),
     new OfflinePlugin({
-      relativePaths: false,
-      publicPath: '/',
+      safeToUseOptionalCaches: true,
+      AppCache: {
+        FALLBACK: { '/': '/' }
+      },
       caches: {
-        main: [':rest:'],
+        main: [
+          'index.html',
+          ':rest:'
+        ].concat(
+          glob.sync('src/www/assets/img/**/*.*', {
+            nodir: true
+          }).map(file => file.replace('src/www/', ''))
+        ),
         additional: [
           'assets/js/vendor.bundle.js',
-          ':externals:'
+          'assets/css/bundle.css'
         ],
-        externals: [
-          'https://static.hotjar.com/c/hotjar-342795.js?sv=5',
-          'https://www.google-analytics.com/analytics.js'
+        optional: [
+          ':externals:'
         ]
       },
-      safeToUseOptionalCaches: true,
-      AppCache: false
+      externals: [
+        'https://static.hotjar.com/c/hotjar-342795.js?sv=5',
+        'https://www.google-analytics.com/analytics.js',
+        'https://cdn.headwayapp.co/widget.js'
+      ]
     }),
     new HtmlWebpackPlugin(Object.assign({}, config, {
       template: path.resolve('index.ejs'),
