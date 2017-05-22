@@ -5,7 +5,7 @@
   ],
   "version": "2.5.1",
   "hash": "e28371ded8995053e69b",
-  "time": 14920,
+  "time": 22887,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -1770,19 +1770,19 @@
           "loc": "14:14-38"
         },
         {
-          "moduleId": "ShAC",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
-          "module": "./~/react-dom/lib/ReactDOMSelect.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
+          "moduleId": "FQvv",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
+          "module": "./~/react-dom/lib/ReactDOMOption.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "13:14-38"
         },
         {
-          "moduleId": "FQvv",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
-          "module": "./~/react-dom/lib/ReactDOMOption.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
+          "moduleId": "ShAC",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
+          "module": "./~/react-dom/lib/ReactDOMSelect.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "13:14-38"
@@ -5197,19 +5197,19 @@
           "loc": "22:14-41"
         },
         {
-          "moduleId": "ShAC",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
-          "module": "./~/react-dom/lib/ReactDOMSelect.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
+          "moduleId": "FQvv",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
+          "module": "./~/react-dom/lib/ReactDOMOption.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "19:14-41"
         },
         {
-          "moduleId": "FQvv",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
-          "module": "./~/react-dom/lib/ReactDOMOption.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
+          "moduleId": "ShAC",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
+          "module": "./~/react-dom/lib/ReactDOMSelect.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "19:14-41"
@@ -5269,15 +5269,6 @@
           "loc": "14:14-41"
         },
         {
-          "moduleId": "yGo3",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactChildReconciler.js",
-          "module": "./~/react-dom/lib/ReactChildReconciler.js",
-          "moduleName": "./~/react-dom/lib/ReactChildReconciler.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/warning",
-          "loc": "19:14-41"
-        },
-        {
           "moduleId": "Zzr+",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/LinkedValueUtils.js",
           "module": "./~/react-dom/lib/LinkedValueUtils.js",
@@ -5285,6 +5276,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/warning",
           "loc": "22:14-41"
+        },
+        {
+          "moduleId": "yGo3",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactChildReconciler.js",
+          "module": "./~/react-dom/lib/ReactChildReconciler.js",
+          "moduleName": "./~/react-dom/lib/ReactChildReconciler.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/warning",
+          "loc": "19:14-41"
         },
         {
           "moduleId": "f6Df",
@@ -5433,19 +5433,19 @@
           "loc": "13:21-48"
         },
         {
-          "moduleId": "wbUH",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
-          "module": "./~/react-dom/lib/SyntheticAnimationEvent.js",
-          "moduleName": "./~/react-dom/lib/SyntheticAnimationEvent.js",
+          "moduleId": "U5Eh",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticClipboardEvent.js",
+          "module": "./~/react-dom/lib/SyntheticClipboardEvent.js",
+          "moduleName": "./~/react-dom/lib/SyntheticClipboardEvent.js",
           "type": "cjs require",
           "userRequest": "./SyntheticEvent",
           "loc": "13:21-48"
         },
         {
-          "moduleId": "U5Eh",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticClipboardEvent.js",
-          "module": "./~/react-dom/lib/SyntheticClipboardEvent.js",
-          "moduleName": "./~/react-dom/lib/SyntheticClipboardEvent.js",
+          "moduleId": "wbUH",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+          "module": "./~/react-dom/lib/SyntheticAnimationEvent.js",
+          "moduleName": "./~/react-dom/lib/SyntheticAnimationEvent.js",
           "type": "cjs require",
           "userRequest": "./SyntheticEvent",
           "loc": "13:21-48"
@@ -6175,6 +6175,15 @@
           "loc": "21:16-45"
         },
         {
+          "moduleId": "wLwR",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/fbjs/lib/createNodesFromMarkup.js",
+          "module": "./~/fbjs/lib/createNodesFromMarkup.js",
+          "moduleName": "./~/fbjs/lib/createNodesFromMarkup.js",
+          "type": "cjs require",
+          "userRequest": "./invariant",
+          "loc": "20:16-38"
+        },
+        {
           "moduleId": "Xt9f",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/traverseAllChildren.js",
           "module": "./~/react-dom/lib/traverseAllChildren.js",
@@ -6191,15 +6200,6 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/invariant",
           "loc": "18:16-45"
-        },
-        {
-          "moduleId": "wLwR",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/fbjs/lib/createNodesFromMarkup.js",
-          "module": "./~/fbjs/lib/createNodesFromMarkup.js",
-          "moduleName": "./~/fbjs/lib/createNodesFromMarkup.js",
-          "type": "cjs require",
-          "userRequest": "./invariant",
-          "loc": "20:16-38"
         },
         {
           "moduleId": "E6DY",
@@ -7651,19 +7651,19 @@
           "loc": "18:28-62"
         },
         {
-          "moduleId": "ShAC",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
-          "module": "./~/react-dom/lib/ReactDOMSelect.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
+          "moduleId": "FQvv",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
+          "module": "./~/react-dom/lib/ReactDOMOption.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
           "type": "cjs require",
           "userRequest": "./ReactDOMComponentTree",
           "loc": "16:28-62"
         },
         {
-          "moduleId": "FQvv",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMOption.js",
-          "module": "./~/react-dom/lib/ReactDOMOption.js",
-          "moduleName": "./~/react-dom/lib/ReactDOMOption.js",
+          "moduleId": "ShAC",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/ReactDOMSelect.js",
+          "module": "./~/react-dom/lib/ReactDOMSelect.js",
+          "moduleName": "./~/react-dom/lib/ReactDOMSelect.js",
           "type": "cjs require",
           "userRequest": "./ReactDOMComponentTree",
           "loc": "16:28-62"
