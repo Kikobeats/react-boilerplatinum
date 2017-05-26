@@ -1,5 +1,6 @@
 'use strict'
 
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -80,6 +81,9 @@ module.exports = {
     new ExtractTextPlugin({
       allChunks: true,
       filename: 'assets/css/bundle.css'
+    }),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.css$/
     }),
     new PurifyCSSPlugin({
       paths: glob.sync('src/app/**/*', { nodir: true }),
