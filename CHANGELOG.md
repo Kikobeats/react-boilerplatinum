@@ -1,3 +1,15 @@
+<a name="1.3.0"></a>
+# 1.3.0 (2017-05-26)
+
+* Add OptimizeCssAssetsPlugin ([6c9b6a2](https://github.com/Kikobeats/react-boilerplatinum/commit/6c9b6a2))
+* Use a global stylesheet ([81cd65a](https://github.com/Kikobeats/react-boilerplatinum/commit/81cd65a))
+* chore(package): update babel-preset-env to version 1.5.1 ([20fd81a](https://github.com/Kikobeats/react-boilerplatinum/commit/20fd81a))
+* chore(package): update offline-plugin to version 4.8.0 ([cd6a351](https://github.com/Kikobeats/react-boilerplatinum/commit/cd6a351))
+* chore(package): update style-loader to version 0.18.0 ([e62400e](https://github.com/Kikobeats/react-boilerplatinum/commit/e62400e))
+* chore(package): update webpack to version 2.6.0 ([0cf295f](https://github.com/Kikobeats/react-boilerplatinum/commit/0cf295f))
+
+
+
 <a name="1.2.3"></a>
 ## 1.2.3 (2017-05-17)
 
