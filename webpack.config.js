@@ -59,6 +59,10 @@ module.exports = {
         }, {
           loader: 'sass-loader',
           options: {
+            data: '@import "index.scss";',
+            includePaths: [
+              path.resolve('src/app')
+            ],
             sourceMap: true
           }
         }]
