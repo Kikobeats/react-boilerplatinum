@@ -1,3 +1,11 @@
+<a name="1.3.1"></a>
+## 1.3.1 (2017-06-07)
+
+* Tweaks ([7a39290](https://github.com/Kikobeats/react-boilerplatinum/commit/7a39290))
+* Update deps ([34942fd](https://github.com/Kikobeats/react-boilerplatinum/commit/34942fd))
+
+
+
 <a name="1.3.0"></a>
 # 1.3.0 (2017-05-26)
 
