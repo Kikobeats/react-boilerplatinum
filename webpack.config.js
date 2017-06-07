@@ -86,12 +86,9 @@ module.exports = {
       assetNameRegExp: /\.css$/
     }),
     new PurifyCSSPlugin({
-      paths: glob.sync('src/app/**/*', { nodir: true }),
-      styleExtensions: ['.css'],
-      moduleExtensions: ['.js', '.html'],
+      paths: glob.sync('src/app/**/*.js', { nodir: true }),
       purifyOptions: {
         info: true,
-        minify: true,
         rejected: true
       }
     }),
@@ -102,9 +99,14 @@ module.exports = {
       comments: false
     }),
     new CommonsChunkPlugin({
-      name: 'vendor',
+      names: ['vendor', 'manifest'],
       filename: 'assets/js/vendor.bundle.js',
       minChunks: Infinity
+    }),
+    new CommonsChunkPlugin({
+      async: true,
+      children: true,
+      minChunks: 4
     }),
     new OfflinePlugin({
       safeToUseOptionalCaches: true,
@@ -115,11 +117,7 @@ module.exports = {
         main: [
           'index.html',
           ':rest:'
-        ].concat(
-          glob.sync('src/www/assets/img/**/*.*', {
-            nodir: true
-          }).map(file => file.replace('src/www/', ''))
-        ),
+        ],
         additional: [
           'assets/js/vendor.bundle.js',
           'assets/css/bundle.css'
@@ -132,7 +130,11 @@ module.exports = {
         'https://static.hotjar.com/c/hotjar-342795.js?sv=5',
         'https://www.google-analytics.com/analytics.js',
         'https://cdn.headwayapp.co/widget.js'
-      ]
+      ].concat(
+        glob.sync('src/www/assets/img/**/*.*', {
+          nodir: true
+        }).map(file => file.replace('src/www/', ''))
+      )
     }),
     new HtmlWebpackPlugin(Object.assign({}, config, {
       template: path.resolve('index.ejs'),
