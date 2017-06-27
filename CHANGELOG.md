@@ -1,3 +1,11 @@
+<a name="1.3.4"></a>
+## 1.3.4 (2017-06-27)
+
+* Better default meta ([7535571](https://github.com/Kikobeats/react-boilerplatinum/commit/7535571))
+* Better GA script ([2fe5c63](https://github.com/Kikobeats/react-boilerplatinum/commit/2fe5c63))
+
+
+
 <a name="1.3.3"></a>
 ## 1.3.3 (2017-06-27)
 
