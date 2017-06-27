@@ -1,3 +1,7 @@
 {
-  "appMountId": "app"
+  "appMountId": "app",
+  "title": "react-boilerplatinum",
+  "baseHref": "https://kikobeats.github.io/react-boilerplatinum",
+  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "googleAnalytics": ""
 }
