@@ -57,7 +57,13 @@ module.exports = {
           parser: 'postcss-scss'
         }
       }, {
-        loader: 'sass-loader'
+        loader: 'sass-loader',
+        options: {
+          data: '@import "index.scss";',
+          includePaths: [
+            path.resolve('src/app')
+          ]
+        }
       }]
     }]
   },
