@@ -1,3 +1,10 @@
+<a name="1.3.3"></a>
+## 1.3.3 (2017-06-27)
+
+* Add missing dep ([c193f60](https://github.com/Kikobeats/react-boilerplatinum/commit/c193f60))
+
+
+
 <a name="1.3.2"></a>
 ## 1.3.2 (2017-06-27)
 
