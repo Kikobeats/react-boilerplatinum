@@ -4,6 +4,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const PurifyCSSPlugin = require('purifycss-webpack')
@@ -97,6 +98,13 @@ module.exports = {
       minimize: true,
       compress: { warnings: false },
       comments: false
+    }),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.(js|html)$/,
+      threshold: 10240,
+      minRatio: 0.8
     }),
     new CommonsChunkPlugin({
       names: ['vendor', 'manifest'],
