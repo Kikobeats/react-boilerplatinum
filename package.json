@@ -75,7 +75,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack --progress --debug --config webpack.config.js",
-    "dev": "webpack-dashboard -- node bin/server",
+    "dev": "webpack-dashboard -m -- node bin/server",
     "lint": "standard",
     "test": "echo 'not yet implemented, wanna help?'"
   },
