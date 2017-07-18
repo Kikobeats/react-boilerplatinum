@@ -1,7 +1,5 @@
 # react-boilerplatinum
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/react-boilerplatinum.svg)](https://greenkeeper.io/)
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/react-boilerplatinum.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/react-boilerplatinum/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/react-boilerplatinum)
 [![Dependency status](http://img.shields.io/david/Kikobeats/react-boilerplatinum.svg?style=flat-square)](https://david-dm.org/Kikobeats/react-boilerplatinum)
