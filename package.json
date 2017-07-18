@@ -27,9 +27,9 @@
     "webpack"
   ],
   "dependencies": {
-    "autoprefixer": "~7.1.1",
+    "autoprefixer": "~7.1.2",
     "babel-core": "~6.25.0",
-    "babel-loader": "~7.1.0",
+    "babel-loader": "~7.1.1",
     "babel-plugin-transform-object-rest-spread": "~6.23.0",
     "babel-plugin-transform-react-constant-elements": "~6.23.0",
     "babel-plugin-transform-react-inline-elements": "~6.22.0",
@@ -44,7 +44,7 @@
     "html-webpack-harddisk-plugin": "0.1.0",
     "html-webpack-plugin": "~2.29.0",
     "node-sass": "~4.5.3",
-    "offline-plugin": "~4.8.1",
+    "offline-plugin": "~4.8.3",
     "optimize-css-assets-webpack-plugin": "~2.0.0",
     "postcss-focus": "~2.0.0",
     "postcss-loader": "~2.0.6",
@@ -57,10 +57,10 @@
     "react-hot-loader": "~3.0.0-beta.7",
     "sass-loader": "~6.0.6",
     "style-loader": "~0.18.2",
-    "tachyons-sass": "~4.7.1",
+    "tachyons-sass": "~4.7.4",
     "travis-after-all": "~1.4.5",
     "webpack": "~3.3.0",
-    "webpack-bundle-analyzer": "~2.8.2"
+    "webpack-bundle-analyzer": "~2.8.3"
   },
   "devDependencies": {
     "babel-preset-react-optimize": "latest",
