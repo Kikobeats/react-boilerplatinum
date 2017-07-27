@@ -1,3 +1,19 @@
+<a name="1.3.5"></a>
+## 1.3.5 (2017-07-27)
+
+* Add compression plugin ([5982d88](https://github.com/Kikobeats/react-boilerplatinum/commit/5982d88))
+* Initialize minimal dashboard ([d18572f](https://github.com/Kikobeats/react-boilerplatinum/commit/d18572f))
+* Remove undeed dep ([cc24607](https://github.com/Kikobeats/react-boilerplatinum/commit/cc24607))
+* Update deps ([7b702d3](https://github.com/Kikobeats/react-boilerplatinum/commit/7b702d3))
+* Update README.md ([310e0d5](https://github.com/Kikobeats/react-boilerplatinum/commit/310e0d5))
+* fix(package): update file-loader to version 1.0.0-rc.0 ([671c295](https://github.com/Kikobeats/react-boilerplatinum/commit/671c295))
+* fix(package): update optimize-css-assets-webpack-plugin to version 3.0.0 ([8936649](https://github.com/Kikobeats/react-boilerplatinum/commit/8936649))
+* fix(package): update webpack to version 3.4.0 ([d1c3a03](https://github.com/Kikobeats/react-boilerplatinum/commit/d1c3a03))
+* docs(readme): add Greenkeeper badge ([47d724b](https://github.com/Kikobeats/react-boilerplatinum/commit/47d724b))
+* chore(package): update dependencies ([ce55bfb](https://github.com/Kikobeats/react-boilerplatinum/commit/ce55bfb))
+
+
+
 <a name="1.3.4"></a>
 ## 1.3.4 (2017-06-27)
 
