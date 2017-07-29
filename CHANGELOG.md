@@ -1,3 +1,10 @@
+<a name="1.4.0"></a>
+# 1.4.0 (2017-07-29)
+
+* Add webpack-common-shake ([52d937a](https://github.com/Kikobeats/react-boilerplatinum/commit/52d937a))
+
+
+
 <a name="1.3.5"></a>
 ## 1.3.5 (2017-07-27)
 
