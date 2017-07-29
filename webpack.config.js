@@ -6,6 +6,7 @@ const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
+const {Plugin: ShakePlugin} = require('webpack-common-shake')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const PurifyCSSPlugin = require('purifycss-webpack')
 const OfflinePlugin = require('offline-plugin')
@@ -79,6 +80,7 @@ module.exports = {
     new HashedModuleIdsPlugin(),
     new OccurrenceOrderPlugin(),
     new AggressiveMergingPlugin(),
+    new ShakePlugin(),
     new ExtractTextPlugin({
       allChunks: true,
       filename: 'assets/css/bundle.css'

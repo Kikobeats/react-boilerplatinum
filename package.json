@@ -59,7 +59,8 @@
     "tachyons-sass": "~4.7.4",
     "travis-after-all": "~1.4.5",
     "webpack": "~3.4.0",
-    "webpack-bundle-analyzer": "~2.8.3"
+    "webpack-bundle-analyzer": "~2.8.3",
+    "webpack-common-shake": "~1.5.3"
   },
   "devDependencies": {
     "babel-preset-react-optimize": "latest",
