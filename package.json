@@ -56,7 +56,7 @@
     "react-hot-loader": "~3.0.0-beta.7",
     "sass-loader": "~6.0.6",
     "style-loader": "~0.18.2",
-    "tachyons-sass": "~4.7.4",
+    "tachyons-sass": "~4.8.1",
     "travis-after-all": "~1.4.5",
     "webpack": "~3.5.0",
     "webpack-bundle-analyzer": "~2.9.0",
