@@ -3,9 +3,9 @@
   "warnings": [
     "OfflinePlugin: Cache asset [index.html] is not found in the output assets,if the asset is not processed by webpack, move it to the |externals| option to remove this warning."
   ],
-  "version": "3.5.6",
+  "version": "3.6.0",
   "hash": "f2119e6c0a841151dd1a",
-  "time": 10405,
+  "time": 9671,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -4272,22 +4272,13 @@
             0
           ],
           "assets": [],
-          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
-          "issuerId": "Li0w",
-          "issuerName": "./node_modules/react-dom/lib/setInnerHTML.js",
+          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMLazyTree.js",
+          "issuerId": "hMln",
+          "issuerName": "./node_modules/react-dom/lib/DOMLazyTree.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
-            {
-              "moduleId": "Li0w",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
-              "module": "./node_modules/react-dom/lib/setInnerHTML.js",
-              "moduleName": "./node_modules/react-dom/lib/setInnerHTML.js",
-              "type": "cjs require",
-              "userRequest": "./createMicrosoftUnsafeLocalFunction",
-              "loc": "19:41-88"
-            },
             {
               "moduleId": "hMln",
               "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMLazyTree.js",
@@ -4296,6 +4287,15 @@
               "type": "cjs require",
               "userRequest": "./createMicrosoftUnsafeLocalFunction",
               "loc": "16:41-88"
+            },
+            {
+              "moduleId": "Li0w",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
+              "module": "./node_modules/react-dom/lib/setInnerHTML.js",
+              "moduleName": "./node_modules/react-dom/lib/setInnerHTML.js",
+              "type": "cjs require",
+              "userRequest": "./createMicrosoftUnsafeLocalFunction",
+              "loc": "19:41-88"
             },
             {
               "moduleId": "rbSI",
@@ -5280,19 +5280,19 @@
               "loc": "13:21-48"
             },
             {
-              "moduleId": "U5Eh",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticClipboardEvent.js",
-              "module": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
-              "moduleName": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
+              "moduleId": "wbUH",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+              "module": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+              "moduleName": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
               "type": "cjs require",
               "userRequest": "./SyntheticEvent",
               "loc": "13:21-48"
             },
             {
-              "moduleId": "wbUH",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
-              "module": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
-              "moduleName": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+              "moduleId": "U5Eh",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticClipboardEvent.js",
+              "module": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
+              "moduleName": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
               "type": "cjs require",
               "userRequest": "./SyntheticEvent",
               "loc": "13:21-48"
@@ -14150,22 +14150,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
-      "issuerId": "Li0w",
-      "issuerName": "./node_modules/react-dom/lib/setInnerHTML.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMLazyTree.js",
+      "issuerId": "hMln",
+      "issuerName": "./node_modules/react-dom/lib/DOMLazyTree.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "Li0w",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
-          "module": "./node_modules/react-dom/lib/setInnerHTML.js",
-          "moduleName": "./node_modules/react-dom/lib/setInnerHTML.js",
-          "type": "cjs require",
-          "userRequest": "./createMicrosoftUnsafeLocalFunction",
-          "loc": "19:41-88"
-        },
         {
           "moduleId": "hMln",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/DOMLazyTree.js",
@@ -14174,6 +14165,15 @@
           "type": "cjs require",
           "userRequest": "./createMicrosoftUnsafeLocalFunction",
           "loc": "16:41-88"
+        },
+        {
+          "moduleId": "Li0w",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/setInnerHTML.js",
+          "module": "./node_modules/react-dom/lib/setInnerHTML.js",
+          "moduleName": "./node_modules/react-dom/lib/setInnerHTML.js",
+          "type": "cjs require",
+          "userRequest": "./createMicrosoftUnsafeLocalFunction",
+          "loc": "19:41-88"
         },
         {
           "moduleId": "rbSI",
@@ -15158,19 +15158,19 @@
           "loc": "13:21-48"
         },
         {
-          "moduleId": "U5Eh",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticClipboardEvent.js",
-          "module": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
-          "moduleName": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
+          "moduleId": "wbUH",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+          "module": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+          "moduleName": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
           "type": "cjs require",
           "userRequest": "./SyntheticEvent",
           "loc": "13:21-48"
         },
         {
-          "moduleId": "wbUH",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticAnimationEvent.js",
-          "module": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
-          "moduleName": "./node_modules/react-dom/lib/SyntheticAnimationEvent.js",
+          "moduleId": "U5Eh",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/lib/SyntheticClipboardEvent.js",
+          "module": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
+          "moduleName": "./node_modules/react-dom/lib/SyntheticClipboardEvent.js",
           "type": "cjs require",
           "userRequest": "./SyntheticEvent",
           "loc": "13:21-48"
