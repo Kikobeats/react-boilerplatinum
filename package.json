@@ -52,7 +52,7 @@
     "purify-css": "~1.2.5",
     "purifycss-webpack": "~0.7.0",
     "react": "~16.0.0",
-    "react-dom": "~15.6.1",
+    "react-dom": "~16.0.0",
     "react-hot-loader": "~3.0.0-beta.7",
     "sass-loader": "~6.0.6",
     "style-loader": "~0.18.2",
