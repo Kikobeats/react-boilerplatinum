@@ -3,9 +3,9 @@
   "warnings": [
     "OfflinePlugin: Cache asset [index.html] is not found in the output assets,if the asset is not processed by webpack, move it to the |externals| option to remove this warning."
   ],
-  "version": "3.6.0",
-  "hash": "14e65a10c768af776c31",
-  "time": 9024,
+  "version": "3.7.1",
+  "hash": "b68e3e2b13a0e75befd5",
+  "time": 10444,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -54,7 +54,7 @@
     },
     {
       "name": "assets/js/bundle.js.map",
-      "size": 446432,
+      "size": 446434,
       "chunks": [
         0
       ],
@@ -83,14 +83,14 @@
     },
     {
       "name": "sw.js",
-      "size": 8887,
+      "size": 8888,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "appcache/manifest.appcache",
-      "size": 140,
+      "size": 141,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -143,7 +143,7 @@
         "assets/css/bundle.css",
         "assets/js/bundle.js.map"
       ],
-      "hash": "ff02bc470657fde48e0e",
+      "hash": "9dfc14c8c818b4a3c92b",
       "parents": [
         1
       ],
@@ -428,7 +428,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
-          "source": "/* eslint-disable global-require */\n\n'use strict';\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./index.prod');\n} else {\n  module.exports = require('./index.dev');\n}"
+          "source": "'use strict';\n\n/* eslint-disable global-require */\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./index.prod');\n} else {\n  module.exports = require('./index.dev');\n}"
         },
         {
           "id": "JTgD",
@@ -957,7 +957,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 5,
-          "source": "/* eslint-disable global-require */\n\n'use strict';\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./AppContainer.prod');\n} else {\n  module.exports = require('./AppContainer.dev');\n}"
+          "source": "'use strict';\n\n/* eslint-disable global-require */\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./AppContainer.prod');\n} else {\n  module.exports = require('./AppContainer.dev');\n}"
         },
         {
           "id": 1,
@@ -1117,7 +1117,7 @@
           "name": "./node_modules/react-hot-loader/index.js",
           "index": 2,
           "index2": 10,
-          "size": 41,
+          "size": 40,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1149,7 +1149,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "module.exports = require('./lib/index');\n"
+          "source": "module.exports = require('./lib/index')\n"
         },
         {
           "id": "sGP0",
@@ -1157,7 +1157,7 @@
           "name": "./node_modules/react-hot-loader/lib/AppContainer.prod.js",
           "index": 6,
           "index2": 6,
-          "size": 2206,
+          "size": 2207,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1187,7 +1187,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 6,
-          "source": "/* eslint-disable react/prop-types */\n\n'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar React = require('react');\nvar Component = React.Component;\n\nvar AppContainer = function (_Component) {\n  _inherits(AppContainer, _Component);\n\n  function AppContainer() {\n    _classCallCheck(this, AppContainer);\n\n    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));\n  }\n\n  _createClass(AppContainer, [{\n    key: 'render',\n    value: function render() {\n      if (this.props.component) {\n        return React.createElement(this.props.component, this.props.props);\n      }\n\n      return React.Children.only(this.props.children);\n    }\n  }]);\n\n  return AppContainer;\n}(Component);\n\nmodule.exports = AppContainer;"
+          "source": "'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/* eslint-disable react/prop-types */\n\nvar React = require('react');\n\nvar Component = React.Component;\n\nvar AppContainer = function (_Component) {\n  _inherits(AppContainer, _Component);\n\n  function AppContainer() {\n    _classCallCheck(this, AppContainer);\n\n    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));\n  }\n\n  _createClass(AppContainer, [{\n    key: 'render',\n    value: function render() {\n      if (this.props.component) {\n        return React.createElement(this.props.component, this.props.props);\n      }\n\n      return React.Children.only(this.props.children);\n    }\n  }]);\n\n  return AppContainer;\n}(Component);\n\nmodule.exports = AppContainer;"
         },
         {
           "id": "sgb3",
@@ -1619,7 +1619,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
-      "source": "/* eslint-disable global-require */\n\n'use strict';\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./index.prod');\n} else {\n  module.exports = require('./index.dev');\n}"
+      "source": "'use strict';\n\n/* eslint-disable global-require */\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./index.prod');\n} else {\n  module.exports = require('./index.dev');\n}"
     },
     {
       "id": "JTgD",
@@ -2079,7 +2079,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 5,
-      "source": "/* eslint-disable global-require */\n\n'use strict';\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./AppContainer.prod');\n} else {\n  module.exports = require('./AppContainer.dev');\n}"
+      "source": "'use strict';\n\n/* eslint-disable global-require */\n\nif (!module.hot || process.env.NODE_ENV === 'production') {\n  module.exports = require('./AppContainer.prod');\n} else {\n  module.exports = require('./AppContainer.dev');\n}"
     },
     {
       "id": "o+pC",
@@ -2247,7 +2247,7 @@
       "name": "./node_modules/react-hot-loader/index.js",
       "index": 2,
       "index2": 10,
-      "size": 41,
+      "size": 40,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2279,7 +2279,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "module.exports = require('./lib/index');\n"
+      "source": "module.exports = require('./lib/index')\n"
     },
     {
       "id": "sGP0",
@@ -2287,7 +2287,7 @@
       "name": "./node_modules/react-hot-loader/lib/AppContainer.prod.js",
       "index": 6,
       "index2": 6,
-      "size": 2206,
+      "size": 2207,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2317,7 +2317,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 6,
-      "source": "/* eslint-disable react/prop-types */\n\n'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar React = require('react');\nvar Component = React.Component;\n\nvar AppContainer = function (_Component) {\n  _inherits(AppContainer, _Component);\n\n  function AppContainer() {\n    _classCallCheck(this, AppContainer);\n\n    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));\n  }\n\n  _createClass(AppContainer, [{\n    key: 'render',\n    value: function render() {\n      if (this.props.component) {\n        return React.createElement(this.props.component, this.props.props);\n      }\n\n      return React.Children.only(this.props.children);\n    }\n  }]);\n\n  return AppContainer;\n}(Component);\n\nmodule.exports = AppContainer;"
+      "source": "'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/* eslint-disable react/prop-types */\n\nvar React = require('react');\n\nvar Component = React.Component;\n\nvar AppContainer = function (_Component) {\n  _inherits(AppContainer, _Component);\n\n  function AppContainer() {\n    _classCallCheck(this, AppContainer);\n\n    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));\n  }\n\n  _createClass(AppContainer, [{\n    key: 'render',\n    value: function render() {\n      if (this.props.component) {\n        return React.createElement(this.props.component, this.props.props);\n      }\n\n      return React.Children.only(this.props.children);\n    }\n  }]);\n\n  return AppContainer;\n}(Component);\n\nmodule.exports = AppContainer;"
     },
     {
       "id": 0,
