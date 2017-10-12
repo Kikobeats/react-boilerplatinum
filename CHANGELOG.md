@@ -1,3 +1,10 @@
+<a name="1.6.0"></a>
+# 1.6.0 (2017-10-12)
+
+* Update deps ([130a949](https://github.com/Kikobeats/react-boilerplatinum/commit/130a949))
+
+
+
 <a name="1.5.0"></a>
 # 1.5.0 (2017-10-12)
 
