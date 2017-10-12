@@ -1,3 +1,25 @@
+<a name="1.4.1"></a>
+## 1.4.1 (2017-10-12)
+
+* Add babel eslint ([b419387](https://github.com/Kikobeats/react-boilerplatinum/commit/b419387))
+* Remove unnecessary deps ([5020c7d](https://github.com/Kikobeats/react-boilerplatinum/commit/5020c7d))
+* fix(package): update babel-core to version 6.26.0 ([c702125](https://github.com/Kikobeats/react-boilerplatinum/commit/c702125))
+* fix(package): update babel-plugin-transform-object-rest-spread to version 6.26.0 ([a2057fd](https://github.com/Kikobeats/react-boilerplatinum/commit/a2057fd))
+* fix(package): update html-webpack-plugin to version 2.30.0 ([506da3b](https://github.com/Kikobeats/react-boilerplatinum/commit/506da3b))
+* fix(package): update optimize-css-assets-webpack-plugin to version 3.1.0 ([d6b4785](https://github.com/Kikobeats/react-boilerplatinum/commit/d6b4785))
+* fix(package): update optimize-css-assets-webpack-plugin to version 3.2.0 ([2a28e6a](https://github.com/Kikobeats/react-boilerplatinum/commit/2a28e6a))
+* fix(package): update preload-webpack-plugin to version 2.0.0 ([6a202fe](https://github.com/Kikobeats/react-boilerplatinum/commit/6a202fe))
+* fix(package): update react to version 16.0.0 ([c47bf51](https://github.com/Kikobeats/react-boilerplatinum/commit/c47bf51))
+* fix(package): update react-dom to version 16.0.0 ([0f0d7b4](https://github.com/Kikobeats/react-boilerplatinum/commit/0f0d7b4))
+* fix(package): update style-loader to version 0.19.0 ([13cd6af](https://github.com/Kikobeats/react-boilerplatinum/commit/13cd6af))
+* fix(package): update tachyons-sass to version 4.8.1 ([07ef190](https://github.com/Kikobeats/react-boilerplatinum/commit/07ef190))
+* fix(package): update webpack to version 3.5.0 ([c7bed58](https://github.com/Kikobeats/react-boilerplatinum/commit/c7bed58))
+* fix(package): update webpack to version 3.6.0 ([c676fe1](https://github.com/Kikobeats/react-boilerplatinum/commit/c676fe1))
+* fix(package): update webpack to version 3.7.0 ([53af794](https://github.com/Kikobeats/react-boilerplatinum/commit/53af794))
+* fix(package): update webpack-bundle-analyzer to version 2.9.0 ([6e7ec07](https://github.com/Kikobeats/react-boilerplatinum/commit/6e7ec07))
+
+
+
 <a name="1.4.0"></a>
 # 1.4.0 (2017-07-29)
 
