@@ -4,9 +4,9 @@ const WebpackDevServer = require('webpack-dev-server')
 const config = require('../webpack.dev.config')
 const webpack = require('webpack')
 
-var compiler = webpack(config)
+const compiler = webpack(config)
 
-var server = new WebpackDevServer(compiler, {
+const server = new WebpackDevServer(compiler, {
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: true,
