@@ -1,3 +1,10 @@
+<a name="1.5.0"></a>
+# 1.5.0 (2017-10-12)
+
+* Add transform-class-properties plugin ([8919d03](https://github.com/Kikobeats/react-boilerplatinum/commit/8919d03))
+
+
+
 <a name="1.4.1"></a>
 ## 1.4.1 (2017-10-12)
 
