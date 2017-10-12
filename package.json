@@ -60,6 +60,7 @@
     "webpack-common-shake": "~1.5.3"
   },
   "devDependencies": {
+    "babel-eslint": "latest",
     "babel-preset-react-optimize": "latest",
     "browser-sync": "latest",
     "browser-sync-webpack-plugin": "latest",
@@ -76,5 +77,11 @@
     "lint": "standard",
     "test": "echo 'not yet implemented, wanna help?'"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "React"
+    ],
+    "parser": "babel-eslint"
+  }
 }
