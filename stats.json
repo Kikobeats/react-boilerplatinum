@@ -3,9 +3,9 @@
   "warnings": [
     "OfflinePlugin: Cache asset [index.html] is not found in the output assets,if the asset is not processed by webpack, move it to the |externals| option to remove this warning."
   ],
-  "version": "3.8.1",
-  "hash": "af5b658c09779865815f",
-  "time": 9192,
+  "version": "3.9.1",
+  "hash": "25d84dc9d90f5fe3c3db",
+  "time": 8918,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -83,14 +83,14 @@
     },
     {
       "name": "sw.js",
-      "size": 8888,
+      "size": 8887,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "appcache/manifest.appcache",
-      "size": 141,
+      "size": 140,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -2611,7 +2611,7 @@
       "assets": [
         {
           "name": "index.html",
-          "size": 550293,
+          "size": 550338,
           "chunks": [
             0
           ],
@@ -2636,12 +2636,12 @@
           "initial": true,
           "entry": true,
           "extraAsync": false,
-          "size": 547268,
+          "size": 547311,
           "names": [],
           "files": [
             "index.html"
           ],
-          "hash": "a8284f6fb2e30fd9cd73",
+          "hash": "d580b687a20d1ca2196d",
           "parents": [],
           "modules": [
             {
@@ -2650,7 +2650,7 @@
               "name": "(webpack)/buildin/module.js",
               "index": 3,
               "index2": 1,
-              "size": 495,
+              "size": 517,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -2680,7 +2680,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 2,
-              "source": "module.exports = function(module) {\n\tif(!module.webpackPolyfill) {\n\t\tmodule.deprecate = function() {};\n\t\tmodule.paths = [];\n\t\t// module.parent = undefined by default\n\t\tif(!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n"
+              "source": "module.exports = function(module) {\r\n\tif(!module.webpackPolyfill) {\r\n\t\tmodule.deprecate = function() {};\r\n\t\tmodule.paths = [];\r\n\t\t// module.parent = undefined by default\r\n\t\tif(!module.children) module.children = [];\r\n\t\tObject.defineProperty(module, \"loaded\", {\r\n\t\t\tenumerable: true,\r\n\t\t\tget: function() {\r\n\t\t\t\treturn module.l;\r\n\t\t\t}\r\n\t\t});\r\n\t\tObject.defineProperty(module, \"id\", {\r\n\t\t\tenumerable: true,\r\n\t\t\tget: function() {\r\n\t\t\t\treturn module.i;\r\n\t\t\t}\r\n\t\t});\r\n\t\tmodule.webpackPolyfill = 1;\r\n\t}\r\n\treturn module;\r\n};\r\n"
             },
             {
               "id": "DuR2",
@@ -2688,7 +2688,7 @@
               "name": "(webpack)/buildin/global.js",
               "index": 2,
               "index2": 0,
-              "size": 488,
+              "size": 509,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -2718,7 +2718,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 2,
-              "source": "var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || Function(\"return this\")() || (1,eval)(\"this\");\n} catch(e) {\n\t// This works if the window reference is available\n\tif(typeof window === \"object\")\n\t\tg = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n"
+              "source": "var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\treturn this;\r\n})();\r\n\r\ntry {\r\n\t// This works if eval is allowed (see CSP)\r\n\tg = g || Function(\"return this\")() || (1,eval)(\"this\");\r\n} catch(e) {\r\n\t// This works if the window reference is available\r\n\tif(typeof window === \"object\")\r\n\t\tg = window;\r\n}\r\n\r\n// g can still be undefined, but nothing to do about it...\r\n// We return undefined, instead of nothing here, so it's\r\n// easier to handle this case. if(!global) { ...}\r\n\r\nmodule.exports = g;\r\n"
             },
             {
               "id": 0,
@@ -2803,7 +2803,7 @@
           "name": "(webpack)/buildin/module.js",
           "index": 3,
           "index2": 1,
-          "size": 495,
+          "size": 517,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2833,7 +2833,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "module.exports = function(module) {\n\tif(!module.webpackPolyfill) {\n\t\tmodule.deprecate = function() {};\n\t\tmodule.paths = [];\n\t\t// module.parent = undefined by default\n\t\tif(!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n"
+          "source": "module.exports = function(module) {\r\n\tif(!module.webpackPolyfill) {\r\n\t\tmodule.deprecate = function() {};\r\n\t\tmodule.paths = [];\r\n\t\t// module.parent = undefined by default\r\n\t\tif(!module.children) module.children = [];\r\n\t\tObject.defineProperty(module, \"loaded\", {\r\n\t\t\tenumerable: true,\r\n\t\t\tget: function() {\r\n\t\t\t\treturn module.l;\r\n\t\t\t}\r\n\t\t});\r\n\t\tObject.defineProperty(module, \"id\", {\r\n\t\t\tenumerable: true,\r\n\t\t\tget: function() {\r\n\t\t\t\treturn module.i;\r\n\t\t\t}\r\n\t\t});\r\n\t\tmodule.webpackPolyfill = 1;\r\n\t}\r\n\treturn module;\r\n};\r\n"
         },
         {
           "id": "DuR2",
@@ -2841,7 +2841,7 @@
           "name": "(webpack)/buildin/global.js",
           "index": 2,
           "index2": 0,
-          "size": 488,
+          "size": 509,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2871,7 +2871,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || Function(\"return this\")() || (1,eval)(\"this\");\n} catch(e) {\n\t// This works if the window reference is available\n\tif(typeof window === \"object\")\n\t\tg = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n"
+          "source": "var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\treturn this;\r\n})();\r\n\r\ntry {\r\n\t// This works if eval is allowed (see CSP)\r\n\tg = g || Function(\"return this\")() || (1,eval)(\"this\");\r\n} catch(e) {\r\n\t// This works if the window reference is available\r\n\tif(typeof window === \"object\")\r\n\t\tg = window;\r\n}\r\n\r\n// g can still be undefined, but nothing to do about it...\r\n// We return undefined, instead of nothing here, so it's\r\n// easier to handle this case. if(!global) { ...}\r\n\r\nmodule.exports = g;\r\n"
         },
         {
           "id": 0,
