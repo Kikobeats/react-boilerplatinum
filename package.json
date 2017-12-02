@@ -47,7 +47,6 @@
     "preload-webpack-plugin": "~2.0.0",
     "purify-css": "~1.2.5",
     "purifycss-webpack": "~0.7.0",
-    "react": "~16.1.0",
     "react": "~16.2.0",
     "react-dom": "~16.2.0",
     "react-hot-loader": "~3.1.0",
@@ -66,6 +65,7 @@
     "babel-preset-react-optimize": "latest",
     "browser-sync": "latest",
     "browser-sync-webpack-plugin": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
     "standard": "latest",
     "webpack-dashboard": "latest",
     "webpack-dev-server": "latest"
@@ -84,6 +84,9 @@
     "globals": [
       "React"
     ],
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "plugins": [
+      "jsx-a11y"
+    ]
   }
 }
