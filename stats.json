@@ -5,7 +5,7 @@
   ],
   "version": "3.10.0",
   "hash": "79c287754348bb913d0a",
-  "time": 8265,
+  "time": 10130,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -20,13 +20,6 @@
   },
   "assets": [
     {
-      "name": "assets/js/bundle.js.gz",
-      "size": 33098,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "assets/js/bundle.js",
       "size": 106015,
       "chunks": [
@@ -34,6 +27,17 @@
       ],
       "chunkNames": [
         "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "assets/js/vendor.bundle.js",
+      "size": 1416,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "manifest"
       ],
       "emitted": true
     },
@@ -71,40 +75,22 @@
       "emitted": true
     },
     {
-      "name": "assets/js/vendor.bundle.js.map.gz",
-      "size": 3125,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "assets/js/vendor.bundle.js",
-      "size": 1416,
-      "chunks": [
-        1
-      ],
-      "chunkNames": [
-        "manifest"
-      ],
-      "emitted": true
-    },
-    {
-      "name": "assets/js/bundle.js.map.gz",
-      "size": 120124,
+      "name": "assets/js/bundle.js.gz",
+      "size": 33098,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "sw.js",
-      "size": 9112,
+      "size": 8888,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "appcache/manifest.appcache",
-      "size": 208,
+      "size": 141,
       "chunks": [],
       "chunkNames": [],
       "emitted": true

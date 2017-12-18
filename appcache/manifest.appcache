@@ -1,13 +1,11 @@
 CACHE MANIFEST
-#ver:2017-12-14 10:03:35
+#ver:2017-12-18 21:26:29
 #plugin:4.8.5
 
 CACHE:
 ../
 ../assets/js/bundle.js
-../assets/js/vendor.bundle.js.map.gz
 ../assets/js/bundle.js.gz
-../assets/js/bundle.js.map.gz
 
 NETWORK:
 *
