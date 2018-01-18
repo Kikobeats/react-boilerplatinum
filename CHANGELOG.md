@@ -1,3 +1,33 @@
+<a name="1.6.1"></a>
+## 1.6.1 (2018-01-18)
+
+* Add a11y plugin ([75b6841](https://github.com/Kikobeats/react-boilerplatinum/commit/75b6841))
+* Remove prop-types for production build ([924b6b2](https://github.com/Kikobeats/react-boilerplatinum/commit/924b6b2))
+* Update README.md ([068ecde](https://github.com/Kikobeats/react-boilerplatinum/commit/068ecde))
+* Update README.md ([2aa9af3](https://github.com/Kikobeats/react-boilerplatinum/commit/2aa9af3))
+* fix(package): update autoprefixer to version 7.2.0 ([cce0dac](https://github.com/Kikobeats/react-boilerplatinum/commit/cce0dac))
+* fix(package): update compression-webpack-plugin to version 1.1.0 ([16d7077](https://github.com/Kikobeats/react-boilerplatinum/commit/16d7077))
+* fix(package): update node-sass to version 4.6.0 ([c4015ce](https://github.com/Kikobeats/react-boilerplatinum/commit/c4015ce))
+* fix(package): update node-sass to version 4.7.1 ([2e913c6](https://github.com/Kikobeats/react-boilerplatinum/commit/2e913c6))
+* fix(package): update offline-plugin to version 4.9.0 ([6b2efb4](https://github.com/Kikobeats/react-boilerplatinum/commit/6b2efb4))
+* fix(package): update postcss-focus to version 3.0.0 ([e8f8e3b](https://github.com/Kikobeats/react-boilerplatinum/commit/e8f8e3b))
+* fix(package): update preload-webpack-plugin to version 2.1.0 ([53da83d](https://github.com/Kikobeats/react-boilerplatinum/commit/53da83d))
+* fix(package): update preload-webpack-plugin to version 2.2.0 ([a4829ea](https://github.com/Kikobeats/react-boilerplatinum/commit/a4829ea))
+* fix(package): update react to version 16.1.0 ([8dd1acc](https://github.com/Kikobeats/react-boilerplatinum/commit/8dd1acc))
+* fix(package): update react to version 16.2.0 ([4aa0b77](https://github.com/Kikobeats/react-boilerplatinum/commit/4aa0b77))
+* fix(package): update react-dom to version 16.1.0 ([97896b9](https://github.com/Kikobeats/react-boilerplatinum/commit/97896b9))
+* fix(package): update react-dom to version 16.2.0 ([577536b](https://github.com/Kikobeats/react-boilerplatinum/commit/577536b))
+* fix(package): update react-hot-loader to version 3.1.0 ([e72ea6c](https://github.com/Kikobeats/react-boilerplatinum/commit/e72ea6c))
+* fix(package): update react-hot-loader to version 4.0.0-beta.1 ([7f79555](https://github.com/Kikobeats/react-boilerplatinum/commit/7f79555))
+* fix(package): update tachyons-sass to version 4.9.0 ([98235cf](https://github.com/Kikobeats/react-boilerplatinum/commit/98235cf))
+* fix(package): update webpack to version 3.10.0 ([2c7b13a](https://github.com/Kikobeats/react-boilerplatinum/commit/2c7b13a))
+* fix(package): update webpack to version 3.8.0 ([212baf8](https://github.com/Kikobeats/react-boilerplatinum/commit/212baf8))
+* fix(package): update webpack to version 3.9.0 ([3346770](https://github.com/Kikobeats/react-boilerplatinum/commit/3346770))
+* docs(readme): add Greenkeeper badge ([a000ac7](https://github.com/Kikobeats/react-boilerplatinum/commit/a000ac7))
+* docs(readme): add Greenkeeper badge ([014ea6d](https://github.com/Kikobeats/react-boilerplatinum/commit/014ea6d))
+
+
+
 <a name="1.6.0"></a>
 # 1.6.0 (2017-10-12)
 
