@@ -4,8 +4,8 @@
     "OfflinePlugin: Cache asset [index.html] is not found in the output assets, if the asset is not processed by webpack, move it to the |externals| option to remove this warning."
   ],
   "version": "3.10.0",
-  "hash": "8a37cbd1276896111efb",
-  "time": 11410,
+  "hash": "cca46397b3f01ea7d8f1",
+  "time": 8950,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -21,7 +21,7 @@
   "assets": [
     {
       "name": "assets/js/bundle.js",
-      "size": 106250,
+      "size": 106238,
       "chunks": [
         0
       ],
@@ -54,7 +54,7 @@
     },
     {
       "name": "assets/js/bundle.js.map",
-      "size": 393063,
+      "size": 392925,
       "chunks": [
         0
       ],
@@ -76,7 +76,7 @@
     },
     {
       "name": "assets/js/bundle.js.gz",
-      "size": 33204,
+      "size": 33194,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -134,7 +134,7 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 125557,
+      "size": 125501,
       "names": [
         "main"
       ],
@@ -143,7 +143,7 @@
         "assets/css/bundle.css",
         "assets/js/bundle.js.map"
       ],
-      "hash": "dd1e90d31f883b6a4fbf",
+      "hash": "fe06a2c6742335ae2c48",
       "parents": [
         1
       ],
@@ -775,7 +775,7 @@
           "name": "./src/app/index.js",
           "index": 1,
           "index2": 25,
-          "size": 1455,
+          "size": 1437,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -805,7 +805,7 @@
           "providedExports": [],
           "optimizationBailout": [],
           "depth": 1,
-          "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport { AppContainer } from 'react-hot-loader';\nimport ReactDOM from 'react-dom';\nimport React from 'react';\nimport App from './App';\n\nimport './index.scss';\n\nvar el = document.getElementById('app');\n\nvar _ref = _jsx(AppContainer, {}, void 0, _jsx(App, {}));\n\nvar render = function render(component) {\n  return ReactDOM.render(_ref, el);\n};\nrender(App);\n\nif (module.hot) module.hot.accept('./App', function () {\n  return render(App);\n});\n\nif (process.env.NODE_ENV === 'production') {\n  require('offline-plugin/runtime').install();\n}"
+          "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport { AppContainer } from 'react-hot-loader';\nimport ReactDOM from 'react-dom';\nimport React from 'react';\nimport App from './App';\n\nimport './index.scss';\n\nvar el = document.getElementById('app');\n\nvar render = function render(component) {\n  return ReactDOM.render(_jsx(AppContainer, {}, void 0, _jsx(App, {})), el);\n};\nrender(App);\n\nif (module.hot) module.hot.accept('./App', function () {\n  return render(App);\n});\n\nif (process.env.NODE_ENV === 'production') {\n  require('offline-plugin/runtime').install();\n}"
         },
         {
           "id": "f2RQ",
@@ -936,7 +936,7 @@
               "moduleName": "./src/app/index.js",
               "type": "cjs require",
               "userRequest": "offline-plugin/runtime",
-              "loc": "24:2-35"
+              "loc": "22:2-35"
             }
           ],
           "usedExports": true,
@@ -988,7 +988,7 @@
           "name": "./src/app/Layout/index.js",
           "index": 23,
           "index2": 20,
-          "size": 1262,
+          "size": 1242,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1022,7 +1022,7 @@
           ],
           "optimizationBailout": [],
           "depth": 3,
-          "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport React from 'react';\n\nvar _ref2 = _jsx('h1', {}, void 0, 'Hello, world!');\n\nexport default function Layout(_ref) {\n  var children = _ref.children;\n\n  return _jsx('article', {\n    className: 'mw5 mw7-ns mt6 center bg-light-gray pa3 ph5-ns'\n  }, void 0, _jsx('section', {\n    className: 'f5 tc lh-copy'\n  }, void 0, _ref2, children));\n}"
+          "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport React from 'react';\n\nexport default function Layout(_ref) {\n  var children = _ref.children;\n\n  return _jsx('article', {\n    className: 'mw5 mw7-ns mt6 center bg-light-gray pa3 ph5-ns'\n  }, void 0, _jsx('section', {\n    className: 'f5 tc lh-copy'\n  }, void 0, _jsx('h1', {}, void 0, 'Hello, world!'), children));\n}"
         },
         {
           "id": "r+jh",
@@ -1030,7 +1030,7 @@
           "name": "./src/app/App/index.js",
           "index": 22,
           "index2": 22,
-          "size": 3247,
+          "size": 3229,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1064,7 +1064,7 @@
           ],
           "optimizationBailout": [],
           "depth": 2,
-          "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nimport React, { Component } from 'react';\n\nimport Layout from '../Layout';\nimport Counter from '../Counter';\n\n// If you use React Router, make this component\n// render <Router> with your routes. Currently,\n// only synchronous routes are hot reloaded, and\n// you will see a warning from <Router> on every reload.\n// You can ignore this warning. For details, see:\n// https://github.com/reactjs/react-router/issues/2182\n\nvar _ref = _jsx(Layout, {}, void 0, _jsx(Counter, {}));\n\nvar App = function (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    _classCallCheck(this, App);\n\n    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));\n  }\n\n  _createClass(App, [{\n    key: 'render',\n    value: function render() {\n      return _ref;\n    }\n  }]);\n\n  return App;\n}(Component);\n\nexport default App;"
+          "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nimport React, { Component } from 'react';\n\nimport Layout from '../Layout';\nimport Counter from '../Counter';\n\n// If you use React Router, make this component\n// render <Router> with your routes. Currently,\n// only synchronous routes are hot reloaded, and\n// you will see a warning from <Router> on every reload.\n// You can ignore this warning. For details, see:\n// https://github.com/reactjs/react-router/issues/2182\n\nvar App = function (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    _classCallCheck(this, App);\n\n    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));\n  }\n\n  _createClass(App, [{\n    key: 'render',\n    value: function render() {\n      return _jsx(Layout, {}, void 0, _jsx(Counter, {}));\n    }\n  }]);\n\n  return App;\n}(Component);\n\nexport default App;"
         },
         {
           "id": "sgb3",
@@ -1919,7 +1919,7 @@
       "name": "./src/app/index.js",
       "index": 1,
       "index2": 25,
-      "size": 1455,
+      "size": 1437,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1949,7 +1949,7 @@
       "providedExports": [],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport { AppContainer } from 'react-hot-loader';\nimport ReactDOM from 'react-dom';\nimport React from 'react';\nimport App from './App';\n\nimport './index.scss';\n\nvar el = document.getElementById('app');\n\nvar _ref = _jsx(AppContainer, {}, void 0, _jsx(App, {}));\n\nvar render = function render(component) {\n  return ReactDOM.render(_ref, el);\n};\nrender(App);\n\nif (module.hot) module.hot.accept('./App', function () {\n  return render(App);\n});\n\nif (process.env.NODE_ENV === 'production') {\n  require('offline-plugin/runtime').install();\n}"
+      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport { AppContainer } from 'react-hot-loader';\nimport ReactDOM from 'react-dom';\nimport React from 'react';\nimport App from './App';\n\nimport './index.scss';\n\nvar el = document.getElementById('app');\n\nvar render = function render(component) {\n  return ReactDOM.render(_jsx(AppContainer, {}, void 0, _jsx(App, {})), el);\n};\nrender(App);\n\nif (module.hot) module.hot.accept('./App', function () {\n  return render(App);\n});\n\nif (process.env.NODE_ENV === 'production') {\n  require('offline-plugin/runtime').install();\n}"
     },
     {
       "id": "f2RQ",
@@ -1995,7 +1995,7 @@
       "name": "./src/app/App/index.js",
       "index": 22,
       "index2": 22,
-      "size": 3247,
+      "size": 3229,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2029,7 +2029,7 @@
       ],
       "optimizationBailout": [],
       "depth": 2,
-      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nimport React, { Component } from 'react';\n\nimport Layout from '../Layout';\nimport Counter from '../Counter';\n\n// If you use React Router, make this component\n// render <Router> with your routes. Currently,\n// only synchronous routes are hot reloaded, and\n// you will see a warning from <Router> on every reload.\n// You can ignore this warning. For details, see:\n// https://github.com/reactjs/react-router/issues/2182\n\nvar _ref = _jsx(Layout, {}, void 0, _jsx(Counter, {}));\n\nvar App = function (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    _classCallCheck(this, App);\n\n    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));\n  }\n\n  _createClass(App, [{\n    key: 'render',\n    value: function render() {\n      return _ref;\n    }\n  }]);\n\n  return App;\n}(Component);\n\nexport default App;"
+      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nimport React, { Component } from 'react';\n\nimport Layout from '../Layout';\nimport Counter from '../Counter';\n\n// If you use React Router, make this component\n// render <Router> with your routes. Currently,\n// only synchronous routes are hot reloaded, and\n// you will see a warning from <Router> on every reload.\n// You can ignore this warning. For details, see:\n// https://github.com/reactjs/react-router/issues/2182\n\nvar App = function (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    _classCallCheck(this, App);\n\n    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));\n  }\n\n  _createClass(App, [{\n    key: 'render',\n    value: function render() {\n      return _jsx(Layout, {}, void 0, _jsx(Counter, {}));\n    }\n  }]);\n\n  return App;\n}(Component);\n\nexport default App;"
     },
     {
       "id": 0,
@@ -2122,7 +2122,7 @@
           "moduleName": "./src/app/index.js",
           "type": "cjs require",
           "userRequest": "offline-plugin/runtime",
-          "loc": "24:2-35"
+          "loc": "22:2-35"
         }
       ],
       "usedExports": true,
@@ -2136,7 +2136,7 @@
       "name": "./src/app/Layout/index.js",
       "index": 23,
       "index2": 20,
-      "size": 1262,
+      "size": 1242,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2170,7 +2170,7 @@
       ],
       "optimizationBailout": [],
       "depth": 3,
-      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport React from 'react';\n\nvar _ref2 = _jsx('h1', {}, void 0, 'Hello, world!');\n\nexport default function Layout(_ref) {\n  var children = _ref.children;\n\n  return _jsx('article', {\n    className: 'mw5 mw7-ns mt6 center bg-light-gray pa3 ph5-ns'\n  }, void 0, _jsx('section', {\n    className: 'f5 tc lh-copy'\n  }, void 0, _ref2, children));\n}"
+      "source": "var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === \"function\" && Symbol.for && Symbol.for(\"react.element\") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();\n\nimport React from 'react';\n\nexport default function Layout(_ref) {\n  var children = _ref.children;\n\n  return _jsx('article', {\n    className: 'mw5 mw7-ns mt6 center bg-light-gray pa3 ph5-ns'\n  }, void 0, _jsx('section', {\n    className: 'f5 tc lh-copy'\n  }, void 0, _jsx('h1', {}, void 0, 'Hello, world!'), children));\n}"
     },
     {
       "id": "qrie",
