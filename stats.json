@@ -5,7 +5,7 @@
   ],
   "version": "3.10.0",
   "hash": "cca46397b3f01ea7d8f1",
-  "time": 8345,
+  "time": 8918,
   "publicPath": "",
   "assetsByChunkName": {
     "main": [
@@ -83,14 +83,14 @@
     },
     {
       "name": "sw.js",
-      "size": 10139,
+      "size": 10138,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "appcache/manifest.appcache",
-      "size": 114,
+      "size": 113,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -277,22 +277,13 @@
             0
           ],
           "assets": [],
-          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-          "issuerId": "vttU",
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": "/OLF",
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
-            {
-              "moduleId": "vttU",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-              "module": "./node_modules/react/cjs/react.production.min.js",
-              "moduleName": "./node_modules/react/cjs/react.production.min.js",
-              "type": "cjs require",
-              "userRequest": "object-assign",
-              "loc": "10:19-43"
-            },
             {
               "moduleId": "/OLF",
               "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
@@ -301,6 +292,15 @@
               "type": "cjs require",
               "userRequest": "object-assign",
               "loc": "13:82-106"
+            },
+            {
+              "moduleId": "vttU",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
+              "module": "./node_modules/react/cjs/react.production.min.js",
+              "moduleName": "./node_modules/react/cjs/react.production.min.js",
+              "type": "cjs require",
+              "userRequest": "object-assign",
+              "loc": "10:19-43"
             }
           ],
           "usedExports": true,
@@ -601,22 +601,13 @@
             0
           ],
           "assets": [],
-          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-          "issuerId": "vttU",
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": "/OLF",
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
-            {
-              "moduleId": "vttU",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-              "module": "./node_modules/react/cjs/react.production.min.js",
-              "moduleName": "./node_modules/react/cjs/react.production.min.js",
-              "type": "cjs require",
-              "userRequest": "fbjs/lib/emptyObject",
-              "loc": "10:46-77"
-            },
             {
               "moduleId": "/OLF",
               "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
@@ -625,6 +616,15 @@
               "type": "cjs require",
               "userRequest": "fbjs/lib/emptyObject",
               "loc": "13:327-358"
+            },
+            {
+              "moduleId": "vttU",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
+              "module": "./node_modules/react/cjs/react.production.min.js",
+              "moduleName": "./node_modules/react/cjs/react.production.min.js",
+              "type": "cjs require",
+              "userRequest": "fbjs/lib/emptyObject",
+              "loc": "10:46-77"
             }
           ],
           "usedExports": true,
@@ -728,22 +728,13 @@
             0
           ],
           "assets": [],
-          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-          "issuerId": "vttU",
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": "/OLF",
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
-            {
-              "moduleId": "vttU",
-              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-              "module": "./node_modules/react/cjs/react.production.min.js",
-              "moduleName": "./node_modules/react/cjs/react.production.min.js",
-              "type": "cjs require",
-              "userRequest": "fbjs/lib/emptyFunction",
-              "loc": "10:80-113"
-            },
             {
               "moduleId": "/OLF",
               "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
@@ -752,6 +743,15 @@
               "type": "cjs require",
               "userRequest": "fbjs/lib/emptyFunction",
               "loc": "13:109-142"
+            },
+            {
+              "moduleId": "vttU",
+              "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
+              "module": "./node_modules/react/cjs/react.production.min.js",
+              "moduleName": "./node_modules/react/cjs/react.production.min.js",
+              "type": "cjs require",
+              "userRequest": "fbjs/lib/emptyFunction",
+              "loc": "10:80-113"
             },
             {
               "moduleId": "o+pC",
@@ -1421,22 +1421,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-      "issuerId": "vttU",
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": "/OLF",
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "vttU",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-          "module": "./node_modules/react/cjs/react.production.min.js",
-          "moduleName": "./node_modules/react/cjs/react.production.min.js",
-          "type": "cjs require",
-          "userRequest": "object-assign",
-          "loc": "10:19-43"
-        },
         {
           "moduleId": "/OLF",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
@@ -1445,6 +1436,15 @@
           "type": "cjs require",
           "userRequest": "object-assign",
           "loc": "13:82-106"
+        },
+        {
+          "moduleId": "vttU",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
+          "module": "./node_modules/react/cjs/react.production.min.js",
+          "moduleName": "./node_modules/react/cjs/react.production.min.js",
+          "type": "cjs require",
+          "userRequest": "object-assign",
+          "loc": "10:19-43"
         }
       ],
       "usedExports": true,
@@ -1745,22 +1745,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-      "issuerId": "vttU",
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": "/OLF",
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "vttU",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-          "module": "./node_modules/react/cjs/react.production.min.js",
-          "moduleName": "./node_modules/react/cjs/react.production.min.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/emptyObject",
-          "loc": "10:46-77"
-        },
         {
           "moduleId": "/OLF",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
@@ -1769,6 +1760,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyObject",
           "loc": "13:327-358"
+        },
+        {
+          "moduleId": "vttU",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
+          "module": "./node_modules/react/cjs/react.production.min.js",
+          "moduleName": "./node_modules/react/cjs/react.production.min.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/emptyObject",
+          "loc": "10:46-77"
         }
       ],
       "usedExports": true,
@@ -1872,22 +1872,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-      "issuerId": "vttU",
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": "/OLF",
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "vttU",
-          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
-          "module": "./node_modules/react/cjs/react.production.min.js",
-          "moduleName": "./node_modules/react/cjs/react.production.min.js",
-          "type": "cjs require",
-          "userRequest": "fbjs/lib/emptyFunction",
-          "loc": "10:80-113"
-        },
         {
           "moduleId": "/OLF",
           "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react-dom/cjs/react-dom.production.min.js",
@@ -1896,6 +1887,15 @@
           "type": "cjs require",
           "userRequest": "fbjs/lib/emptyFunction",
           "loc": "13:109-142"
+        },
+        {
+          "moduleId": "vttU",
+          "moduleIdentifier": "/home/travis/build/Kikobeats/react-boilerplatinum/node_modules/react/cjs/react.production.min.js",
+          "module": "./node_modules/react/cjs/react.production.min.js",
+          "moduleName": "./node_modules/react/cjs/react.production.min.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/emptyFunction",
+          "loc": "10:80-113"
         },
         {
           "moduleId": "o+pC",
