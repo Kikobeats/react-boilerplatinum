@@ -55,7 +55,7 @@
     "tachyons-sass": "~4.9.0",
     "travis-after-all": "~1.4.5",
     "webpack": "~3.11.0",
-    "webpack-bundle-analyzer": "~2.10.0",
+    "webpack-bundle-analyzer": "~2.11.0",
     "webpack-common-shake": "~1.5.3"
   },
   "devDependencies": {
